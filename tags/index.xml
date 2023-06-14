@@ -1,14 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>Tags - 标签 - 不北咪</title>
-    <link>http://example.org/tags/</link>
+    <link>https://roukaixin.github.io/tags/</link>
     <description>Tags - 标签 - 不北咪</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 13 Jun 2023 19:10:46 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>a3427173515@163.com (pankx)</managingEditor>
+      <webMaster>a3427173515@163.com (pankx)</webMaster><lastBuildDate>Tue, 13 Jun 2023 19:10:46 &#43;0800</lastBuildDate><atom:link href="https://roukaixin.github.io/tags/" rel="self" type="application/rss+xml" /><item>
   <title>hugo</title>
-  <link>http://example.org/tags/hugo/</link>
+  <link>https://roukaixin.github.io/tags/hugo/</link>
   <pubDate>Tue, 13 Jun 2023 19:10:46 &#43;0800</pubDate>
-  <author>作者</author>
-  <guid>http://example.org/tags/hugo/</guid>
+  <author>pankx</author>
+  <guid>https://roukaixin.github.io/tags/hugo/</guid>
   <description><![CDATA[]]></description>
 </item>
 </channel>
