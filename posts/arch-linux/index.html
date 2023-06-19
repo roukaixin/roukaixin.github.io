@@ -10,7 +10,7 @@
 <meta name="description" content="archlinux的基本安装 停止reflector服务 禁止自动更新服务器列表 1 systemctl stop reflector.service 检查电脑是否支持UEFI引导模式 1 2 ls /sys/firmware/efi/efivars # 提示：如果没有" /><meta name="keywords" content='linux' /><meta itemprop="name" content="Arch Linux 安装到美化">
 <meta itemprop="description" content="archlinux的基本安装 停止reflector服务 禁止自动更新服务器列表 1 systemctl stop reflector.service 检查电脑是否支持UEFI引导模式 1 2 ls /sys/firmware/efi/efivars # 提示：如果没有"><meta itemprop="datePublished" content="2023-06-16T23:29:46+08:00" />
 <meta itemprop="dateModified" content="2023-06-19T21:43:46+08:00" />
-<meta itemprop="wordCount" content="7730">
+<meta itemprop="wordCount" content="7720">
 <meta itemprop="keywords" content="linux," /><meta property="og:title" content="Arch Linux 安装到美化" />
 <meta property="og:description" content="archlinux的基本安装 停止reflector服务 禁止自动更新服务器列表 1 systemctl stop reflector.service 检查电脑是否支持UEFI引导模式 1 2 ls /sys/firmware/efi/efivars # 提示：如果没有" />
 <meta property="og:type" content="article" />
@@ -32,7 +32,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https:\/\/roukaixin.github.io\/posts\/arch-linux\/"
-    },"genre": "posts","keywords": "linux","wordcount":  7730 ,
+    },"genre": "posts","keywords": "linux","wordcount":  7720 ,
     "url": "https:\/\/roukaixin.github.io\/posts\/arch-linux\/","datePublished": "2023-06-16T23:29:46+08:00","dateModified": "2023-06-19T21:43:46+08:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -148,7 +148,7 @@
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><span class="author"><img loading="lazy" src="/images/avatar.jpg" srcset="/images/avatar.jpg, /images/avatar.jpg 1.5x, /images/avatar.jpg 2x" sizes="auto" data-title="pankx" data-alt="pankx" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;pankx</span></span>
           <span class="post-category">收录于 <a href="/categories/linux/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> linux</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-06-16 23:29:46"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-06-16 23:29:46">2023-06-16 23:29:46</time></span>&nbsp;<span title="更新于 2023-06-19 21:43:46"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-06-19 21:43:46">2023-06-19 21:43:46</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 7730 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 16 分钟</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Arch Linux 安装到美化">
+      <div class="post-meta-line"><span title="发布于 2023-06-16 23:29:46"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-06-16 23:29:46">2023-06-16 23:29:46</time></span>&nbsp;<span title="更新于 2023-06-19 21:43:46"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-06-19 21:43:46">2023-06-19 21:43:46</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 7720 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 16 分钟</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Arch Linux 安装到美化">
             <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span id="busuanzi_value_page_pv">-</span>&nbsp;次阅读
           </span>&nbsp;</div>
     </div><div class="details toc" id="toc-static" data-kept="false">
@@ -254,15 +254,7 @@
       <ul>
         <li><a href="#提升开机速度">提升开机速度</a></li>
         <li><a href="#打补丁方法">打补丁方法</a></li>
-      </ul>
-    </li>
-    <li><a href="#打补丁的命令">打补丁的命令</a></li>
-    <li><a href="#-f-0--取消模糊匹配">-F 0  取消模糊匹配</a></li>
-    <li><a href="#打补丁失败的是生成一个--dej-为结尾的文件要自己手动去决定">打补丁失败的是生成一个  .dej 为结尾的文件，要自己手动去决定</a></li>
-    <li><a href="#打开一个vim的tab栏">打开一个vim的tab栏</a></li>
-    <li><a href="#打开文件">打开（文件）</a>
-      <ul>
-        <li>
+        <li><a href="#dwm">dwm</a>
           <ul>
             <li><a href="#dwn推荐的补丁">dwn推荐的补丁</a></li>
             <li><a href="#布局图标">布局图标</a></li>
@@ -1601,21 +1593,44 @@
 <li>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code></code></pre></td>
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">   <span class="c1"># 打补丁的命令</span>
+</span></span><span class="line"><span class="cl">   <span class="c1"># -F 0  取消模糊匹配</span>
+</span></span><span class="line"><span class="cl">   patch  -F <span class="m">0</span> 补丁名字
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">   <span class="c1"># 打补丁失败的是生成一个  .dej 为结尾的文件，要自己手动去决定</span>
+</span></span><span class="line"><span class="cl">   vim .rej
+</span></span><span class="line"><span class="cl">   <span class="c1"># 打开一个vim的tab栏</span>
+</span></span><span class="line"><span class="cl">   :tabnew
+</span></span><span class="line"><span class="cl">   <span class="c1"># 打开（文件）</span>
+</span></span><span class="line"><span class="cl">   :e 文件名
+</span></span></code></pre></td></tr></table>
 </div>
 </div></li>
+<li>
+<p>在.rej 文件里，前端有 + 号的就是表示要加进去，- 号就表示删除掉</p>
+</li>
+<li>
+<p>注意：函数的函数名不要删除掉</p>
+</li>
 </ul>
-<h1 id="打补丁的命令">打补丁的命令</h1>
-<h1 id="-f-0--取消模糊匹配">-F 0  取消模糊匹配</h1>
-<p>patch  -F 0 补丁名字</p>
-<h1 id="打补丁失败的是生成一个--dej-为结尾的文件要自己手动去决定">打补丁失败的是生成一个  .dej 为结尾的文件，要自己手动去决定</h1>
-<p>vim .rej</p>
-<h1 id="打开一个vim的tab栏">打开一个vim的tab栏</h1>
-<p>:tabnew</p>
-<h1 id="打开文件">打开（文件）</h1>
-<p>:e 文件名</p>
+<blockquote>
+<p>方法二</p>
+</blockquote>
+<p>下载补丁，然后自己手动去复制粘贴到源代码里面</p>
+<h2 id="dwm">dwm</h2>
+<p>进行到这一步的时候，因为之前已经编译了 dwm ，所以先重置回到官方的版本。<code>命令：make clean &amp;&amp; rm -rf config.h &amp;&amp; git reset --hard origin/master</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1630,58 +1645,20 @@
 </span><span class="lnt">10
 </span><span class="lnt">11
 </span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">- 在.rej 文件里，前端有 + 号的就是表示要加进去，- 号就表示删除掉
-</span></span><span class="line"><span class="cl">- 注意：函数的函数名不要删除掉
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&gt; 方法二
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">下载补丁，然后自己手动去复制粘贴到源代码里面
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">## dwm
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">进行到这一步的时候，因为之前已经编译了 dwm ，所以先重置回到官方的版本。`命令：make clean &amp;&amp; rm -rf config.h &amp;&amp; git reset --hard origin/master`
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">```bash
-</span></span><span class="line"><span class="cl"># 创建一个本地 sockless 分支
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 创建一个本地 sockless 分支</span>
 </span></span><span class="line"><span class="cl">git branch sockless
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"># 删除官方的仓库地址并重新添加，下图第一个
+</span></span><span class="line"><span class="cl"><span class="c1"># 删除官方的仓库地址并重新添加，下图第一个</span>
 </span></span><span class="line"><span class="cl">git remote -v
 </span></span><span class="line"><span class="cl">git remote remove origin
 </span></span><span class="line"><span class="cl">git remote add sockless https://git.suckless.org/dwm
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"># 添加自己的仓库地址（这里使用的是两个仓库，分别是 gitee，github。自己根据需要来执行操作）
+</span></span><span class="line"><span class="cl"><span class="c1"># 添加自己的仓库地址（这里使用的是两个仓库，分别是 gitee，github。自己根据需要来执行操作）</span>
 </span></span><span class="line"><span class="cl">git remote add gitee git@gitee.com:rouxin/dwm.git
 </span></span><span class="line"><span class="cl">git remote add github git@github.com:roukaixin/dwm.git
-</span></span><span class="line"><span class="cl"># 出现下面第二张图说明就成功了
+</span></span><span class="line"><span class="cl"><span class="c1"># 出现下面第二张图说明就成功了</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p><a class="lightgallery" href="/posts/note%20picture/Arch%20Linux.assets/image-20230507075646997.png" data-thumbnail="/posts/note%20picture/Arch%20Linux.assets/image-20230507075646997.png" data-sub-html="<h2>image-20230507075646997</h2>"><img loading="lazy" src="/posts/note%20picture/Arch%20Linux.assets/image-20230507075646997.png" srcset="/posts/note%20picture/Arch%20Linux.assets/image-20230507075646997.png, /posts/note%20picture/Arch%20Linux.assets/image-20230507075646997.png 1.5x, /posts/note%20picture/Arch%20Linux.assets/image-20230507075646997.png 2x" sizes="auto" data-title="image-20230507075646997" data-alt="image-20230507075646997" width="551" height="80" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a></p>

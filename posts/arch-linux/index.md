@@ -934,18 +934,17 @@ make clean && rm -rf config.h && git reset --hard origin/master
 
 
 -  ```bash
-  # 打补丁的命令
-  # -F 0  取消模糊匹配
-  patch  -F 0 补丁名字
-  
-  # 打补丁失败的是生成一个  .dej 为结尾的文件，要自己手动去决定
-  vim .rej
-  # 打开一个vim的tab栏
-  :tabnew
-  # 打开（文件）
-  :e 文件名
-  
-  ```
+      # 打补丁的命令
+      # -F 0  取消模糊匹配
+      patch  -F 0 补丁名字
+      
+      # 打补丁失败的是生成一个  .dej 为结尾的文件，要自己手动去决定
+      vim .rej
+      # 打开一个vim的tab栏
+      :tabnew
+      # 打开（文件）
+      :e 文件名
+   ```
 
   - 在.rej 文件里，前端有 + 号的就是表示要加进去，- 号就表示删除掉
   - 注意：函数的函数名不要删除掉
