@@ -4,7 +4,15 @@
     <link>https://roukaixin.github.io/posts/</link>
     <description>所有文章 | 不北咪</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>a3427173515@163.com (pankx)</managingEditor>
-      <webMaster>a3427173515@163.com (pankx)</webMaster><lastBuildDate>Tue, 13 Jun 2023 19:10:46 &#43;0800</lastBuildDate><atom:link href="https://roukaixin.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>a3427173515@163.com (pankx)</webMaster><lastBuildDate>Fri, 16 Jun 2023 23:29:46 &#43;0800</lastBuildDate><atom:link href="https://roukaixin.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+  <title>Arch Linux 安装到美化</title>
+  <link>https://roukaixin.github.io/posts/arch-linux/</link>
+  <pubDate>Fri, 16 Jun 2023 23:29:46 &#43;0800</pubDate>
+  <author>pankx</author>
+  <guid>https://roukaixin.github.io/posts/arch-linux/</guid>
+  <description><![CDATA[archlinux的基本安装 停止reflector服务 禁止自动更新服务器列表 1 systemctl stop reflector.service 检查电脑是否支持UEFI引导模式 1 2 ls /sys/firmware/efi/efivars # 提示：如果没有]]></description>
+</item>
+<item>
   <title>hugo 博客搭建</title>
   <link>https://roukaixin.github.io/posts/hugo-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
   <pubDate>Tue, 13 Jun 2023 19:10:46 &#43;0800</pubDate>
