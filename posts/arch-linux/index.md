@@ -150,7 +150,7 @@ pacstrap /mnt base base-devel linux linux-firmware vim
 
 ```
 
-![](/posts/note%20picture/Arch%20Linux.assets/image-20220924005039396.png)
+![image-20220924005039396](/posts/note%20picture/Arch%20Linux.assets/image-20220924005039396.png)
 
 ## 配置系统
 
@@ -249,7 +249,6 @@ vim /etc/hosts
 # 写入内容
 127.0.0.1   localhost
 ::1         localhost
-127.0.1.1   arch.localhost	arch
 ```
 
 
@@ -280,17 +279,14 @@ pacman -S intel-ucode  grub efibootmgr os-prober
 ```bash
 #安装grub引导
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=ARCH
-
-说明
-
-grub-install 				*安装grub*
-
---target=x86_64-efi      	*目标架构x86架构64位 efi启动方式  若不确定使用uname -a 可以查看*
-
---efi-directory=/boot      	*就是我sda1挂载的/boot位置*
-
---bootloader-id=ARCH     	*这里的ARCH名字可以自行更改 甚至这一段都可以不用写*
 ```
+
+**说明**
+
+- grub-install：`安装grub`
+- --target=x86_64-efi ：`目标架构x86架构64位 efi启动方式  若不确定使用uname -a 可以查看`
+- --efi-directory=/boot ：`安装系统是 efi 分区挂载的文件目录。例如：我 efi 挂载到 /boot 目录下，这里就是 /boot，如果是 /boot/efi 目录下，那这里就要写成 /boot/efi`
+- --bootloader-id=ARCH ：`ARCH 是引导的别名，甚至这一段都可以不用写`
 
 
 
@@ -398,6 +394,10 @@ EDITOR=vim visudo
 找到 # %wheel ALL=(ALL:ALL)ALL 并把 # 号去掉
 ```
 
+![image-20230625065238368](/posts/note%20picture/Arch%20Linux.assets/image-20230625065238368.png)
+
+**个人是注释掉 `%wheel ALL=(ALL:ALL)ALL` 这一行，如果不想使用 `sudo` 命令时输入密码，可以注释掉 `%wheel ALL=(ALL:ALL) NOPASSWD: ALL`。两个选择一个注释掉既可以了**
+
 
 
 ## 安装软件源（AUR）
@@ -478,6 +478,8 @@ systemctl enable udisks2
 
 
 
+
+
 # 显卡驱动
 
 ## 安装 NVIDIA 驱动
@@ -489,12 +491,12 @@ systemctl enable udisks2
 ```bash
 # 安装 linux-lts-headers，因为显卡启动需要。
 # 注意：如果内核是 linux ，不是 linux-lts，那么安装的是 linux-headers
-yay -S linux-lts-headers
+sudo pacman -S linux-lts-headers
 ```
 
 ```bash
 # 安装 nvidia 启动，推荐安装 nvidia-dkms ，他是动态安装的。不像其他驱动，如果内核升级，就需要重新安装一次驱动。
-yay -S nvidia-dkms
+sudo pacman -S nvidia-dkms
 ```
 
 **安装完成驱动之后重启电脑**
@@ -520,7 +522,7 @@ vim /etc/default/grub
 
 
 
-> ##### 添加 initramfs 模块
+> 添加 initramfs 模块
 
 在 `/etc/mkinitcpio.conf` 中找到  `MODULES=` 这一行在括号的后面加入`nvidia nvidia_modeset nvidia_uvm nvidia_drm`。修改之前先备份一下（`sudo cp /etc/mkinitcpio.conf /etc/mkinitcpio.conf.back`）
 
@@ -538,13 +540,15 @@ vim /etc/default/grub
 
 
 
+### 仅使用 NVIDIA 显卡
 
+**下面配置针对于 x 服务器，并使用桌面环境（dwm）**
 
 > 创建 xorg.conf（10-nvidia-drm-outputclass.conf）
 
 在 `/etc/X11/xorg.conf.d/` 目录下新建 `10-nvidia-drm-outputclass.conf`。
 
-重要：如果`/etc/X11`存在`xorg.conf`，那么一定要删除掉
+**重要：**如果`/etc/X11`存在`xorg.conf`，那么一定要删除掉
 
 在`/usr/share/X11/xorg.conf.d/10-nvidia-drm-outputclass.conf`也有一份是生成的，可以参考着来看
 
@@ -572,17 +576,7 @@ EndSection
 
 
 
-> 安装 NVIDIA 软件包
-
-```bash
-yay -S lib32-nvidia-utils lib32-opencl-nvidia lib32-libvdpau libvdpau nvidia-settings nvidia-utils opencl-nvidia xorg-xrandr
-```
-
-![image-20230507052136496](/posts/note%20picture/Arch%20Linux.assets/image-20230507052136496.png)
-
-
-
-> 仅使用 NVIDIA 显卡配置
+> 使用 startx 启动
 
 这里以**dwm**为例，如果你是其他桌面管理器，请参阅[这里](https://wiki.archlinux.org/index.php/NVIDIA_Optimus#Display_Managers)。如果不配置你将会获得黑屏。 
 
@@ -598,6 +592,18 @@ xrandr --auto
 
 ![image-20230507052853861](/posts/note%20picture/Arch%20Linux.assets/image-20230507052853861.png)
 
+**如果启动之后 dpi 设置不正确，那么还需要在 `xrandr --auto` 下面一行加入 `xrandr --dpi 96`**
+
+
+
+> 安装 NVIDIA 软件包 （可选）
+
+```bash
+sudo pacman -S nvidia-settings nvidia-utils
+```
+
+![image-20230507052136496](/posts/note%20picture/Arch%20Linux.assets/image-20230507052136496.png)
+
 
 
 > 检查3D
@@ -606,7 +612,7 @@ xrandr --auto
 
 ```bash
 # 安装包
-yay -S mesa-demos
+sudo pacman -S mesa-utils
 
 # 检查是否输出,出现下面内容就是成功了
 glxinfo | grep NVIDIA
@@ -616,13 +622,24 @@ glxinfo | grep NVIDIA
 
 
 
-> 配置视频硬解
+#### 配置视频硬解
+
+```bash
+# 安装 翻译层
+paru -S libva-nvidia-driver
+```
+
+
+
+> 配置
+
+方法一：
 
 ```bash
 # 创建 .xprofile 文件
 vim ~/.xprofile
 
-export LIBVA_DRIVER_NAME=vdpau
+export LIBVA_DRIVER_NAME=nvidia
 export LIBVA_DRIVERS_PATH=/usr/lib/dri/
 export VDPAU_DRIVER=nvidia
 
@@ -632,11 +649,40 @@ export VDPAU_DRIVER=nvidia
 
 ![image-20230507053717011](/posts/note%20picture/Arch%20Linux.assets/image-20230507053717011.png)
 
+方法二：
+
+```bash
+# 修改 .xinitrc 文件
+export LIBVA_DRIVER_NAME=nvidia
+export LIBVA_DRIVERS_PATH=/usr/lib/dri/
+export VDPAU_DRIVER=nvidia
+```
+
+![image-20230625081349283](/posts/note%20picture/Arch%20Linux.assets/image-20230625081349283.png)
+
+**注意：一定要在 `exec dwm` 之前**
+
+
+
+> 验证 VA-API
+
+```bash
+# 安装软件包，如果不安装这个包，那么 vainfo 无法使用
+sudo pacman -S libva-utils
+```
+
 验证 VA-API 是否正常工作，运行 `vainfo`，出现下面内容就表示成功
 
 
 
 ![image-20230507055147711](/posts/note%20picture/Arch%20Linux.assets/image-20230507055147711.png)
+
+> 验证VDPAU
+
+```bash
+# 安装 vdpauinfo，不安装无法使用 vdpauinfo 命令
+sudo pacman -S vdpauinfo
+```
 
 
 
@@ -758,7 +804,6 @@ vim ~/.xinitrc
 # 先把最后几行删除，在把 exec dwm 添加进去
 ```
 
-![image](https://img2023.cnblogs.com/blog/2434930/202212/2434930-20221203153412668-790895871.png)
 
 **在`～/.xinitrc`文件末尾添加`exec dwm`，并保存退出，使用`startx`来启动窗口管理器。** 
 
@@ -822,7 +867,10 @@ picom --config ~/wm/config/picom/picom.conf
 
 
 
-**class_g 怎么获取，1、下载安装 `xorg-xprop` 2、在终端里运行 `xprop` 命令，之后点击需要获取的 `class` 的窗口** 
+**class_g 怎么获取：**
+
+- **1、下载安装 `xorg-xprop` **
+- **2、在终端里运行 `xprop` 命令，之后点击需要获取的 `class` 的窗口** 
 
 
 
@@ -933,18 +981,19 @@ make clean && rm -rf config.h && git reset --hard origin/master
 
 
 
--  ```bash
-      # 打补丁的命令
-      # -F 0  取消模糊匹配
-      patch  -F 0 补丁名字
-      
-      # 打补丁失败的是生成一个  .dej 为结尾的文件，要自己手动去决定
-      vim .rej
-      # 打开一个vim的tab栏
-      :tabnew
-      # 打开（文件）
-      :e 文件名
-   ```
+- ```bash
+  # 打补丁的命令
+  # -F 0  取消模糊匹配
+  patch  -F 0 补丁名字
+  
+  # 打补丁失败的是生成一个  .dej 为结尾的文件，要自己手动去决定
+  vim .rej
+  # 打开一个vim的tab栏
+  :tabnew
+  # 打开（文件）
+  :e 文件名
+  
+  ```
 
   - 在.rej 文件里，前端有 + 号的就是表示要加进去，- 号就表示删除掉
   - 注意：函数的函数名不要删除掉
@@ -1222,7 +1271,6 @@ chmod +x volup.sh voldown.sh voltoggle.sh
   - 打开多个终端就会出项这个问题
 - 终端中的输入下划线（blinking_cursor）
   - 闪动的下划线
-    ![image](https://img2022.cnblogs.com/blog/2434930/202209/2434930-20220927091029238-881829393.png)
 - 主题颜色（xresources）
   - 保留多个主颜色
 
