@@ -927,6 +927,15 @@ grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 
+## 双系统时间不正确
+
+windows使用 UTC 时间
+
+```bash
+# 进入 windows 系统，使用管理员运行 cmd，并运行下面命令于添加到注册表中
+reg add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation" /v RealTimeIsUniversal /d 1 /t REG_DWORD /f
+```
+
 
 
 

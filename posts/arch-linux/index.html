@@ -10,7 +10,7 @@
 <meta name="description" content="archlinux的基本安装 停止reflector服务 禁止自动更新服务器列表 1 systemctl stop reflector.service 检查电脑是否支持UEFI引导模式 1 2 ls /sys/firmware/efi/efivars # 提示：如果没有" /><meta name="keywords" content='linux' /><meta itemprop="name" content="Arch Linux 安装到美化">
 <meta itemprop="description" content="archlinux的基本安装 停止reflector服务 禁止自动更新服务器列表 1 systemctl stop reflector.service 检查电脑是否支持UEFI引导模式 1 2 ls /sys/firmware/efi/efivars # 提示：如果没有"><meta itemprop="datePublished" content="2023-06-16T23:29:46+08:00" />
 <meta itemprop="dateModified" content="2023-06-26T18:35:46+08:00" />
-<meta itemprop="wordCount" content="7981">
+<meta itemprop="wordCount" content="8046">
 <meta itemprop="keywords" content="linux," /><meta property="og:title" content="Arch Linux 安装到美化" />
 <meta property="og:description" content="archlinux的基本安装 停止reflector服务 禁止自动更新服务器列表 1 systemctl stop reflector.service 检查电脑是否支持UEFI引导模式 1 2 ls /sys/firmware/efi/efivars # 提示：如果没有" />
 <meta property="og:type" content="article" />
@@ -32,7 +32,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https:\/\/roukaixin.github.io\/posts\/arch-linux\/"
-    },"genre": "posts","keywords": "linux","wordcount":  7981 ,
+    },"genre": "posts","keywords": "linux","wordcount":  8046 ,
     "url": "https:\/\/roukaixin.github.io\/posts\/arch-linux\/","datePublished": "2023-06-16T23:29:46+08:00","dateModified": "2023-06-26T18:35:46+08:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -148,7 +148,7 @@
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><span class="author"><img loading="lazy" src="/images/avatar.jpg" srcset="/images/avatar.jpg, /images/avatar.jpg 1.5x, /images/avatar.jpg 2x" sizes="auto" data-title="pankx" data-alt="pankx" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;pankx</span></span>
           <span class="post-category">收录于 <a href="/categories/linux/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> linux</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-06-16 23:29:46"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-06-16 23:29:46">2023-06-16 23:29:46</time></span>&nbsp;<span title="更新于 2023-06-26 18:35:46"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-06-26 18:35:46">2023-06-26 18:35:46</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 7981 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 16 分钟</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Arch Linux 安装到美化">
+      <div class="post-meta-line"><span title="发布于 2023-06-16 23:29:46"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-06-16 23:29:46">2023-06-16 23:29:46</time></span>&nbsp;<span title="更新于 2023-06-26 18:35:46"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-06-26 18:35:46">2023-06-26 18:35:46</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 8046 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 17 分钟</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Arch Linux 安装到美化">
             <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span id="busuanzi_value_page_pv">-</span>&nbsp;次阅读
           </span>&nbsp;</div>
     </div><div class="featured-image"><img loading="lazy" src="/hugo/ArchLinux.png" srcset="/hugo/ArchLinux.png, /hugo/ArchLinux.png 1.5x, /hugo/ArchLinux.png 2x" sizes="auto" data-title="/hugo/ArchLinux.png" data-alt="/hugo/ArchLinux.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></div><div class="details toc" id="toc-static" data-kept="false">
@@ -249,6 +249,7 @@
     <li><a href="#系统优化">系统优化</a>
       <ul>
         <li><a href="#提升开机速度">提升开机速度</a></li>
+        <li><a href="#双系统时间不正确">双系统时间不正确</a></li>
         <li><a href="#打补丁方法">打补丁方法</a></li>
         <li><a href="#dwm">dwm</a>
           <ul>
@@ -1560,6 +1561,18 @@
 </span></span><span class="line"><span class="cl"><span class="nv">GRUB_CMDLINE_LINUX_DEFAULT</span><span class="o">=</span><span class="s2">&#34;loglevel=3 nowatchdog&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># 重新生成</span>
 </span></span><span class="line"><span class="cl">grub-mkconfig -o /boot/grub/grub.cfg
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="双系统时间不正确">双系统时间不正确</h2>
+<p>windows使用 UTC 时间</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 进入 windows 系统，使用管理员运行 cmd，并运行下面命令于添加到注册表中</span>
+</span></span><span class="line"><span class="cl">reg add <span class="s2">&#34;HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation&#34;</span> /v RealTimeIsUniversal /d <span class="m">1</span> /t REG_DWORD /f
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="打补丁方法">打补丁方法</h2>
