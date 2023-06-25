@@ -6,10 +6,10 @@
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>a3427173515@163.com (pankx)</managingEditor>
       <webMaster>a3427173515@163.com (pankx)</webMaster><lastBuildDate>Fri, 16 Jun 2023 23:29:46 &#43;0800</lastBuildDate><atom:link href="https://roukaixin.github.io/tags/linux/" rel="self" type="application/rss+xml" /><item>
   <title>Arch Linux 安装到美化</title>
-  <link>https://roukaixin.github.io/posts/arch-linux/</link>
+  <link>https://roukaixin.github.io/arch-linux/</link>
   <pubDate>Fri, 16 Jun 2023 23:29:46 &#43;0800</pubDate>
   <author>pankx</author>
-  <guid>https://roukaixin.github.io/posts/arch-linux/</guid>
+  <guid>https://roukaixin.github.io/arch-linux/</guid>
   <description><![CDATA[<div class="featured-image">
         <img src="/hugo/ArchLinux.png" referrerpolicy="no-referrer">
       </div>archlinux的基本安装 停止reflector服务 禁止自动更新服务器列表 1 systemctl stop reflector.service 检查电脑是否支持UEFI引导模式 1 2 ls /sys/firmware/efi/efivars # 提示：如果没有]]></description>
