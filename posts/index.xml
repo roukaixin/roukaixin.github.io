@@ -10,7 +10,9 @@
   <pubDate>Fri, 16 Jun 2023 23:29:46 &#43;0800</pubDate>
   <author>pankx</author>
   <guid>https://roukaixin.github.io/posts/arch-linux/</guid>
-  <description><![CDATA[archlinux的基本安装 停止reflector服务 禁止自动更新服务器列表 1 systemctl stop reflector.service 检查电脑是否支持UEFI引导模式 1 2 ls /sys/firmware/efi/efivars # 提示：如果没有]]></description>
+  <description><![CDATA[<div class="featured-image">
+        <img src="/hugo/ArchLinux.png" referrerpolicy="no-referrer">
+      </div>archlinux的基本安装 停止reflector服务 禁止自动更新服务器列表 1 systemctl stop reflector.service 检查电脑是否支持UEFI引导模式 1 2 ls /sys/firmware/efi/efivars # 提示：如果没有]]></description>
 </item>
 <item>
   <title>hugo 博客搭建</title>
