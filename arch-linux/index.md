@@ -936,6 +936,51 @@ windows使用 UTC 时间
 reg add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation" /v RealTimeIsUniversal /d 1 /t REG_DWORD /f
 ```
 
+## 调节亮度
+
+**方法一：**
+
+默认亮度：24000
+
+> 查看最大亮度
+
+```bash
+cat  /sys/class/backlight/intel_backlight/max_brightness
+```
+
+> 修改亮度值
+
+```bash
+sudo vim /sys/class/backlight/intel_backlight/brightness
+```
+
+
+
+**方法二：**
+
+```bash
+# 安装 brightnessctl 包
+sudo pacman -S brightnessctl
+```
+
+在 dwm 的 config.h 中加入
+
+```bash
+static const char *brighter[] = { "brightnessctl", "set", "10%+", NULL };
+static const char *dimmer[]   = { "brightnessctl", "set", "10%-", NULL };
+...
+
+static const Key keys[] = {
+       ...
+       
+       { 0, XF86XK_MonBrightnessDown, spawn, {.v = dimmer } },
+       { 0, XF86XK_MonBrightnessUp,   spawn, {.v = brighter } },
+       
+       ...
+};
+```
+
+
 
 
 
