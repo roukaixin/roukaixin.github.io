@@ -1,4 +1,4 @@
-# Arch Linux 安装到美化
+# neovim
 
 
 

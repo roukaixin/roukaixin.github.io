@@ -2,10 +2,10 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
   ><url>
-      <loc>https://roukaixin.github.io/neovim/</loc><lastmod>2023-07-01T23:45:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
       <loc>https://roukaixin.github.io/categories/</loc><lastmod>2023-07-01T23:45:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
       <loc>https://roukaixin.github.io/tags/neovim/</loc><lastmod>2023-07-01T23:45:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
       <loc>https://roukaixin.github.io/categories/neovim/</loc><lastmod>2023-07-01T23:45:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>https://roukaixin.github.io/neovim/</loc><lastmod>2023-07-01T23:45:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
       <loc>https://roukaixin.github.io/posts/</loc><lastmod>2023-07-01T23:45:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
       <loc>https://roukaixin.github.io/tags/</loc><lastmod>2023-07-01T23:45:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
       <loc>https://roukaixin.github.io/tags/vim/</loc><lastmod>2023-07-01T23:45:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
