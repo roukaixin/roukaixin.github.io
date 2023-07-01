@@ -4,7 +4,15 @@
     <link>https://roukaixin.github.io/posts/</link>
     <description>所有文章 | 不北咪</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>a3427173515@163.com (pankx)</managingEditor>
-      <webMaster>a3427173515@163.com (pankx)</webMaster><lastBuildDate>Fri, 16 Jun 2023 23:29:46 &#43;0800</lastBuildDate><atom:link href="https://roukaixin.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>a3427173515@163.com (pankx)</webMaster><lastBuildDate>Sat, 01 Jul 2023 23:45:46 &#43;0800</lastBuildDate><atom:link href="https://roukaixin.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+  <title>Arch Linux 安装到美化</title>
+  <link>https://roukaixin.github.io/neovim/</link>
+  <pubDate>Sat, 01 Jul 2023 23:45:46 &#43;0800</pubDate>
+  <author>pankx</author>
+  <guid>https://roukaixin.github.io/neovim/</guid>
+  <description><![CDATA[安装 github 地址：https://github.com/neovim/neovim arch 1 sudo pacman -S neovim]]></description>
+</item>
+<item>
   <title>Arch Linux 安装到美化</title>
   <link>https://roukaixin.github.io/arch-linux/</link>
   <pubDate>Fri, 16 Jun 2023 23:29:46 &#43;0800</pubDate>

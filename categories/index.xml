@@ -4,7 +4,23 @@
     <link>https://roukaixin.github.io/categories/</link>
     <description>Categories - 分类 - 不北咪</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>a3427173515@163.com (pankx)</managingEditor>
-      <webMaster>a3427173515@163.com (pankx)</webMaster><lastBuildDate>Fri, 16 Jun 2023 23:29:46 &#43;0800</lastBuildDate><atom:link href="https://roukaixin.github.io/categories/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>a3427173515@163.com (pankx)</webMaster><lastBuildDate>Sat, 01 Jul 2023 23:45:46 &#43;0800</lastBuildDate><atom:link href="https://roukaixin.github.io/categories/" rel="self" type="application/rss+xml" /><item>
+  <title>neovim</title>
+  <link>https://roukaixin.github.io/categories/neovim/</link>
+  <pubDate>Sat, 01 Jul 2023 23:45:46 &#43;0800</pubDate>
+  <author>pankx</author>
+  <guid>https://roukaixin.github.io/categories/neovim/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>vim</title>
+  <link>https://roukaixin.github.io/categories/vim/</link>
+  <pubDate>Sat, 01 Jul 2023 23:45:46 &#43;0800</pubDate>
+  <author>pankx</author>
+  <guid>https://roukaixin.github.io/categories/vim/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
   <title>linux</title>
   <link>https://roukaixin.github.io/categories/linux/</link>
   <pubDate>Fri, 16 Jun 2023 23:29:46 &#43;0800</pubDate>
