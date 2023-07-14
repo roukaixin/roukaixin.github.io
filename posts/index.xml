@@ -4,7 +4,27 @@
     <link>https://roukaixin.github.io/posts/</link>
     <description>所有文章 | 不北咪</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>a3427173515@163.com (pankx)</managingEditor>
-      <webMaster>a3427173515@163.com (pankx)</webMaster><lastBuildDate>Sat, 01 Jul 2023 23:45:46 &#43;0800</lastBuildDate><atom:link href="https://roukaixin.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>a3427173515@163.com (pankx)</webMaster><lastBuildDate>Fri, 14 Jul 2023 19:13:00 &#43;0800</lastBuildDate><atom:link href="https://roukaixin.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+  <title>fedora Linux 安装</title>
+  <link>https://roukaixin.github.io/fedora-linux/</link>
+  <pubDate>Fri, 14 Jul 2023 19:13:00 &#43;0800</pubDate>
+  <author>pankx</author>
+  <guid>https://roukaixin.github.io/fedora-linux/</guid>
+  <description><![CDATA[<div class="featured-image">
+        <img src="https://adersaytech.com/wp-content/uploads/2021/08/what-is-fedora.webp" referrerpolicy="no-referrer">
+      </div>安装 下载iso 镜像 下载地址：https://mirrors.tuna.tsinghua.edu.cn/ 下载带有 Everything 的镜像文件，这个镜像文件可以]]></description>
+</item>
+<item>
+  <title>openSUSE 安装和窗口管理器安装</title>
+  <link>https://roukaixin.github.io/opensuse/</link>
+  <pubDate>Wed, 12 Jul 2023 20:00:00 &#43;0800</pubDate>
+  <author>pankx</author>
+  <guid>https://roukaixin.github.io/opensuse/</guid>
+  <description><![CDATA[<div class="featured-image">
+        <img src="https://cdn.shortpixel.ai/spai/q_glossy&#43;w_1082&#43;h_1422&#43;to_auto&#43;ret_img/https://linuxiac.com/wp-content/uploads/2021/03/opensuse-tumbleweed-leap-header.png" referrerpolicy="no-referrer">
+      </div>下载镜像 dbus-1-devel libGLC-devel libev-devel xcb-util-renderutil-devel xcb-util-image-devel libpixman-1-0-devel xcb-util-devel uthash-devel libconfig-devel pcre2-devel]]></description>
+</item>
+<item>
   <title>neovim</title>
   <link>https://roukaixin.github.io/neovim/</link>
   <pubDate>Sat, 01 Jul 2023 23:45:46 &#43;0800</pubDate>
