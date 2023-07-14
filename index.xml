@@ -33,7 +33,7 @@
   <author>pankx</author>
   <guid>https://roukaixin.github.io/neovim/</guid>
   <description><![CDATA[<div class="featured-image">
-        <img src="/hugo/neovim.png" referrerpolicy="no-referrer">
+        <img src="https://www.xtuos.com/wp-content/uploads/2023/03/neovim-logo.png" referrerpolicy="no-referrer">
       </div>安装 github 地址：https://github.com/neovim/neovim arch 1 sudo pacman -S neovim]]></description>
 </item>
 <item>
@@ -53,7 +53,7 @@
   <author>pankx</author>
   <guid>https://roukaixin.github.io/hugo-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
   <description><![CDATA[<div class="featured-image">
-        <img src="/hugo/hugo1.png" referrerpolicy="no-referrer">
+        <img src="https://bartlomiejmika.com/img/2020/09/07-hugo-banner.jpeg" referrerpolicy="no-referrer">
       </div>hugo 安装 windows hugo 下载地址：https://github.com/gohugoio/hugo/releases 下载二进制文件（官方推荐下载扩展版），]]></description>
 </item>
 </channel>

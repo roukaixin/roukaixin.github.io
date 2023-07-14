@@ -11,7 +11,7 @@
   <author>pankx</author>
   <guid>https://roukaixin.github.io/neovim/</guid>
   <description><![CDATA[<div class="featured-image">
-        <img src="/hugo/neovim.png" referrerpolicy="no-referrer">
+        <img src="https://www.xtuos.com/wp-content/uploads/2023/03/neovim-logo.png" referrerpolicy="no-referrer">
       </div>安装 github 地址：https://github.com/neovim/neovim arch 1 sudo pacman -S neovim]]></description>
 </item>
 </channel>
