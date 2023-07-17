@@ -67,7 +67,6 @@ timedatectl set-ntp true
 timedatectl status
 ```
 
-.
 
 ## 修改软件源
 
@@ -213,7 +212,7 @@ mkfs.btrfs -f -L arch /dev/sda3
 pacstrap /mnt base base-devel linux linux-firmware vim
 ```
 
-![image-20220924005039396](/posts/note%20picture/Arch%20Linux.assets/image-20220924005039396.png)
+![image-20220924005039396](/posts/note%20picture/Arch%20Linux.assets/image-20220924005039396.png " ")
 
 ## 配置系统
 
@@ -457,7 +456,7 @@ EDITOR=vim visudo
 找到 # %wheel ALL=(ALL:ALL)ALL 并把 # 号去掉
 ```
 
-![image-20230625065238368](/posts/note%20picture/Arch%20Linux.assets/image-20230625065238368.png)
+![image-20230625065238368](/posts/note%20picture/Arch%20Linux.assets/image-20230625065238368.png " ")
 
 **个人是注释掉 `%wheel ALL=(ALL:ALL)ALL` 这一行，如果不想使用 `sudo` 命令时输入密码，可以注释掉 `%wheel ALL=(ALL:ALL) NOPASSWD: ALL`。两个选择一个注释掉既可以了**
 
@@ -577,9 +576,9 @@ vim /etc/default/grub
 # 找到 GRUB_CMDLINE_LINUX_DEFAULT 这一项在后面加入 nvidia-drm.modeset=1
 ```
 
-![image-20230507044757042](/posts/note%20picture/Arch%20Linux.assets/image-20230507044757042.png)
+![image-20230507044757042](/posts/note%20picture/Arch%20Linux.assets/image-20230507044757042.png " ")
 
-![image-20230506101749305](/posts/note%20picture/Arch%20Linux.assets/image-20230506101749305.png)
+![image-20230506101749305](/posts/note%20picture/Arch%20Linux.assets/image-20230506101749305.png " ")
 
 **编辑完成之后，重新生成 `grub.cfg` ，执行 `sudo  grub-mkconfig -o /boot/grub/grub.cfg`**
 
@@ -589,7 +588,7 @@ vim /etc/default/grub
 
 在 `/etc/mkinitcpio.conf` 中找到  `MODULES=` 这一行在括号的后面加入`nvidia nvidia_modeset nvidia_uvm nvidia_drm`。修改之前先备份一下（`sudo cp /etc/mkinitcpio.conf /etc/mkinitcpio.conf.back`）
 
-![image-20230507045036585](/posts/note%20picture/Arch%20Linux.assets/image-20230507045036585.png)
+![image-20230507045036585](/posts/note%20picture/Arch%20Linux.assets/image-20230507045036585.png " ")
 
 重新生成 `initramfs ` 。生成命令：`sudo mkinitcpio -P`
 
@@ -653,7 +652,7 @@ xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
 ```
 
-![image-20230507052853861](/posts/note%20picture/Arch%20Linux.assets/image-20230507052853861.png)
+![image-20230507052853861](/posts/note%20picture/Arch%20Linux.assets/image-20230507052853861.png " ")
 
 **如果启动之后 dpi 设置不正确，那么还需要在 `xrandr --auto` 下面一行加入 `xrandr --dpi 96`**
 
@@ -665,7 +664,7 @@ xrandr --auto
 sudo pacman -S nvidia-settings nvidia-utils
 ```
 
-![image-20230507052136496](/posts/note%20picture/Arch%20Linux.assets/image-20230507052136496.png)
+![image-20230507052136496](/posts/note%20picture/Arch%20Linux.assets/image-20230507052136496.png " ")
 
 
 
@@ -681,7 +680,7 @@ sudo pacman -S mesa-utils
 glxinfo | grep NVIDIA
 ```
 
-![image-20230507053421591](/posts/note%20picture/Arch%20Linux.assets/image-20230507053421591.png)
+![image-20230507053421591](/posts/note%20picture/Arch%20Linux.assets/image-20230507053421591.png " ")
 
 
 
@@ -710,7 +709,7 @@ export VDPAU_DRIVER=nvidia
 [ -f ~/.xprofile ] && . ~/.xprofile
 ```
 
-![image-20230507053717011](/posts/note%20picture/Arch%20Linux.assets/image-20230507053717011.png)
+![image-20230507053717011](/posts/note%20picture/Arch%20Linux.assets/image-20230507053717011.png " ")
 
 方法二：
 
@@ -721,7 +720,7 @@ export LIBVA_DRIVERS_PATH=/usr/lib/dri/
 export VDPAU_DRIVER=nvidia
 ```
 
-![image-20230625081349283](/posts/note%20picture/Arch%20Linux.assets/image-20230625081349283.png)
+![image-20230625081349283](/posts/note%20picture/Arch%20Linux.assets/image-20230625081349283.png " ")
 
 **注意：一定要在 `exec dwm` 之前**
 
@@ -738,7 +737,7 @@ sudo pacman -S libva-utils
 
 
 
-![image-20230507055147711](/posts/note%20picture/Arch%20Linux.assets/image-20230507055147711.png)
+![image-20230507055147711](/posts/note%20picture/Arch%20Linux.assets/image-20230507055147711.png " ")
 
 > 验证VDPAU
 
@@ -751,7 +750,7 @@ sudo pacman -S vdpauinfo
 
 验证 VDPAU 是否正常工作，运行`vdpauinfo`，出现下图就表示成功
 
-![image-20230507055418720](/posts/note%20picture/Arch%20Linux.assets/image-20230507055418720.png)
+![image-20230507055418720](/posts/note%20picture/Arch%20Linux.assets/image-20230507055418720.png " ")
 
 
 
@@ -841,7 +840,7 @@ make clean install
 # 在 ~/.xinitrc 中加入 exec slstatus & 。注意：一定要在 dwm 前面
 ```
 
-![image-20220925144617614](/posts/note%20picture/Arch%20Linux.assets/image-20220925144617614.png)
+![image-20220925144617614](/posts/note%20picture/Arch%20Linux.assets/image-20220925144617614.png " ")
 
 
 
@@ -897,7 +896,7 @@ xrandr --addmode 显示器名称 "1920x1080_144.00"
 xrandr --output 显示器名称 --mode '分辨率'
 ```
 
-![image-20220928004105215](/posts/note%20picture/Arch%20Linux.assets/image-20220928004105215.png)
+![image-20220928004105215](/posts/note%20picture/Arch%20Linux.assets/image-20220928004105215.png " ")
 
 
 
@@ -953,7 +952,7 @@ opacity-rule = [
 # 其中 100 表示不透明度为 100%
 ```
 
-![image-20230507064748371](/posts/note%20picture/Arch%20Linux.assets/image-20230507064748371.png)
+![image-20230507064748371](/posts/note%20picture/Arch%20Linux.assets/image-20230507064748371.png " ")
 
 > 开启圆角
 
@@ -968,7 +967,7 @@ rounded-corners-exclude = [
 
 
 
-![image-20230507065032647](/posts/note%20picture/Arch%20Linux.assets/image-20230507065032647.png)
+![image-20230507065032647](/posts/note%20picture/Arch%20Linux.assets/image-20230507065032647.png " ")
 
 **我的配置文件地址：`https://gitee.com/rouxin/config`**
 
@@ -1098,19 +1097,20 @@ make clean && rm -rf config.h && git reset --hard origin/master
 
 
 
-- ```bash
-  # 打补丁的命令
-  # -F 0  取消模糊匹配
-  patch  -F 0 补丁名字
+```bash
+
+# 打补丁的命令
+# -F 0  取消模糊匹配
+patch  -F 0 补丁名字
   
-  # 打补丁失败的是生成一个  .dej 为结尾的文件，要自己手动去决定
-  vim .rej
-  # 打开一个vim的tab栏
-  :tabnew
-  # 打开（文件）
-  :e 文件名
-  
-  ```
+# 打补丁失败的是生成一个  .dej 为结尾的文件，要自己手动去决定
+vim .rej
+# 打开一个vim的tab栏
+:tabnew
+# 打开（文件）
+:e 文件名
+
+```
 
   - 在.rej 文件里，前端有 + 号的就是表示要加进去，- 号就表示删除掉
   - 注意：函数的函数名不要删除掉
@@ -1145,9 +1145,9 @@ git remote add github git@github.com:roukaixin/dwm.git
 
 ```
 
-![image-20230507075646997](/posts/note%20picture/Arch%20Linux.assets/image-20230507075646997.png)
+![image-20230507075646997](/posts/note%20picture/Arch%20Linux.assets/image-20230507075646997.png " ")
 
-![image-20230507080205654](/posts/note%20picture/Arch%20Linux.assets/image-20230507080205654.png)
+![image-20230507080205654](/posts/note%20picture/Arch%20Linux.assets/image-20230507080205654.png " ")
 
 
 
@@ -1226,7 +1226,7 @@ vim config.h
 
 
 
-![image-20220924013208040](/posts/note%20picture/Arch%20Linux.assets/image-20220924013208040.png)
+![image-20220924013208040](/posts/note%20picture/Arch%20Linux.assets/image-20220924013208040.png " ")
 
 
 
@@ -1251,11 +1251,11 @@ fc-list |grep Nerd
 “Symbols Nerd Font:pixelsize=14:type=2048-em:antialias=true:autohint=true”
 ```
 
-![image-20220924233710569](/posts/note%20picture/Arch%20Linux.assets/image-20220924233710569.png)
+![image-20220924233710569](/posts/note%20picture/Arch%20Linux.assets/image-20220924233710569.png " ")
 
 
 
-![image-20221001210909598](/posts/note%20picture/Arch%20Linux.assets/image-20221001210909598.png)
+![image-20221001210909598](/posts/note%20picture/Arch%20Linux.assets/image-20221001210909598.png " ")
 
 
 
@@ -1283,9 +1283,9 @@ https://www.nerdfonts.com/cheat-sheet
 make && sudo make clean install
 ```
 
-![image-20220925134618485](/posts/note%20picture/Arch%20Linux.assets/image-20220925134618485.png)
+![image-20220925134618485](/posts/note%20picture/Arch%20Linux.assets/image-20220925134618485.png " ")
 
-![image-20220925134649175](/posts/note%20picture/Arch%20Linux.assets/image-20220925134649175.png)
+![image-20220925134649175](/posts/note%20picture/Arch%20Linux.assets/image-20220925134649175.png " ")
 
 
 
@@ -1319,7 +1319,7 @@ time
 如图片
 ```
 
-![image-20221001202825882](/posts/note%20picture/Arch%20Linux.assets/image-20221001202825882.png)
+![image-20221001202825882](/posts/note%20picture/Arch%20Linux.assets/image-20221001202825882.png " ")
 
 
 
@@ -1405,7 +1405,7 @@ vim config.h
 
 
 
-![image-20220924013544614](/posts/note%20picture/Arch%20Linux.assets/image-20220924013544614.png)
+![image-20220924013544614](/posts/note%20picture/Arch%20Linux.assets/image-20220924013544614.png " ")
 
 
 
@@ -1443,7 +1443,7 @@ do
 done &
 ```
 
-![image-20220924120805094](/posts/note%20picture/Arch%20Linux.assets/image-20220924120805094.png)
+![image-20220924120805094](/posts/note%20picture/Arch%20Linux.assets/image-20220924120805094.png " ")
 
 
 
@@ -1519,7 +1519,7 @@ sudo pacman -S ranger
 ranger --copy-config=all
 ```
 
-![image-20230525000537299](/posts/note%20picture/Arch%20Linux.assets/image-20230525000537299.png)
+![image-20230525000537299](/posts/note%20picture/Arch%20Linux.assets/image-20230525000537299.png " ")
 
 ### 安装图标
 
@@ -1556,7 +1556,7 @@ sudo pacman -S ffmpegthumbnailer
 
 
 
-![image-20230525011949986](/posts/note%20picture/Arch%20Linux.assets/image-20230525011949986.png)
+![image-20230525011949986](/posts/note%20picture/Arch%20Linux.assets/image-20230525011949986.png " ")
 
 
 
@@ -1677,7 +1677,7 @@ paru -S qqmusic-bin
 
 地址：`https://github.com/listen1/listen1_desktop`
 
-![image-20230608194903103](/posts/note%20picture/Arch%20Linux.assets/image-20230608194903103.png)
+![image-20230608194903103](/posts/note%20picture/Arch%20Linux.assets/image-20230608194903103.png " ")
 
 这里我选择的是 `AppImage` 格式，如果想在 rofi 中可以打开，那么要先给这个文件可执行的权限，并把他软链接到 `/usr/local/bin` 目录下。
 
@@ -1721,7 +1721,7 @@ ln -sf /opt/apps/com.qq.weixin.deepin/files/run.sh /usr/local/bin/weixin
 
 **注意：如果使用有那些框框，可以试着改一下启动命令的一些东西，本人使用 deepin-wine5 是比较好用的，还有一些 wine 的容器（这个需要自己去了解）**
 
-![image-20230608195843418](/posts/note%20picture/Arch%20Linux.assets/image-20230608195843418.png)
+![image-20230608195843418](/posts/note%20picture/Arch%20Linux.assets/image-20230608195843418.png " ")
 
 
 
