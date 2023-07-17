@@ -34,19 +34,19 @@ ls /sys/firmware/efi/efivars
 ### 无线网络（wifi）
 
 ```bash
-#是否启用了网络接口
+# 是否启用了网络接口
 ip link 
-#执行iwctl命令，进入交互式命令行
+# 执行 iwctl 命令，进入交互式命令行
 iwctl 
-#列出设备名，比如无线网卡看到叫 wlan0
+# 列出设备名，比如无线网卡看到叫 wlan0
 device list   
-#用wlan0网卡扫描网络
+# 用 wlan0 网卡扫描网络
 station wlan0 scan 
-#列出网络
+# 列出网络
 station wlan0 get-networks  
-#连接网络名字 输入密码
+# 连接网络名字 输入密码
 station wlan0 connect 无线网名字    
-#成功后退出
+# 成功后退出
 exit或者quit   
 ```
 
@@ -61,9 +61,9 @@ ping baidu.com
 ## 同步时间
 
 ```bash
-#同步网络时间
+# 同步网络时间
 timedatectl set-ntp true
-#提示：检查是否成功 看到（system clock synchronized :yes）这一句就是成功了
+# 提示：检查是否成功 看到（system clock synchronized :yes）这一句就是成功了
 timedatectl status
 ```
 
@@ -77,7 +77,7 @@ timedatectl status
 vim /etc/pacman.d/mirrorlist
 ```
 
-- 33 dd : 剪切33行
+- 36 dd : 剪切36行
 
 - p  : 粘贴
 
@@ -88,9 +88,9 @@ vim /etc/pacman.d/mirrorlist
 ### fdisk分区
 
 ```bash
-#查看磁盘分区
+# 查看磁盘分区
 lsblk
-#分区
+# 分区
 fdisk  /dev/sda
 ```
 
@@ -112,42 +112,105 @@ cfdisk /dev/sda
 
 ### 格式化分区
 
+> EFI 分区
+
+两个选择其中一个
+
 ```bash
-EFI分区
-	mkfs.vfat /dev/sda1
-	或者mkfs.fat -F32 /dev/sda1
-swap分区
-	mkswap /dev/sda2
-普通分区
-	mkfs.ext4 /dev/sda3
+# mkfs.fat -F32 /dev/sda1 和 mkfs.vfat /dev/sda1
+mkfs.vfat /dev/sda1
 ```
+
+
+
+> swap 分区
+
+```bash
+mkswap /dev/sda2
+```
+
+
+
+> 普通分区
+
+```bash
+# 使用 ext4 格式格式化
+mkfs.ext4 /dev/sda3
+
+# 使用 btrfs 格式进行格式化
+mkfs.btrfs -f -L arch /dev/sda3
+```
+
+- btrfs
+  - `-f`  ：强制格式化为 `btrfs` 格式
+  - `-L` ： 表示分区 `label` （可以自定义），可以理解为 `win` 下的磁盘名称。
 
  
 
 ## 挂载分区
 
 - 根据自己的分区情况进行挂载分区（尽量不要把usr目录挂载出去，如果挂载出去是不能开机的（网上也有教程是可以挂载的，我没有试过）），一般挂载第三方应用安装目录（opt）、临时文件目录（tmp）
+- **注意 ：必须先挂载根目录才能挂载其他目录**
 
-```bash
-#挂载 
-#必须先挂载根目录 才能挂载其他目录
-mount /dev/sda3 /mnt
-swapon /dev/sda2  请用swap分区
-mkdir /mnt/boot
-mount /dev/sda1 /mnt/boot
-```
+> 挂载根分区
+
+1.  `btrfs` 格式化挂载方法
+
+    ```bash
+    # 先挂载 /dev/sda3 分区。注意： 这个分区是 btrfs 分区，也是我的根分区
+    mount -t btrfs -o compress=zstd /dev/sda3 /mnt
+    
+    # 创建两个子卷
+    btrfs subvolume create /mnt/@
+    btrfs subvolume create /mnt/@home
+    
+    # 查看创建的子卷，-p : 指定哪个分区
+    btrfs subvolume list -p /mnt
+    
+    # 卸载 /dev/sda3 分区
+    umount /mnt
+    
+    # 挂载根目录
+    mount -t btrfs -o subvol=/@,compress=zstd /dev/sda3 /mnt
+    
+    # 挂载 home 目录
+    mkdir /mnt/home
+    mount -t btrfs -o subvol=/@home,compress=zstd /dev/sda3 /mnt/home
+    
+    # 挂载 EFI 分区
+    mkdir /mnt/boot
+    mount /dev/sda1 /mnt/boot
+    
+    # 挂载 swapon 分区
+    swapon /dev/sda2
+    ```
+
+    > 警告：快照工具 `timeshift` 只支持 /@ 这种子卷布局，如果采用不同的布局，`thimeshift` 可能会存在问题。
+
+
+
+
+2.  `ext4`  格式化挂载方法
+
+    ```bash
+    # 挂载 
+    mount /dev/sda3 /mnt
+    swapon /dev/sda2  请用swap分区
+    mkdir /mnt/boot
+    mount /dev/sda1 /mnt/boot
+    ```
+
 
 
 
 ## 安装内核
 
 ```bash
-#往/mnt目录里安装系统
-#其中最基础的四个包是base base-devel linux linux-firmware
-#linux-lts （lts:稳定版）
+# 往/mnt目录里安装系统
+# 其中最基础的四个包是 base base-devel linux linux-firmware
+# linux-lts （lts:稳定版）
 # 如果内核安装了稳定版，那么独显也要是稳定版的，要不然就会发生问题（我也不知道什么问题）
 pacstrap /mnt base base-devel linux linux-firmware vim
-
 ```
 
 ![image-20220924005039396](/posts/note%20picture/Arch%20Linux.assets/image-20220924005039396.png)

@@ -10,7 +10,7 @@
 <meta name="description" content="archlinux的基本安装 停止reflector服务 禁止自动更新服务器列表 1 systemctl stop reflector.service 检查电脑是否支持UEFI引导模式 1 2 ls /sys/firmware/efi/efivars # 提示：如果没有" /><meta name="keywords" content='linux' /><meta itemprop="name" content="Arch Linux 安装到美化">
 <meta itemprop="description" content="archlinux的基本安装 停止reflector服务 禁止自动更新服务器列表 1 systemctl stop reflector.service 检查电脑是否支持UEFI引导模式 1 2 ls /sys/firmware/efi/efivars # 提示：如果没有"><meta itemprop="datePublished" content="2023-06-16T23:29:46+08:00" />
 <meta itemprop="dateModified" content="2023-06-29T21:43:46+08:00" />
-<meta itemprop="wordCount" content="8166"><meta itemprop="image" content="https://roukaixin.github.io/logo.png"/>
+<meta itemprop="wordCount" content="8442"><meta itemprop="image" content="https://roukaixin.github.io/logo.png"/>
 <meta itemprop="keywords" content="linux," /><meta property="og:title" content="Arch Linux 安装到美化" />
 <meta property="og:description" content="archlinux的基本安装 停止reflector服务 禁止自动更新服务器列表 1 systemctl stop reflector.service 检查电脑是否支持UEFI引导模式 1 2 ls /sys/firmware/efi/efivars # 提示：如果没有" />
 <meta property="og:type" content="article" />
@@ -34,7 +34,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https:\/\/roukaixin.github.io\/arch-linux\/"
-    },"genre": "posts","keywords": "linux","wordcount":  8166 ,
+    },"genre": "posts","keywords": "linux","wordcount":  8442 ,
     "url": "https:\/\/roukaixin.github.io\/arch-linux\/","datePublished": "2023-06-16T23:29:46+08:00","dateModified": "2023-06-29T21:43:46+08:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -150,7 +150,7 @@
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><span class="author"><img loading="lazy" src="/images/avatar.jpg" srcset="/images/avatar.jpg, /images/avatar.jpg 1.5x, /images/avatar.jpg 2x" sizes="auto" data-title="pankx" data-alt="pankx" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;pankx</span></span>
           <span class="post-category">收录于 <a href="/categories/linux/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> linux</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-06-16 23:29:46"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-06-16 23:29:46">2023-06-16 23:29:46</time></span>&nbsp;<span title="更新于 2023-06-29 21:43:46"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-06-29 21:43:46">2023-06-29 21:43:46</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 8166 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 17 分钟</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Arch Linux 安装到美化">
+      <div class="post-meta-line"><span title="发布于 2023-06-16 23:29:46"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-06-16 23:29:46">2023-06-16 23:29:46</time></span>&nbsp;<span title="更新于 2023-06-29 21:43:46"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-06-29 21:43:46">2023-06-29 21:43:46</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 8442 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 17 分钟</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Arch Linux 安装到美化">
             <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span id="busuanzi_value_page_pv">-</span>&nbsp;次阅读
           </span>&nbsp;</div>
     </div><div class="featured-image"><img loading="lazy" src="/hugo/ArchLinux.png" srcset="/hugo/ArchLinux.png, /hugo/ArchLinux.png 1.5x, /hugo/ArchLinux.png 2x" sizes="auto" data-title="/hugo/ArchLinux.png" data-alt="/hugo/ArchLinux.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></div><div class="details toc" id="toc-static" data-kept="false">
@@ -375,19 +375,19 @@
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#是否启用了网络接口</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 是否启用了网络接口</span>
 </span></span><span class="line"><span class="cl">ip link 
-</span></span><span class="line"><span class="cl"><span class="c1">#执行iwctl命令，进入交互式命令行</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 执行 iwctl 命令，进入交互式命令行</span>
 </span></span><span class="line"><span class="cl">iwctl 
-</span></span><span class="line"><span class="cl"><span class="c1">#列出设备名，比如无线网卡看到叫 wlan0</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 列出设备名，比如无线网卡看到叫 wlan0</span>
 </span></span><span class="line"><span class="cl">device list   
-</span></span><span class="line"><span class="cl"><span class="c1">#用wlan0网卡扫描网络</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 用 wlan0 网卡扫描网络</span>
 </span></span><span class="line"><span class="cl">station wlan0 scan 
-</span></span><span class="line"><span class="cl"><span class="c1">#列出网络</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 列出网络</span>
 </span></span><span class="line"><span class="cl">station wlan0 get-networks  
-</span></span><span class="line"><span class="cl"><span class="c1">#连接网络名字 输入密码</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 连接网络名字 输入密码</span>
 </span></span><span class="line"><span class="cl">station wlan0 connect 无线网名字    
-</span></span><span class="line"><span class="cl"><span class="c1">#成功后退出</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 成功后退出</span>
 </span></span><span class="line"><span class="cl">exit或者quit   </span></span></code></pre></td></tr></table>
 </div>
 </div><p>连接成功后ping一下百度是否有网</p>
@@ -407,9 +407,9 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#同步网络时间</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 同步网络时间</span>
 </span></span><span class="line"><span class="cl">timedatectl set-ntp <span class="nb">true</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#提示：检查是否成功 看到（system clock synchronized :yes）这一句就是成功了</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 提示：检查是否成功 看到（system clock synchronized :yes）这一句就是成功了</span>
 </span></span><span class="line"><span class="cl">timedatectl status</span></span></code></pre></td></tr></table>
 </div>
 </div><p>.</p>
@@ -426,7 +426,7 @@
 </div>
 </div><ul>
 <li>
-<p>33 dd : 剪切33行</p>
+<p>36 dd : 剪切36行</p>
 </li>
 <li>
 <p>p  : 粘贴</p>
@@ -442,9 +442,9 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#查看磁盘分区</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 查看磁盘分区</span>
 </span></span><span class="line"><span class="cl">lsblk
-</span></span><span class="line"><span class="cl"><span class="c1">#分区</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 分区</span>
 </span></span><span class="line"><span class="cl">fdisk  /dev/sda</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="cfdisk分区">cfdisk分区</h3>
@@ -459,47 +459,32 @@
 <p>例子：2G扩展分区（1G的 /boot 分区，1G 的 /boot/efi 分区），16G主分区（swap 交换分区），500G主分区 （ /home 分区），482G主分区（ 根分区）</p>
 <p><strong>一般分区都有跟分区（/）、交换分区（swap）、引导分区（boot）</strong></p>
 <h3 id="格式化分区">格式化分区</h3>
+<blockquote>
+<p>EFI 分区</p>
+</blockquote>
+<p>两个选择其中一个</p>
 <div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">EFI分区
-</span></span><span class="line"><span class="cl">	mkfs.vfat /dev/sda1
-</span></span><span class="line"><span class="cl">	或者mkfs.fat -F32 /dev/sda1
-</span></span><span class="line"><span class="cl">swap分区
-</span></span><span class="line"><span class="cl">	mkswap /dev/sda2
-</span></span><span class="line"><span class="cl">普通分区
-</span></span><span class="line"><span class="cl">	mkfs.ext4 /dev/sda3</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># mkfs.fat -F32 /dev/sda1 和 mkfs.vfat /dev/sda1</span>
+</span></span><span class="line"><span class="cl">mkfs.vfat /dev/sda1</span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="挂载分区">挂载分区</h2>
-<ul>
-<li>根据自己的分区情况进行挂载分区（尽量不要把usr目录挂载出去，如果挂载出去是不能开机的（网上也有教程是可以挂载的，我没有试过）），一般挂载第三方应用安装目录（opt）、临时文件目录（tmp）</li>
-</ul>
+</div><blockquote>
+<p>swap 分区</p>
+</blockquote>
 <div class="highlight" id="id-10"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#挂载 </span>
-</span></span><span class="line"><span class="cl"><span class="c1">#必须先挂载根目录 才能挂载其他目录</span>
-</span></span><span class="line"><span class="cl">mount /dev/sda3 /mnt
-</span></span><span class="line"><span class="cl">swapon /dev/sda2  请用swap分区
-</span></span><span class="line"><span class="cl">mkdir /mnt/boot
-</span></span><span class="line"><span class="cl">mount /dev/sda1 /mnt/boot</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkswap /dev/sda2</span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="安装内核">安装内核</h2>
+</div><blockquote>
+<p>普通分区</p>
+</blockquote>
 <div class="highlight" id="id-11"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -509,16 +494,131 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#往/mnt目录里安装系统</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#其中最基础的四个包是base base-devel linux linux-firmware</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#linux-lts （lts:稳定版）</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 使用 ext4 格式格式化</span>
+</span></span><span class="line"><span class="cl">mkfs.ext4 /dev/sda3
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 使用 btrfs 格式进行格式化</span>
+</span></span><span class="line"><span class="cl">mkfs.btrfs -f -L arch /dev/sda3</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>btrfs
+<ul>
+<li><code>-f</code>  ：强制格式化为 <code>btrfs</code> 格式</li>
+<li><code>-L</code> ： 表示分区 <code>label</code> （可以自定义），可以理解为 <code>win</code> 下的磁盘名称。</li>
+</ul>
+</li>
+</ul>
+<h2 id="挂载分区">挂载分区</h2>
+<ul>
+<li>根据自己的分区情况进行挂载分区（尽量不要把usr目录挂载出去，如果挂载出去是不能开机的（网上也有教程是可以挂载的，我没有试过）），一般挂载第三方应用安装目录（opt）、临时文件目录（tmp）</li>
+<li><strong>注意 ：必须先挂载根目录才能挂载其他目录</strong></li>
+</ul>
+<blockquote>
+<p>挂载根分区</p>
+</blockquote>
+<ol>
+<li>
+<p><code>btrfs</code> 格式化挂载方法</p>
+<div class="highlight" id="id-12"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 先挂载 /dev/sda3 分区。注意： 这个分区是 btrfs 分区，也是我的根分区</span>
+</span></span><span class="line"><span class="cl">mount -t btrfs -o <span class="nv">compress</span><span class="o">=</span>zstd /dev/sda3 /mnt
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 创建两个子卷</span>
+</span></span><span class="line"><span class="cl">btrfs subvolume create /mnt/@
+</span></span><span class="line"><span class="cl">btrfs subvolume create /mnt/@home
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 查看创建的子卷，-p : 指定哪个分区</span>
+</span></span><span class="line"><span class="cl">btrfs subvolume list -p /mnt
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 卸载 /dev/sda3 分区</span>
+</span></span><span class="line"><span class="cl">umount /mnt
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 挂载根目录</span>
+</span></span><span class="line"><span class="cl">mount -t btrfs -o <span class="nv">subvol</span><span class="o">=</span>/@,compress<span class="o">=</span>zstd /dev/sda3 /mnt
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 挂载 home 目录</span>
+</span></span><span class="line"><span class="cl">mkdir /mnt/home
+</span></span><span class="line"><span class="cl">mount -t btrfs -o <span class="nv">subvol</span><span class="o">=</span>/@home,compress<span class="o">=</span>zstd /dev/sda3 /mnt/home
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 挂载 EFI 分区</span>
+</span></span><span class="line"><span class="cl">mkdir /mnt/boot
+</span></span><span class="line"><span class="cl">mount /dev/sda1 /mnt/boot
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 挂载 swapon 分区</span>
+</span></span><span class="line"><span class="cl">swapon /dev/sda2</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>警告：快照工具 <code>timeshift</code> 只支持 /@ 这种子卷布局，如果采用不同的布局，<code>thimeshift</code> 可能会存在问题。</p>
+</blockquote>
+</li>
+<li>
+<p><code>ext4</code>  格式化挂载方法</p>
+<div class="highlight" id="id-13"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 挂载 </span>
+</span></span><span class="line"><span class="cl">mount /dev/sda3 /mnt
+</span></span><span class="line"><span class="cl">swapon /dev/sda2  请用swap分区
+</span></span><span class="line"><span class="cl">mkdir /mnt/boot
+</span></span><span class="line"><span class="cl">mount /dev/sda1 /mnt/boot</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<h2 id="安装内核">安装内核</h2>
+<div class="highlight" id="id-14"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 往/mnt目录里安装系统</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 其中最基础的四个包是 base base-devel linux linux-firmware</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># linux-lts （lts:稳定版）</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># 如果内核安装了稳定版，那么独显也要是稳定版的，要不然就会发生问题（我也不知道什么问题）</span>
 </span></span><span class="line"><span class="cl">pacstrap /mnt base base-devel linux linux-firmware vim</span></span></code></pre></td></tr></table>
 </div>
 </div><p><a class="lightgallery" href="/posts/note%20picture/Arch%20Linux.assets/image-20220924005039396.png" data-thumbnail="/posts/note%20picture/Arch%20Linux.assets/image-20220924005039396.png" data-sub-html="<h2>image-20220924005039396</h2>"><img loading="lazy" src="/posts/note%20picture/Arch%20Linux.assets/image-20220924005039396.png" srcset="/posts/note%20picture/Arch%20Linux.assets/image-20220924005039396.png, /posts/note%20picture/Arch%20Linux.assets/image-20220924005039396.png 1.5x, /posts/note%20picture/Arch%20Linux.assets/image-20220924005039396.png 2x" sizes="auto" data-title="image-20220924005039396" data-alt="image-20220924005039396" width="527" height="427" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a></p>
 <h2 id="配置系统">配置系统</h2>
 <h3 id="fstab">Fstab</h3>
-<div class="highlight" id="id-12"><div class="chroma">
+<div class="highlight" id="id-15"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -529,7 +629,7 @@
 </div>
 </div><p>**强烈建议：**在执行完以上命令后，检查一下生成的 <code>/mnt/etc/fstab</code> 文件是否正确。</p>
 <h3 id="chroot">Chroot</h3>
-<div class="highlight" id="id-13"><div class="chroma">
+<div class="highlight" id="id-16"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -539,7 +639,7 @@
 </span></span><span class="line"><span class="cl">arch-chroot /mnt</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="设置时区">设置时区</h3>
-<div class="highlight" id="id-14"><div class="chroma">
+<div class="highlight" id="id-17"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -564,7 +664,7 @@
 <p>需在这两个文件设置：<code>locale.gen</code> 与 <code>locale.conf</code>。</p>
 <p>编辑 <code>/etc/locale.gen</code>，然后取消掉 <code>en_US.UTF-8 UTF-8</code> 和其他需要的 区域设置前的注释#。</p>
 <p>接着执行 <code>locale-gen</code> 以生成 locale 信息：</p>
-<div class="highlight" id="id-15"><div class="chroma">
+<div class="highlight" id="id-18"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -579,7 +679,7 @@
 <p>创建 locale.conf 文件</p>
 </blockquote>
 <p>创建 locale.conf 文件，并编辑设定 LANG 变量，比如：</p>
-<div class="highlight" id="id-16"><div class="chroma">
+<div class="highlight" id="id-19"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -590,7 +690,7 @@
 </div>
 </div><p><strong>警告：</strong> 不推荐在此设置任何中文 locale，会导致 tty 乱码。</p>
 <p>例子：</p>
-<div class="highlight" id="id-17"><div class="chroma">
+<div class="highlight" id="id-20"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -605,7 +705,7 @@
 <blockquote>
 <p>创建hostname文件</p>
 </blockquote>
-<div class="highlight" id="id-18"><div class="chroma">
+<div class="highlight" id="id-21"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -623,7 +723,7 @@
 </div><blockquote>
 <p>创建hosts文件</p>
 </blockquote>
-<div class="highlight" id="id-19"><div class="chroma">
+<div class="highlight" id="id-22"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -641,7 +741,7 @@
 </span></span><span class="line"><span class="cl">::1         localhost</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="root-密码">Root 密码</h3>
-<div class="highlight" id="id-20"><div class="chroma">
+<div class="highlight" id="id-23"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -652,7 +752,7 @@
 </div>
 </div><h2 id="安装引导程序">安装引导程序</h2>
 <h3 id="安装-cpu微码和引导软件">安装 cpu微码和引导软件</h3>
-<div class="highlight" id="id-21"><div class="chroma">
+<div class="highlight" id="id-24"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -664,7 +764,7 @@
 </span></span><span class="line"><span class="cl"><span class="c1"># os-prober查找已安装的操作系统 推荐实体机上安装</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="安装grub引导">安装grub引导</h3>
-<div class="highlight" id="id-22"><div class="chroma">
+<div class="highlight" id="id-25"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -681,7 +781,7 @@
 <li>&ndash;bootloader-id=ARCH ：<code>ARCH 是引导的别名，甚至这一段都可以不用写</code></li>
 </ul>
 <h3 id="生成grub">生成grub</h3>
-<div class="highlight" id="id-23"><div class="chroma">
+<div class="highlight" id="id-26"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -691,7 +791,7 @@
 </span></span><span class="line"><span class="cl">grub-mkconfig -o /boot/grub/grub.cfg</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="安装软件">安装软件</h2>
-<div class="highlight" id="id-24"><div class="chroma">
+<div class="highlight" id="id-27"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -735,7 +835,7 @@
 </span></span><span class="line"><span class="cl">systemctl <span class="nb">enable</span> NetworkManager</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="退出">退出</h2>
-<div class="highlight" id="id-25"><div class="chroma">
+<div class="highlight" id="id-28"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -754,7 +854,7 @@
 </div>
 </div><h1 id="安装后的配置">安装后的配置</h1>
 <h2 id="配置中国源和开启32位软件包">配置中国源和开启32位软件包</h2>
-<div class="highlight" id="id-26"><div class="chroma">
+<div class="highlight" id="id-29"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -820,7 +920,7 @@
 </span></span><span class="line"><span class="cl">pacman -S archlinuxcn-keyring </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="添加一个普通用户">添加一个普通用户</h2>
-<div class="highlight" id="id-27"><div class="chroma">
+<div class="highlight" id="id-30"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -848,7 +948,7 @@
 </div><p><a class="lightgallery" href="/posts/note%20picture/Arch%20Linux.assets/image-20230625065238368.png" data-thumbnail="/posts/note%20picture/Arch%20Linux.assets/image-20230625065238368.png" data-sub-html="<h2>image-20230625065238368</h2>"><img loading="lazy" src="/posts/note%20picture/Arch%20Linux.assets/image-20230625065238368.png" srcset="/posts/note%20picture/Arch%20Linux.assets/image-20230625065238368.png, /posts/note%20picture/Arch%20Linux.assets/image-20230625065238368.png 1.5x, /posts/note%20picture/Arch%20Linux.assets/image-20230625065238368.png 2x" sizes="auto" data-title="image-20230625065238368" data-alt="image-20230625065238368" width="804" height="151" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a></p>
 <p><strong>个人是注释掉 <code>%wheel ALL=(ALL:ALL)ALL</code> 这一行，如果不想使用 <code>sudo</code> 命令时输入密码，可以注释掉 <code>%wheel ALL=(ALL:ALL) NOPASSWD: ALL</code>。两个选择一个注释掉既可以了</strong></p>
 <h2 id="安装软件源aur">安装软件源（AUR）</h2>
-<div class="highlight" id="id-28"><div class="chroma">
+<div class="highlight" id="id-31"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -858,7 +958,7 @@
 </span></span><span class="line"><span class="cl">pacman -S yay paru</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="安装字体">安装字体</h2>
-<div class="highlight" id="id-29"><div class="chroma">
+<div class="highlight" id="id-32"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -879,7 +979,7 @@
 <blockquote>
 <p>安装 fcitx5</p>
 </blockquote>
-<div class="highlight" id="id-30"><div class="chroma">
+<div class="highlight" id="id-33"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -897,7 +997,7 @@
 </div><blockquote>
 <p>配置输入法</p>
 </blockquote>
-<div class="highlight" id="id-31"><div class="chroma">
+<div class="highlight" id="id-34"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -923,7 +1023,7 @@
 </div><blockquote>
 <p>安装词库</p>
 </blockquote>
-<div class="highlight" id="id-32"><div class="chroma">
+<div class="highlight" id="id-35"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -936,7 +1036,7 @@
 </div>
 </div><p><strong>全部配置完成之后重启一下电脑，使用普通用户登录，在进行下面操作</strong></p>
 <h2 id="安装工具可选">安装工具（可选）</h2>
-<div class="highlight" id="id-33"><div class="chroma">
+<div class="highlight" id="id-36"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -963,7 +1063,7 @@
 <p>安装驱动</p>
 </blockquote>
 <p>安装启动之前，先跟新一下 pacman 数据库。更新命令：<code>sudo pacman -Syyu</code></p>
-<div class="highlight" id="id-34"><div class="chroma">
+<div class="highlight" id="id-37"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -974,7 +1074,7 @@
 </span></span><span class="line"><span class="cl"><span class="c1"># 注意：如果内核是 linux ，不是 linux-lts，那么安装的是 linux-headers</span>
 </span></span><span class="line"><span class="cl">sudo pacman -S linux-lts-headers</span></span></code></pre></td></tr></table>
 </div>
-</div><div class="highlight" id="id-35"><div class="chroma">
+</div><div class="highlight" id="id-38"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -988,7 +1088,7 @@
 <p>DRM 内核模式设置</p>
 </blockquote>
 <p><strong>这一步可以解决屏幕撕裂问题</strong></p>
-<div class="highlight" id="id-36"><div class="chroma">
+<div class="highlight" id="id-39"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1023,7 +1123,7 @@
 <p>在 <code>/etc/X11/xorg.conf.d/</code> 目录下新建 <code>10-nvidia-drm-outputclass.conf</code>。</p>
 <p>**重要：**如果<code>/etc/X11</code>存在<code>xorg.conf</code>，那么一定要删除掉</p>
 <p>在<code>/usr/share/X11/xorg.conf.d/10-nvidia-drm-outputclass.conf</code>也有一份是生成的，可以参考着来看</p>
-<div class="highlight" id="id-37"><div class="chroma">
+<div class="highlight" id="id-40"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1068,7 +1168,7 @@
 </blockquote>
 <p>这里以<strong>dwm</strong>为例，如果你是其他桌面管理器，请参阅<a href="https://wiki.archlinux.org/index.php/NVIDIA_Optimus#Display_Managers"target="_blank" rel="external nofollow noopener noreferrer">这里</a>。如果不配置你将会获得黑屏。</p>
 <p>接下来，将以下两行添加到您的开头：<code>~/.xinitrc</code></p>
-<div class="highlight" id="id-38"><div class="chroma">
+<div class="highlight" id="id-41"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1088,7 +1188,7 @@
 <blockquote>
 <p>安装 NVIDIA 软件包 （可选）</p>
 </blockquote>
-<div class="highlight" id="id-39"><div class="chroma">
+<div class="highlight" id="id-42"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -1100,7 +1200,7 @@
 <p>检查3D</p>
 </blockquote>
 <p>检查是否正常使用 N 卡来输出。建议检查一下</p>
-<div class="highlight" id="id-40"><div class="chroma">
+<div class="highlight" id="id-43"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1117,7 +1217,7 @@
 </div>
 </div><p><a class="lightgallery" href="/posts/note%20picture/Arch%20Linux.assets/image-20230507053421591.png" data-thumbnail="/posts/note%20picture/Arch%20Linux.assets/image-20230507053421591.png" data-sub-html="<h2>image-20230507053421591</h2>"><img loading="lazy" src="/posts/note%20picture/Arch%20Linux.assets/image-20230507053421591.png" srcset="/posts/note%20picture/Arch%20Linux.assets/image-20230507053421591.png, /posts/note%20picture/Arch%20Linux.assets/image-20230507053421591.png 1.5x, /posts/note%20picture/Arch%20Linux.assets/image-20230507053421591.png 2x" sizes="auto" data-title="image-20230507053421591" data-alt="image-20230507053421591" width="810" height="240" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a></p>
 <h4 id="配置视频硬解">配置视频硬解</h4>
-<div class="highlight" id="id-41"><div class="chroma">
+<div class="highlight" id="id-44"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1130,7 +1230,7 @@
 <p>配置</p>
 </blockquote>
 <p>方法一：</p>
-<div class="highlight" id="id-42"><div class="chroma">
+<div class="highlight" id="id-45"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1155,7 +1255,7 @@
 </div>
 </div><p><a class="lightgallery" href="/posts/note%20picture/Arch%20Linux.assets/image-20230507053717011.png" data-thumbnail="/posts/note%20picture/Arch%20Linux.assets/image-20230507053717011.png" data-sub-html="<h2>image-20230507053717011</h2>"><img loading="lazy" src="/posts/note%20picture/Arch%20Linux.assets/image-20230507053717011.png" srcset="/posts/note%20picture/Arch%20Linux.assets/image-20230507053717011.png, /posts/note%20picture/Arch%20Linux.assets/image-20230507053717011.png 1.5x, /posts/note%20picture/Arch%20Linux.assets/image-20230507053717011.png 2x" sizes="auto" data-title="image-20230507053717011" data-alt="image-20230507053717011" width="604" height="570" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a></p>
 <p>方法二：</p>
-<div class="highlight" id="id-43"><div class="chroma">
+<div class="highlight" id="id-46"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1173,7 +1273,7 @@
 <blockquote>
 <p>验证 VA-API</p>
 </blockquote>
-<div class="highlight" id="id-44"><div class="chroma">
+<div class="highlight" id="id-47"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1187,7 +1287,7 @@
 <blockquote>
 <p>验证VDPAU</p>
 </blockquote>
-<div class="highlight" id="id-45"><div class="chroma">
+<div class="highlight" id="id-48"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1199,7 +1299,7 @@
 </div><p>验证 VDPAU 是否正常工作，运行<code>vdpauinfo</code>，出现下图就表示成功</p>
 <p><a class="lightgallery" href="/posts/note%20picture/Arch%20Linux.assets/image-20230507055418720.png" data-thumbnail="/posts/note%20picture/Arch%20Linux.assets/image-20230507055418720.png" data-sub-html="<h2>image-20230507055418720</h2>"><img loading="lazy" src="/posts/note%20picture/Arch%20Linux.assets/image-20230507055418720.png" srcset="/posts/note%20picture/Arch%20Linux.assets/image-20230507055418720.png, /posts/note%20picture/Arch%20Linux.assets/image-20230507055418720.png 1.5x, /posts/note%20picture/Arch%20Linux.assets/image-20230507055418720.png 2x" sizes="auto" data-title="image-20230507055418720" data-alt="image-20230507055418720" width="709" height="956" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a></p>
 <h1 id="声卡驱动">声卡驱动</h1>
-<div class="highlight" id="id-46"><div class="chroma">
+<div class="highlight" id="id-49"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1215,7 +1315,7 @@
 </div><h1 id="wm窗口管理器">wm（窗口管理器）</h1>
 <h2 id="dwm窗口管理器的安装">dwm（窗口管理器）的安装</h2>
 <h3 id="安装x窗口管理系统">安装x窗口管理系统</h3>
-<div class="highlight" id="id-47"><div class="chroma">
+<div class="highlight" id="id-50"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1234,7 +1334,7 @@
 </div>
 </div><h3 id="安装dwm全家桶">安装dwm全家桶</h3>
 <h4 id="安装dwm">安装dwm</h4>
-<div class="highlight" id="id-48"><div class="chroma">
+<div class="highlight" id="id-51"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1254,7 +1354,7 @@
 </span></span><span class="line"><span class="cl">make install</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="安装st">安装st</h4>
-<div class="highlight" id="id-49"><div class="chroma">
+<div class="highlight" id="id-52"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1274,7 +1374,7 @@
 </span></span><span class="line"><span class="cl">make install</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="安装dmenu">安装dmenu</h4>
-<div class="highlight" id="id-50"><div class="chroma">
+<div class="highlight" id="id-53"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1294,7 +1394,7 @@
 </span></span><span class="line"><span class="cl">make clean install</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="安装slstaus">安装slstaus</h4>
-<div class="highlight" id="id-51"><div class="chroma">
+<div class="highlight" id="id-54"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1316,7 +1416,7 @@
 </div><p><a class="lightgallery" href="/posts/note%20picture/Arch%20Linux.assets/image-20220925144617614.png" data-thumbnail="/posts/note%20picture/Arch%20Linux.assets/image-20220925144617614.png" data-sub-html="<h2>image-20220925144617614</h2>"><img loading="lazy" src="/posts/note%20picture/Arch%20Linux.assets/image-20220925144617614.png" srcset="/posts/note%20picture/Arch%20Linux.assets/image-20220925144617614.png, /posts/note%20picture/Arch%20Linux.assets/image-20220925144617614.png 1.5x, /posts/note%20picture/Arch%20Linux.assets/image-20220925144617614.png 2x" sizes="auto" data-title="image-20220925144617614" data-alt="image-20220925144617614" width="346" height="81" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a></p>
 <h4 id="启动">启动</h4>
 <h4 id="设置中文界面">设置中文界面</h4>
-<div class="highlight" id="id-52"><div class="chroma">
+<div class="highlight" id="id-55"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1330,7 +1430,7 @@
 </span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">LANGUAGE</span><span class="o">=</span>zh_CN:en_US</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="启动dwm">启动dwm</h4>
-<div class="highlight" id="id-53"><div class="chroma">
+<div class="highlight" id="id-56"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1345,7 +1445,7 @@
 </div>
 </div><p><strong>在<code>～/.xinitrc</code>文件末尾添加<code>exec dwm</code>，并保存退出，使用<code>startx</code>来启动窗口管理器。</strong></p>
 <h4 id="设置分辨率">设置分辨率</h4>
-<div class="highlight" id="id-54"><div class="chroma">
+<div class="highlight" id="id-57"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1367,7 +1467,7 @@
 </span></span><span class="line"><span class="cl">xrandr --output Virtual-1 --mode 1920x1080 --rate 144.00 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>注意：如果使用<code>xrandr -q</code>查看的结果中没有符合自己显示的分辨率就需要自己创建一个</p>
-<div class="highlight" id="id-55"><div class="chroma">
+<div class="highlight" id="id-58"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1388,7 +1488,7 @@
 </div>
 </div><p><a class="lightgallery" href="/posts/note%20picture/Arch%20Linux.assets/image-20220928004105215.png" data-thumbnail="/posts/note%20picture/Arch%20Linux.assets/image-20220928004105215.png" data-sub-html="<h2>image-20220928004105215</h2>"><img loading="lazy" src="/posts/note%20picture/Arch%20Linux.assets/image-20220928004105215.png" srcset="/posts/note%20picture/Arch%20Linux.assets/image-20220928004105215.png, /posts/note%20picture/Arch%20Linux.assets/image-20220928004105215.png 1.5x, /posts/note%20picture/Arch%20Linux.assets/image-20220928004105215.png 2x" sizes="auto" data-title="image-20220928004105215" data-alt="image-20220928004105215" width="1294" height="163" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a></p>
 <h1 id="picom合成器">picom合成器</h1>
-<div class="highlight" id="id-56"><div class="chroma">
+<div class="highlight" id="id-59"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1442,7 +1542,7 @@
 <blockquote>
 <p>排除透明度的程序</p>
 </blockquote>
-<div class="highlight" id="id-57"><div class="chroma">
+<div class="highlight" id="id-60"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1473,7 +1573,7 @@
 <blockquote>
 <p>开启圆角</p>
 </blockquote>
-<div class="highlight" id="id-58"><div class="chroma">
+<div class="highlight" id="id-61"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1494,7 +1594,7 @@
 <p><strong>我的配置文件地址：<code>https://gitee.com/rouxin/config</code></strong></p>
 <h1 id="系统优化">系统优化</h1>
 <h2 id="提升开机速度">提升开机速度</h2>
-<div class="highlight" id="id-59"><div class="chroma">
+<div class="highlight" id="id-62"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1509,7 +1609,7 @@
 </div>
 </div><h2 id="双系统时间不正确">双系统时间不正确</h2>
 <p>windows使用 UTC 时间</p>
-<div class="highlight" id="id-60"><div class="chroma">
+<div class="highlight" id="id-63"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1524,7 +1624,7 @@
 <blockquote>
 <p>查看最大亮度</p>
 </blockquote>
-<div class="highlight" id="id-61"><div class="chroma">
+<div class="highlight" id="id-64"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -1534,7 +1634,7 @@
 </div><blockquote>
 <p>修改亮度值</p>
 </blockquote>
-<div class="highlight" id="id-62"><div class="chroma">
+<div class="highlight" id="id-65"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -1542,7 +1642,7 @@
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo vim /sys/class/backlight/intel_backlight/brightness</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>方法二：</strong></p>
-<div class="highlight" id="id-63"><div class="chroma">
+<div class="highlight" id="id-66"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1552,7 +1652,7 @@
 </span></span><span class="line"><span class="cl">sudo pacman -S brightnessctl</span></span></code></pre></td></tr></table>
 </div>
 </div><p>在 dwm 的 config.h 中加入</p>
-<div class="highlight" id="id-64"><div class="chroma">
+<div class="highlight" id="id-67"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1583,7 +1683,7 @@
 </div>
 </div><h2 id="打补丁方法">打补丁方法</h2>
 <p>进行下面操作之前需要配置好 <code>git</code></p>
-<div class="highlight" id="id-65"><div class="chroma">
+<div class="highlight" id="id-68"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1615,7 +1715,7 @@
 <p>git 操作</p>
 </li>
 </ul>
-<div class="highlight" id="id-66"><div class="chroma">
+<div class="highlight" id="id-69"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1652,7 +1752,7 @@
 </div>
 </div><ul>
 <li>
-<div class="highlight" id="id-67"><div class="chroma">
+<div class="highlight" id="id-70"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1689,7 +1789,7 @@
 <p>下载补丁，然后自己手动去复制粘贴到源代码里面</p>
 <h2 id="dwm">dwm</h2>
 <p>进行到这一步的时候，因为之前已经编译了 dwm ，所以先重置回到官方的版本。<code>命令：make clean &amp;&amp; rm -rf config.h &amp;&amp; git reset --hard origin/master</code></p>
-<div class="highlight" id="id-68"><div class="chroma">
+<div class="highlight" id="id-71"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1723,7 +1823,7 @@
 <blockquote>
 <p>把官方的 dwm 源码分别提交到 gitee 和 github 仓库</p>
 </blockquote>
-<div class="highlight" id="id-69"><div class="chroma">
+<div class="highlight" id="id-72"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1751,7 +1851,7 @@
 </span></span><span class="line"><span class="cl">git push github master:main</span></span></code></pre></td></tr></table>
 </div>
 </div><p>这些操作只是为了到时候升级dwm的官方版本比较方便，直接在 <code>sockless</code> 分支拉取最新的代码就可以了，之后在到 主分支和并 <code>sockless</code> 分支。</p>
-<div class="highlight" id="id-70"><div class="chroma">
+<div class="highlight" id="id-73"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1817,7 +1917,7 @@
 </ul>
 <p>其他补丁可以参考<code>https://toscode.gitee.com/xiexie1993/dwm</code> git 仓库</p>
 <h3 id="布局图标">布局图标</h3>
-<div class="highlight" id="id-71"><div class="chroma">
+<div class="highlight" id="id-74"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1835,7 +1935,7 @@
 </span></span><span class="line"><span class="cl">nf-md-collage</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="修改关键的键为win键">修改关键的键为win键</h3>
-<div class="highlight" id="id-72"><div class="chroma">
+<div class="highlight" id="id-75"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1850,7 +1950,7 @@
 </div>
 </div><p><a class="lightgallery" href="/posts/note%20picture/Arch%20Linux.assets/image-20220924013208040.png" data-thumbnail="/posts/note%20picture/Arch%20Linux.assets/image-20220924013208040.png" data-sub-html="<h2>image-20220924013208040</h2>"><img loading="lazy" src="/posts/note%20picture/Arch%20Linux.assets/image-20220924013208040.png" srcset="/posts/note%20picture/Arch%20Linux.assets/image-20220924013208040.png, /posts/note%20picture/Arch%20Linux.assets/image-20220924013208040.png 1.5x, /posts/note%20picture/Arch%20Linux.assets/image-20220924013208040.png 2x" sizes="auto" data-title="image-20220924013208040" data-alt="image-20220924013208040" width="416" height="311" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a></p>
 <h3 id="设置中英文字体大小相同">设置中英文字体大小相同</h3>
-<div class="highlight" id="id-73"><div class="chroma">
+<div class="highlight" id="id-76"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1890,7 +1990,7 @@
 </div><p><a class="lightgallery" href="/posts/note%20picture/Arch%20Linux.assets/image-20220924233710569.png" data-thumbnail="/posts/note%20picture/Arch%20Linux.assets/image-20220924233710569.png" data-sub-html="<h2>image-20220924233710569</h2>"><img loading="lazy" src="/posts/note%20picture/Arch%20Linux.assets/image-20220924233710569.png" srcset="/posts/note%20picture/Arch%20Linux.assets/image-20220924233710569.png, /posts/note%20picture/Arch%20Linux.assets/image-20220924233710569.png 1.5x, /posts/note%20picture/Arch%20Linux.assets/image-20220924233710569.png 2x" sizes="auto" data-title="image-20220924233710569" data-alt="image-20220924233710569" width="1033" height="113" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a></p>
 <p><a class="lightgallery" href="/posts/note%20picture/Arch%20Linux.assets/image-20221001210909598.png" data-thumbnail="/posts/note%20picture/Arch%20Linux.assets/image-20221001210909598.png" data-sub-html="<h2>image-20221001210909598</h2>"><img loading="lazy" src="/posts/note%20picture/Arch%20Linux.assets/image-20221001210909598.png" srcset="/posts/note%20picture/Arch%20Linux.assets/image-20221001210909598.png, /posts/note%20picture/Arch%20Linux.assets/image-20221001210909598.png 1.5x, /posts/note%20picture/Arch%20Linux.assets/image-20221001210909598.png 2x" sizes="auto" data-title="image-20221001210909598" data-alt="image-20221001210909598" width="1290" height="91" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a></p>
 <h3 id="设置tag图标">设置tag图标</h3>
-<div class="highlight" id="id-74"><div class="chroma">
+<div class="highlight" id="id-77"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1937,7 +2037,7 @@
 <p><a class="lightgallery" href="/posts/note%20picture/Arch%20Linux.assets/image-20220925134649175.png" data-thumbnail="/posts/note%20picture/Arch%20Linux.assets/image-20220925134649175.png" data-sub-html="<h2>image-20220925134649175</h2>"><img loading="lazy" src="/posts/note%20picture/Arch%20Linux.assets/image-20220925134649175.png" srcset="/posts/note%20picture/Arch%20Linux.assets/image-20220925134649175.png, /posts/note%20picture/Arch%20Linux.assets/image-20220925134649175.png 1.5x, /posts/note%20picture/Arch%20Linux.assets/image-20220925134649175.png 2x" sizes="auto" data-title="image-20220925134649175" data-alt="image-20220925134649175" width="1033" height="64" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a></p>
 <h3 id="设置状态栏">设置状态栏</h3>
 <p><strong>使用音量要安装alsa-utils包</strong> ：<code>pacman -S  alsa-utils</code></p>
-<div class="highlight" id="id-75"><div class="chroma">
+<div class="highlight" id="id-78"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1991,7 +2091,7 @@
 </div><p><a class="lightgallery" href="/posts/note%20picture/Arch%20Linux.assets/image-20221001202825882.png" data-thumbnail="/posts/note%20picture/Arch%20Linux.assets/image-20221001202825882.png" data-sub-html="<h2>image-20221001202825882</h2>"><img loading="lazy" src="/posts/note%20picture/Arch%20Linux.assets/image-20221001202825882.png" srcset="/posts/note%20picture/Arch%20Linux.assets/image-20221001202825882.png, /posts/note%20picture/Arch%20Linux.assets/image-20221001202825882.png 1.5x, /posts/note%20picture/Arch%20Linux.assets/image-20221001202825882.png 2x" sizes="auto" data-title="image-20221001202825882" data-alt="image-20221001202825882" width="1188" height="261" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a></p>
 <h3 id="设置快捷键">设置快捷键</h3>
 <h4 id="设置音量快捷键">设置音量快捷键</h4>
-<div class="highlight" id="id-76"><div class="chroma">
+<div class="highlight" id="id-79"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2012,7 +2112,7 @@
 </span></span><span class="line"><span class="cl"><span class="c1"># 增大音量</span>
 </span></span><span class="line"><span class="cl">amixer sset Master 5%+ unmute</span></span></code></pre></td></tr></table>
 </div>
-</div><div class="highlight" id="id-77"><div class="chroma">
+</div><div class="highlight" id="id-80"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2084,7 +2184,7 @@
 </li>
 </ul>
 <h3 id="修改st的字体大小">修改st的字体大小</h3>
-<div class="highlight" id="id-78"><div class="chroma">
+<div class="highlight" id="id-81"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2099,7 +2199,7 @@
 <h2 id="dmenu">dmenu</h2>
 <h2 id="slstaus">slstaus</h2>
 <h2 id="设置背景图片">设置背景图片</h2>
-<div class="highlight" id="id-79"><div class="chroma">
+<div class="highlight" id="id-82"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2141,7 +2241,7 @@
 </div><p><a class="lightgallery" href="/posts/note%20picture/Arch%20Linux.assets/image-20220924120805094.png" data-thumbnail="/posts/note%20picture/Arch%20Linux.assets/image-20220924120805094.png" data-sub-html="<h2>image-20220924120805094</h2>"><img loading="lazy" src="/posts/note%20picture/Arch%20Linux.assets/image-20220924120805094.png" srcset="/posts/note%20picture/Arch%20Linux.assets/image-20220924120805094.png, /posts/note%20picture/Arch%20Linux.assets/image-20220924120805094.png 1.5x, /posts/note%20picture/Arch%20Linux.assets/image-20220924120805094.png 2x" sizes="auto" data-title="image-20220924120805094" data-alt="image-20220924120805094" width="691" height="211" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a></p>
 <h1 id="软件安装">软件安装</h1>
 <h2 id="网络管理器">网络管理器</h2>
-<div class="highlight" id="id-80"><div class="chroma">
+<div class="highlight" id="id-83"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2153,7 +2253,7 @@
 </div><blockquote>
 <p>开启热点</p>
 </blockquote>
-<div class="highlight" id="id-81"><div class="chroma">
+<div class="highlight" id="id-84"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2175,7 +2275,7 @@
 </span></span><span class="line"><span class="cl">sudo create_ap wlo1 wlo1 arch <span class="m">12345678</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="截图软件">截图软件</h2>
-<div class="highlight" id="id-82"><div class="chroma">
+<div class="highlight" id="id-85"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2186,7 +2286,7 @@
 </div>
 </div><p>绑定 <code>dwm</code> 快捷键，在 <code>config.def.conf</code> 中加入 <code>{ Mod1Mask,                     XK_a,      spawn,          SHCMD(&quot;flameshot gui&quot;) },    //截图</code> （快捷键：alt + a）</p>
 <h2 id="通知守护进程">通知守护进程</h2>
-<div class="highlight" id="id-83"><div class="chroma">
+<div class="highlight" id="id-86"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2200,7 +2300,7 @@
 </span></span><span class="line"><span class="cl">dunst -config 文件路径</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="终端文件管理器">终端文件管理器</h2>
-<div class="highlight" id="id-84"><div class="chroma">
+<div class="highlight" id="id-87"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -2210,7 +2310,7 @@
 </div><p>官方文档：<code>https://kgithub.com/ranger/ranger/wiki</code></p>
 <p>其他文档配置：<code>https://www.zssnp.top/2021/06/03/ranger/</code></p>
 <h3 id="生成配置文件">生成配置文件</h3>
-<div class="highlight" id="id-85"><div class="chroma">
+<div class="highlight" id="id-88"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -2219,7 +2319,7 @@
 </div>
 </div><p><a class="lightgallery" href="/posts/note%20picture/Arch%20Linux.assets/image-20230525000537299.png" data-thumbnail="/posts/note%20picture/Arch%20Linux.assets/image-20230525000537299.png" data-sub-html="<h2>image-20230525000537299</h2>"><img loading="lazy" src="/posts/note%20picture/Arch%20Linux.assets/image-20230525000537299.png" srcset="/posts/note%20picture/Arch%20Linux.assets/image-20230525000537299.png, /posts/note%20picture/Arch%20Linux.assets/image-20230525000537299.png 1.5x, /posts/note%20picture/Arch%20Linux.assets/image-20230525000537299.png 2x" sizes="auto" data-title="image-20230525000537299" data-alt="image-20230525000537299" width="625" height="183" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a></p>
 <h3 id="安装图标">安装图标</h3>
-<div class="highlight" id="id-86"><div class="chroma">
+<div class="highlight" id="id-89"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2229,7 +2329,7 @@
 </span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;default_linemode devicons&#34;</span> &gt;&gt; <span class="nv">$HOME</span>/.config/ranger/rc.conf</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="预览图片">预览图片</h3>
-<div class="highlight" id="id-87"><div class="chroma">
+<div class="highlight" id="id-90"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2247,7 +2347,7 @@
 </span></span><span class="line"><span class="cl"><span class="nb">set</span> preview_images_method w3m 改为 <span class="nb">set</span> preview_images_method ueberzug</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="预览视频">预览视频</h3>
-<div class="highlight" id="id-88"><div class="chroma">
+<div class="highlight" id="id-91"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2262,7 +2362,7 @@
 </div>
 </div><p><a class="lightgallery" href="/posts/note%20picture/Arch%20Linux.assets/image-20230525011949986.png" data-thumbnail="/posts/note%20picture/Arch%20Linux.assets/image-20230525011949986.png" data-sub-html="<h2>image-20230525011949986</h2>"><img loading="lazy" src="/posts/note%20picture/Arch%20Linux.assets/image-20230525011949986.png" srcset="/posts/note%20picture/Arch%20Linux.assets/image-20230525011949986.png, /posts/note%20picture/Arch%20Linux.assets/image-20230525011949986.png 1.5x, /posts/note%20picture/Arch%20Linux.assets/image-20230525011949986.png 2x" sizes="auto" data-title="image-20230525011949986" data-alt="image-20230525011949986" width="759" height="152" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a></p>
 <h3 id="代码高亮">代码高亮</h3>
-<div class="highlight" id="id-89"><div class="chroma">
+<div class="highlight" id="id-92"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -2270,7 +2370,7 @@
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -S highlight</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="压缩包预览">压缩包预览</h3>
-<div class="highlight" id="id-90"><div class="chroma">
+<div class="highlight" id="id-93"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -2279,7 +2379,7 @@
 </div>
 </div><h2 id="文档软件">文档软件</h2>
 <h3 id="wps">wps</h3>
-<div class="highlight" id="id-91"><div class="chroma">
+<div class="highlight" id="id-94"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2295,7 +2395,7 @@
 <blockquote>
 <p>下载配置文件</p>
 </blockquote>
-<div class="highlight" id="id-92"><div class="chroma">
+<div class="highlight" id="id-95"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -2305,7 +2405,7 @@
 </div><blockquote>
 <p>docker compose</p>
 </blockquote>
-<div class="highlight" id="id-93"><div class="chroma">
+<div class="highlight" id="id-96"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2343,7 +2443,7 @@
 </div><blockquote>
 <p>终端代理</p>
 </blockquote>
-<div class="highlight" id="id-94"><div class="chroma">
+<div class="highlight" id="id-97"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -2351,7 +2451,7 @@
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -S proxychains-ng</span></span></code></pre></td></tr></table>
 </div>
 </div><p>修改配置文件</p>
-<div class="highlight" id="id-95"><div class="chroma">
+<div class="highlight" id="id-98"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2367,7 +2467,7 @@
 </div><blockquote>
 <p>googe 使用代理</p>
 </blockquote>
-<div class="highlight" id="id-96"><div class="chroma">
+<div class="highlight" id="id-99"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2379,7 +2479,7 @@
 </span></span><span class="line"><span class="cl">google-chrome-stable --proxy-server<span class="o">=</span>127.0.0.1:7890</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="文件管理器">文件管理器</h2>
-<div class="highlight" id="id-97"><div class="chroma">
+<div class="highlight" id="id-100"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2392,7 +2492,7 @@
 </div>
 </div><h2 id="音乐播放器">音乐播放器</h2>
 <h3 id="qq音乐">qq音乐</h3>
-<div class="highlight" id="id-98"><div class="chroma">
+<div class="highlight" id="id-101"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -2406,7 +2506,7 @@
 <p><strong>注意：一定要使用绝对路径，要不然找不到文件</strong></p>
 <h2 id="聊天软件">聊天软件</h2>
 <h3 id="纸飞机">纸飞机</h3>
-<div class="highlight" id="id-99"><div class="chroma">
+<div class="highlight" id="id-102"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -2414,7 +2514,7 @@
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -S telegram-desktop</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="qq">qq</h3>
-<div class="highlight" id="id-100"><div class="chroma">
+<div class="highlight" id="id-103"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -2422,7 +2522,7 @@
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">paru -S linuxqq</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="微信">微信</h3>
-<div class="highlight" id="id-101"><div class="chroma">
+<div class="highlight" id="id-104"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2445,7 +2545,7 @@
 <p><a class="lightgallery" href="/posts/note%20picture/Arch%20Linux.assets/image-20230608195843418.png" data-thumbnail="/posts/note%20picture/Arch%20Linux.assets/image-20230608195843418.png" data-sub-html="<h2>image-20230608195843418</h2>"><img loading="lazy" src="/posts/note%20picture/Arch%20Linux.assets/image-20230608195843418.png" srcset="/posts/note%20picture/Arch%20Linux.assets/image-20230608195843418.png, /posts/note%20picture/Arch%20Linux.assets/image-20230608195843418.png 1.5x, /posts/note%20picture/Arch%20Linux.assets/image-20230608195843418.png 2x" sizes="auto" data-title="image-20230608195843418" data-alt="image-20230608195843418" width="814" height="608" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a></p>
 <h2 id="笔记软件">笔记软件</h2>
 <h3 id="typora">typora</h3>
-<div class="highlight" id="id-102"><div class="chroma">
+<div class="highlight" id="id-105"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -2454,7 +2554,7 @@
 </div>
 </div><h2 id="录屏软件">录屏软件</h2>
 <h3 id="obs">obs</h3>
-<div class="highlight" id="id-103"><div class="chroma">
+<div class="highlight" id="id-106"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -2462,7 +2562,7 @@
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -S obs-studio</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="redis-可视化">redis 可视化</h2>
-<div class="highlight" id="id-104"><div class="chroma">
+<div class="highlight" id="id-107"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -2472,7 +2572,7 @@
 </div><blockquote>
 <p>官方地址</p>
 </blockquote>
-<div class="highlight" id="id-105"><div class="chroma">
+<div class="highlight" id="id-108"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
