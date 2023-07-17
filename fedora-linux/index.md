@@ -74,7 +74,7 @@ EDITOR=vim visudo
 
 ```bash
 # 安装依赖包
-sudo dnf xorg-x11-server-devel xorg-x11-xinit xorg-x11-server-Xorg
+sudo dnf install xorg-x11-server-devel xorg-x11-xinit xorg-x11-server-Xorg
 
 # 可选
 xorg-x11-server-Xvfb xorg-x11-xauth xorg-x11-server-Xvfb xorg-x11-server-Xdmx xorg-x11-server-Xephyr xorg-x11-server-Xnest
@@ -93,7 +93,7 @@ exec dwm
 
 ```bash
 # 安装依赖包
-sudo dnf cmake gcc libX11-devel libXft-devel libXinerama-devel git 
+sudo dnf install cmake gcc libX11-devel libXft-devel libXinerama-devel git 
 
 # 克隆 dwm
 cd ~ && mkdir wm
