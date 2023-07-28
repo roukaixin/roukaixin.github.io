@@ -102,6 +102,8 @@ git clone https://github.com/roukaixin/yaocccc-dwm
 # 编译
 sudo make clean install
 ```
+**编译过程中，可能会缺失一些同文件，可以使用 `dnf provides */头文件名` 来查找在哪一个包**
+
 
 
 
