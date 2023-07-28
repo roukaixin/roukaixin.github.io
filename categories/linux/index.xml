@@ -1,11 +1,48 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>linux on</title><link>/categories/linux/</link><description>Recent content in linux on</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 14 Jul 2023 19:13:00 +0800</lastBuildDate><atom:link href="/categories/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>fedora Linux 安装</title><link>/posts/fedora-linux/</link><pubDate>Fri, 14 Jul 2023 19:13:00 +0800</pubDate><guid>/posts/fedora-linux/</guid><description>安装 下载iso 镜像
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on </title>
+    <link>/categories/linux/</link>
+    <description>Recent content in linux on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 14 Jul 2023 19:13:00 +0800</lastBuildDate><atom:link href="/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>fedora Linux 安装</title>
+      <link>/posts/fedora-linux/</link>
+      <pubDate>Fri, 14 Jul 2023 19:13:00 +0800</pubDate>
+      
+      <guid>/posts/fedora-linux/</guid>
+      <description>安装 下载iso 镜像
 下载地址：https://mirrors.tuna.tsinghua.edu.cn/
 下载带有 Everything 的镜像文件，这个镜像文件可以自定义安装。
 安装
 创建启动u盘，可视化安装教程。这里我安装的是最小化安装，因为我使用的是dwm窗口管理器
-安装配置 替换为国内源 sudo sed -e &amp;#39;s|^metalink=|#metalink=|g&amp;#39; \ -e &amp;#39;s|^#baseurl=http://download.example/pub/fedora/linux|baseurl=https://mirrors.tuna.tsinghua.edu.cn/fedora|g&amp;#39; \ -i.bak \ /etc/yum.repos.d/fedora.repo \ /etc/yum.repos.d/fedora-modular.repo \ /etc/yum.repos.d/fedora-updates.repo \ /etc/yum.repos.d/fedora-updates-modular.repo # 更新本地缓存 sudo dnf makecache # 更新软件 sudo dnf -y update 创建一个普通用户 #新建用户名arch 可自行更改用户名 useradd -m -G wheel -s /bin/bash arch #设置arch用户名的密码 passwd arch #编辑arch用户的权限 EDITOR=vim visudo 找到 # %wheel ALL=(ALL:ALL)ALL 并把 # 号去掉 个人是注释掉 %wheel ALL=(ALL:ALL)ALL 这一行，如果不想使用 sudo 命令时输入密码，可以注释掉 %wheel ALL=(ALL:ALL) NOPASSWD: ALL。两个选择一个注释掉既可以了</description></item><item><title>openSUSE 安装和窗口管理器安装</title><link>/posts/opensuse/</link><pubDate>Wed, 12 Jul 2023 20:00:00 +0800</pubDate><guid>/posts/opensuse/</guid><description>安装 镜像下载地址：https://get.opensuse.org/tumbleweed/#download
+安装配置 替换为国内源 sudo sed -e &amp;#39;s|^metalink=|#metalink=|g&amp;#39; \ -e &amp;#39;s|^#baseurl=http://download.example/pub/fedora/linux|baseurl=https://mirrors.tuna.tsinghua.edu.cn/fedora|g&amp;#39; \ -i.bak \ /etc/yum.repos.d/fedora.repo \ /etc/yum.repos.d/fedora-modular.repo \ /etc/yum.repos.d/fedora-updates.repo \ /etc/yum.repos.d/fedora-updates-modular.repo # 更新本地缓存 sudo dnf makecache # 更新软件 sudo dnf -y update 创建一个普通用户 #新建用户名arch 可自行更改用户名 useradd -m -G wheel -s /bin/bash arch #设置arch用户名的密码 passwd arch #编辑arch用户的权限 EDITOR=vim visudo 找到 # %wheel ALL=(ALL:ALL)ALL 并把 # 号去掉 个人是注释掉 %wheel ALL=(ALL:ALL)ALL 这一行，如果不想使用 sudo 命令时输入密码，可以注释掉 %wheel ALL=(ALL:ALL) NOPASSWD: ALL。两个选择一个注释掉既可以了</description>
+    </item>
+    
+    <item>
+      <title>openSUSE 安装和窗口管理器安装</title>
+      <link>/posts/opensuse/</link>
+      <pubDate>Wed, 12 Jul 2023 20:00:00 +0800</pubDate>
+      
+      <guid>/posts/opensuse/</guid>
+      <description>安装 镜像下载地址：https://get.opensuse.org/tumbleweed/#download
 窗口管理器安装 创建一个普通用户 #新建用户名arch 可自行更改用户名 useradd -m -G wheel -s /bin/bash arch #设置arch用户名的密码 passwd arch #编辑arch用户的权限 EDITOR=vim visudo 找到 # %wheel ALL=(ALL:ALL)ALL 并把 # 号去掉 个人是注释掉 %wheel ALL=(ALL:ALL)ALL 这一行，如果不想使用 sudo 命令时输入密码，可以注释掉 %wheel ALL=(ALL:ALL) NOPASSWD: ALL。两个选择一个注释掉既可以了
 安装 dwm 重启使用普通用户登录
-# 安装 git sudo zypper install git # 创建 wm 并进入文件夹 mkdir wm &amp;amp;&amp;amp; cd ~/wm # 克隆 dwm git clone https://github.com/roukaixin/yaocccc-dwm # 修改名字 mv yaocccc-dwm/ dwm cd dwm # 安装编译包 sudo zypper install cmake gcc libX11-devel libXft-devel libXinerama-devel # 编译 sudo make clean install 安装 st # 克隆 cd ~/wm &amp;amp;&amp;amp; git clone https://gitee.</description></item><item><title>Arch Linux 安装到美化</title><link>/posts/arch-linux/</link><pubDate>Fri, 16 Jun 2023 23:29:46 +0800</pubDate><guid>/posts/arch-linux/</guid><description>archlinux的基本安装 停止reflector服务 禁止自动更新服务器列表 systemctl stop reflector.service 检查电脑是否支持UEFI引导模式 ls /sys/firmware/efi/efivars # 提示：如果没有报错就是支持UEFI 连接网络 有线连接 直接插上网线就可以自动联网了
+# 安装 git sudo zypper install git # 创建 wm 并进入文件夹 mkdir wm &amp;amp;&amp;amp; cd ~/wm # 克隆 dwm git clone https://github.com/roukaixin/yaocccc-dwm # 修改名字 mv yaocccc-dwm/ dwm cd dwm # 安装编译包 sudo zypper install cmake gcc libX11-devel libXft-devel libXinerama-devel # 编译 sudo make clean install 安装 st # 克隆 cd ~/wm &amp;amp;&amp;amp; git clone https://gitee.</description>
+    </item>
+    
+    <item>
+      <title>Arch Linux 安装到美化</title>
+      <link>/posts/arch-linux/</link>
+      <pubDate>Fri, 16 Jun 2023 23:29:46 +0800</pubDate>
+      
+      <guid>/posts/arch-linux/</guid>
+      <description>archlinux的基本安装 停止reflector服务 禁止自动更新服务器列表 systemctl stop reflector.service 检查电脑是否支持UEFI引导模式 ls /sys/firmware/efi/efivars # 提示：如果没有报错就是支持UEFI 连接网络 有线连接 直接插上网线就可以自动联网了
 无线网络（wifi） # 是否启用了网络接口 ip link # 执行 iwctl 命令，进入交互式命令行 iwctl # 列出设备名，比如无线网卡看到叫 wlan0 device list # 用 wlan0 网卡扫描网络 station wlan0 scan # 列出网络 station wlan0 get-networks # 连接网络名字 输入密码 station wlan0 connect 无线网名字 # 成功后退出 exit或者quit 连接成功后ping一下百度是否有网
-ping baidu.com 同步时间 # 同步网络时间 timedatectl set-ntp true # 提示：检查是否成功 看到（system clock synchronized :yes）这一句就是成功了 timedatectl status 修改软件源 打中国的源放在头部 vim /etc/pacman.</description></item></channel></rss>
+ping baidu.com 同步时间 # 同步网络时间 timedatectl set-ntp true # 提示：检查是否成功 看到（system clock synchronized :yes）这一句就是成功了 timedatectl status 修改软件源 打中国的源放在头部 vim /etc/pacman.</description>
+    </item>
+    
+  </channel>
+</rss>
