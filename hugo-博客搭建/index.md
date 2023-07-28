@@ -238,6 +238,7 @@ hugo server
 - **instantPage**: 和 [主题配置](https://fixit.lruihao.cn/zh-cn/documentation/basics/#theme-configuration) 中的 `params.page.instantPage` 部分相同
 
 
+# github action 自动化部署
 
 ---
 
