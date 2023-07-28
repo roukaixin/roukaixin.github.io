@@ -15,7 +15,7 @@
 
 下载带有 `Everything` 的镜像文件，这个镜像文件可以自定义安装。
 
-![image-20230714150218400](/posts/note%20picture/fedoraLinux.assets/image-20230714150218400.png)
+![image-20230714150218400](../note%20picture/fedoraLinux.assets/image-20230714150218400.png)
 
 
 
@@ -150,7 +150,7 @@ sudo dnf install network-manager-applet flameshot dunst feh neofetch neovim acpi
 
 下载地址：`https://github.com/ryanoasis/nerd-fonts/releases/`
 
-![image-20230714175135561](/posts/note%20picture/fedoraLinux.assets/image-20230714175135561.png)
+![image-20230714175135561](../note%20picture/fedoraLinux.assets/image-20230714175135561.png)
 
 下载需要的字体，本人使用 dwm 的字体为：`JetBrainsMono.zip`，下载地址为：`https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip`
 
