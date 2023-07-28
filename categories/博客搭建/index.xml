@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>博客搭建 on </title>
-    <link>/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
-    <description>Recent content in 博客搭建 on </description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Tue, 13 Jun 2023 19:10:46 +0800</lastBuildDate><atom:link href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>hugo 博客搭建</title>
-      <link>/posts/hugo-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
-      <pubDate>Tue, 13 Jun 2023 19:10:46 +0800</pubDate>
-      
-      <guid>/posts/hugo-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
-      <description>hugo 安装 windows hugo 下载地址：https://github.com/gohugoio/hugo/releases
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>博客搭建 on</title><link>/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link><description>Recent content in 博客搭建 on</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 13 Jun 2023 19:10:46 +0800</lastBuildDate><atom:link href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.xml" rel="self" type="application/rss+xml"/><item><title>hugo 博客搭建</title><link>/posts/hugo-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link><pubDate>Tue, 13 Jun 2023 19:10:46 +0800</pubDate><guid>/posts/hugo-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid><description>hugo 安装 windows hugo 下载地址：https://github.com/gohugoio/hugo/releases
 下载二进制文件（官方推荐下载扩展版），解压到一个目录，并配置 hugo 的环境变量。
 注意：使用 hugo 一定要配置好 git 和 go 的环境
 配置环境变量
@@ -25,8 +10,4 @@ linux 我是使用的 Arch Linux 系统，可以直接使用 sudo pacman -S hugo
 其他 linux 操作系统，可以使用和 windows 的安装方法一样。
 配置环境变量
 # 编辑 /etc/profile 文件 export PATH=hugo文件解压路径:$PATH # 加载 profile source /etc/profile 注意： linux 下的 path 变量使用英文冒号
-创建一个博客 创建网站 # 创建一个博客目录 hugo new site blog cd my_website 安装主题 git init git submodule add https://github.</description>
-    </item>
-    
-  </channel>
-</rss>
+创建一个博客 创建网站 # 创建一个博客目录 hugo new site blog cd my_website 安装主题 git init git submodule add https://github.</description></item></channel></rss>
