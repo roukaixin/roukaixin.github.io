@@ -72,7 +72,7 @@ nvim config.mk
 sudo make clean install
 ```
 
-![image-20230715175157860](note%20picture/openSUSE.assets/image-20230715175157860.png)
+![image-20230715175157860](./note%20picture/openSUSE.assets/image-20230715175157860.png  " ")
 
 
 
@@ -97,7 +97,7 @@ ninja -C build install
 
 下载地址：`https://github.com/ryanoasis/nerd-fonts/releases/`
 
-![image-20230714175135561](../note%20picture/fedoraLinux.assets/image-20230714175135561.png)
+![image-20230714175135561](./note%20picture/openSUSE.assets/image-20230714175135561.png " ")
 
 下载需要的字体，本人使用 dwm 的字体为：`JetBrainsMono.zip`，下载地址为：`https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip`
 
