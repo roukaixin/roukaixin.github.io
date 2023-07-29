@@ -300,10 +300,26 @@ hugo server
    **注意：`Disable quotePath` 这个过程不一定需要加上，如果你的博客文件名有中文时一定需要加入，所以一般加上比较保险**
 4. 创建一个 ssh 密钥。`ssh-keygen -t rsa -C 'a3427173515@163.com' -f ~/.ssh/hugo_id_rsa`
 5. 在 `用户名.github.io` 仓库的设置的 `Deploy keys` 设置公钥。
-6. ![image-20230729225250770](./note%20picture/hugo%20%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.assets/image-20230729225250770.png)
+6. ![image-20230729225250770](./note%20picture/hugo%20%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.assets/image-20230729225250770.png " ")
 7. 在源文件仓库的设置里的 `secrets` 设置私钥。注意：私钥的名字一定要是 `ACTIONS_DEPLOY_KEY`。
-8. ![image-20230729225727248](./note%20picture/hugo%20%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.assets/image-20230729225727248.png)
+8. ![image-20230729225727248](./note%20picture/hugo%20%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.assets/image-20230729225727248.png " ")
 
+# 已 git 提交时间作为文章的更新时间
+
+需要在 hugo 的配置文件中加入下面内容的配置
+
+```yaml
+# 时间配置
+frontmatter:
+  # 更新时间
+  lastmod:
+    - :git
+    - lastmod
+    - :fileModTime
+
+# 开启 git info
+enableGitInfo: true
+```
 
 
 ---
