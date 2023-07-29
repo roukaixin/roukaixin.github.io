@@ -240,6 +240,71 @@ hugo server
 
 # github action 自动化部署
 
+1. 创建一个保存原文件的仓库和一个 `用户名.github.io` 的仓库
+
+2. 在源文件仓库中创建 `.github/workflows` 目录，并在目录下创建 `hugo.yaml` 文件。内容如下
+
+3. ```yaml
+   name: github pages
+   
+   # push 到 main 分支触发
+   on:
+     push:
+       branches:
+         - main
+   
+   jobs:
+     deploy:
+       # 运行的环境
+       runs-on: ubuntu-latest
+       env:
+         HUGO_VERSION: 0.115.1
+       steps:
+         # 安装 hugo 程序
+         - name: Install Hugo CLI
+           run: |
+             wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+             && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+   
+         # 拉取源仓库代码
+         - name: Checkout
+           uses: actions/checkout@v3
+           with:
+             # 可选值 recursive 和 true
+             submodules: recursive
+             # 默认为 1。1：拉取最后一次提交，0：全部拉取
+             fetch-depth: 0
+   
+         # 禁用中文转义
+         - name: Disable quotePath
+           run: git config --global core.quotePath false
+   
+         # 构建 hugo 静态博客
+         - name: Build Hugo Static Blog
+           env:
+             HUGO_ENVIRONMENT: production
+             HUGO_ENV: production
+           run: hugo --gc --minify
+   
+         # 把 public 目录下的文件推送到 roukaixin.github.io 仓库
+         - name: Deploy Hugo
+           uses: peaceiris/actions-gh-pages@v3
+           with:
+             deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+             external_repository: roukaixin/roukaixin.github.io
+             publish_branch: main
+             publish_dir: ./public
+             commit_message: ${{ github.event.head_commit.message }}
+   ```
+
+   **注意：`Disable quotePath` 这个过程不一定需要加上，如果你的博客文件名有中文时一定需要加入，所以一般加上比较保险**
+4. 创建一个 ssh 密钥。`ssh-keygen -t rsa -C 'a3427173515@163.com' -f ~/.ssh/hugo_id_rsa`
+5. 在 `用户名.github.io` 仓库的设置的 `Deploy keys` 设置公钥。
+6. ![image-20230729225250770](./note%20picture/hugo%20%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.assets/image-20230729225250770.png)
+7. 在源文件仓库的设置里的 `secrets` 设置私钥。注意：私钥的名字一定要是 `ACTIONS_DEPLOY_KEY`。
+8. ![image-20230729225727248](./note%20picture/hugo%20%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.assets/image-20230729225727248.png)
+
+
 
 ---
 
