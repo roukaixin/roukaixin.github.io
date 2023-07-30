@@ -240,6 +240,8 @@ hugo server
 
 # github action 自动化部署
 
+官方地址方法：`https://gohugo.io/hosting-and-deployment/hosting-on-github/`
+
 1. 创建一个保存原文件的仓库和一个 `用户名.github.io` 的仓库
 
 2. 在源文件仓库中创建 `.github/workflows` 目录，并在目录下创建 `hugo.yaml` 文件。内容如下
