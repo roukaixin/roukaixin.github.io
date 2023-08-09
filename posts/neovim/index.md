@@ -19,5 +19,5 @@ sudo pacman -S neovim
 ---
 
 > 作者: pankx  
-> URL: https://roukaixin.github.io/neovim/  
+> URL: https://roukaixin.github.io/posts/neovim/  
 

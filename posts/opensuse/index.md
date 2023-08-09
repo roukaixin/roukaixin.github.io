@@ -198,5 +198,5 @@ sudo zypper install pipewire-pulseaudio pavucontrol
 ---
 
 > 作者: pankx  
-> URL: https://roukaixin.github.io/opensuse/  
+> URL: https://roukaixin.github.io/posts/opensuse/  
 

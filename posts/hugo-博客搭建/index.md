@@ -327,5 +327,5 @@ enableGitInfo: true
 ---
 
 > 作者: pankx  
-> URL: https://roukaixin.github.io/hugo-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/  
+> URL: https://roukaixin.github.io/posts/hugo-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/  
 
