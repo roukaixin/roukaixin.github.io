@@ -1,3 +1,4 @@
+https://roukaixin.github.io/posts/minio-%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2/
 https://roukaixin.github.io/posts/fedora-linux/
 https://roukaixin.github.io/posts/opensuse/
 https://roukaixin.github.io/posts/neovim/
