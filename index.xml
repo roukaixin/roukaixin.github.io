@@ -7,7 +7,7 @@
 &lt;/div>安装 镜像下载地址：https://get.opensuse.org/tumbleweed/#download 窗口管理器安装 创建一个普通用户 1</description></item><item><title>neovim</title><link>https://roukaixin.github.io/posts/neovim/</link><pubDate>Sat, 01 Jul 2023 23:45:46 +0800</pubDate><author>pankx</author><guid>https://roukaixin.github.io/posts/neovim/</guid><description>&lt;div class="featured-image">
 &lt;img src="/neovim.png" referrerpolicy="no-referrer">
 &lt;/div>安装 github 地址：https://github.com/neovim/neovim arch 1 sudo pacman -S neovim</description></item><item><title>Arch Linux 安装到美化</title><link>https://roukaixin.github.io/posts/arch-linux/</link><pubDate>Fri, 16 Jun 2023 23:29:46 +0800</pubDate><author>pankx</author><guid>https://roukaixin.github.io/posts/arch-linux/</guid><description>&lt;div class="featured-image">
-&lt;img src="/ArchLinux.png" referrerpolicy="no-referrer">
+&lt;img src="/archlinux.png" referrerpolicy="no-referrer">
 &lt;/div>archlinux的基本安装 停止reflector服务 禁止自动更新服务器列表 1 systemctl stop reflector.service 检查电脑是否支持UEFI引导模式 1 2 ls /sys/firmware/efi/efivars # 提示：如果没有</description></item><item><title>hugo 博客搭建</title><link>https://roukaixin.github.io/posts/hugo-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link><pubDate>Tue, 13 Jun 2023 19:10:46 +0800</pubDate><author>pankx</author><guid>https://roukaixin.github.io/posts/hugo-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid><description>&lt;div class="featured-image">
 &lt;img src="/hugo.jpeg" referrerpolicy="no-referrer">
 &lt;/div>hugo 安装 windows hugo 下载地址：https://github.com/gohugoio/hugo/releases 下载二进制文件（官方推荐下载扩展版），</description></item></channel></rss>
