@@ -171,9 +171,9 @@ hugo server
 
 - **categories**: 文章所属的类别
 
-- **featuredImage**: 文章的特色图片
+- **featuredImage**: 文章的特色图片，使用绝对路径
 
-- **featuredImagePreview**: 用在主页预览的文章特色图片
+- **featuredImagePreview**: 用在主页预览的文章特色图片，文章的缩略图，使用绝对路径
 
 - **hiddenFromHomePage**: 如果设为 `true`, 这篇文章将不会显示在主页上
 
@@ -237,6 +237,9 @@ hugo server
 
 - **instantPage**: 和 [主题配置](https://fixit.lruihao.cn/zh-cn/documentation/basics/#theme-configuration) 中的 `params.page.instantPage` 部分相同
 
+**注意** ： 
+- `featured-image-preview` : 表示首页文章的缩略图
+- `resources` : 里面属性使用的是相对路径，优先级比较低
 
 # github action 自动化部署
 
