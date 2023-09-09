@@ -561,8 +561,6 @@ sudo pacman -S linux-lts-headers
 sudo pacman -S nvidia-dkms
 ```
 
-**安装完成驱动之后重启电脑**
-
 
 
 > DRM 内核模式设置
@@ -580,6 +578,8 @@ vim /etc/default/grub
 
 ![image-20230506101749305](./note%20picture/Arch%20Linux.assets/image-20230506101749305.png " ")
 
+
+
 **编辑完成之后，重新生成 `grub.cfg` ，执行 `sudo  grub-mkconfig -o /boot/grub/grub.cfg`**
 
 
@@ -590,7 +590,16 @@ vim /etc/default/grub
 
 ![image-20230507045036585](./note%20picture/Arch%20Linux.assets/image-20230507045036585.png " ")
 
-重新生成 `initramfs ` 。生成命令：`sudo mkinitcpio -P`
+> 重新生成 `initramfs `
+
+```bash
+# 输入 sudo mkinitcpio -P 命令生成 initramfs
+sudo mkinitcpio -P
+```
+
+
+
+**重要：执行完命令之后重启电脑（一定要重启）**
 
 
 
@@ -598,7 +607,7 @@ vim /etc/default/grub
 
 打开终端，输入 `nvidia-smi` 命令，出现 `NVIDIA-SMI has failed because it couldn't communicate with the NIVIDIA driver. Make sure that the latest NVIDIA driver is installed and running`  ，那就说明没有安装成功。
 
-**解决方案：重启电脑，如果重启电脑还是不行，那就重新按 4.1 在安装一遍启动。还是不行的话，就多试试几次**
+**解决方案：重启电脑，如果重启电脑还是不行，看看上面修改的配置有没有对，如果还是不行在安装一遍**
 
 
 
@@ -610,7 +619,7 @@ vim /etc/default/grub
 
 在 `/etc/X11/xorg.conf.d/` 目录下新建 `10-nvidia-drm-outputclass.conf`。
 
-**重要：**如果`/etc/X11`存在`xorg.conf`，那么一定要删除掉
+**重要：如果`/etc/X11`存在`xorg.conf`，那么一定要删除掉**
 
 在`/usr/share/X11/xorg.conf.d/10-nvidia-drm-outputclass.conf`也有一份是生成的，可以参考着来看
 
