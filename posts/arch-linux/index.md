@@ -149,7 +149,12 @@ mkfs.btrfs -f -L arch /dev/sda3
 ## 挂载分区
 
 - 根据自己的分区情况进行挂载分区（尽量不要把usr目录挂载出去，如果挂载出去是不能开机的（网上也有教程是可以挂载的，我没有试过）），一般挂载第三方应用安装目录（opt）、临时文件目录（tmp）
-- **注意 ：必须先挂载根目录才能挂载其他目录**
+
+
+{{< admonition warning "注意" true >}}
+  必须先挂载根目录才能挂载其他目录
+{{< /admonition >}}
+
 
 > 挂载根分区
 
@@ -184,7 +189,8 @@ mkfs.btrfs -f -L arch /dev/sda3
     swapon /dev/sda2
     ```
 
-    > 警告：快照工具 `timeshift` 只支持 /@ 这种子卷布局，如果采用不同的布局，`thimeshift` 可能会存在问题。
+    {{< admonition warning "警告" true >}}快照工具 `timeshift` 只支持 /@ 这种子卷布局，如果采用不同的布局，`thimeshift` 可能会存在问题。
+    {{< /admonition >}}
 
 
 
@@ -223,7 +229,7 @@ pacstrap /mnt base base-devel linux linux-firmware vim
 genfstab -U /mnt >> /mnt/etc/fstab
 ```
 
-**强烈建议：**在执行完以上命令后，检查一下生成的 `/mnt/etc/fstab` 文件是否正确。
+{{< admonition info "强烈建议" true >}}在执行完以上命令后，检查一下生成的 `/mnt/etc/fstab` 文件是否正确。{{< /admonition >}}
 
 
 
@@ -366,20 +372,17 @@ grub-mkconfig -o /boot/grub/grub.cfg
 ```bash
 # 连接网络相关的包，如果安装了 networkmanager 就不需要安装 dhcpd 。如果你使用的是 dhcpcd 那就需要结合 iwd 来使用 wifi，networkmanager 不需要 iwd。
 dhcpcd iwd	networkmanager
-#
-sudo 
 # 命令补全工具
 bash-completion  
 # 网络工具
 iproute2 
 #
 zsh
-
 # 查看系统信息命令
 neofetch  
 
 # 安装  
-pacman -S networkmanager sudo neofetch
+pacman -S networkmanager neofetch bash-completion
 
 # 开机自启动网络管理。如果安装的是 dhcpd ，执行 systemctl enable dhcpcd
 systemctl enable NetworkManager
@@ -643,7 +646,7 @@ Section "OutputClass"
 EndSection
 ```
 
-**注意：**这里的  `intel`  驱动 **必须为** `modesetting`，否则会产生严重的撕裂，后面的 `AllowEmptyInitialConfiguration` 是为了让 n 卡在没检测到显示器的时候继续运行，而不是默认的退出。
+**注意：** 这里的  `intel`  驱动 **必须为** `modesetting`，否则会产生严重的撕裂，后面的 `AllowEmptyInitialConfiguration` 是为了让 n 卡在没检测到显示器的时候继续运行，而不是默认的退出。
 
 
 
