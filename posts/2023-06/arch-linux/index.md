@@ -1780,5 +1780,5 @@ https://redis.com/redis-enterprise/redis-insight/
 ---
 
 > 作者: pankx  
-> URL: https://roukaixin.github.io/posts/arch-linux/  
+> URL: https://roukaixin.github.io/posts/2023-06/arch-linux/  
 

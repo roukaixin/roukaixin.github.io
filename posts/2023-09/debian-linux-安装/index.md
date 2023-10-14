@@ -130,5 +130,5 @@
 ---
 
 > 作者: pankx  
-> URL: https://roukaixin.github.io/posts/debian-linux-%E5%AE%89%E8%A3%85/  
+> URL: https://roukaixin.github.io/posts/2023-09/debian-linux-%E5%AE%89%E8%A3%85/  
 
