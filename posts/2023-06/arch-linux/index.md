@@ -1072,7 +1072,7 @@ static const Key keys[] = {
 # kdiff3 : 对比 git 冲突的图形化页面
 pacman -S git kdiff3
 # 配置用户名和邮箱
-git config --global user.name roukaixin
+git config --global user.name pankx
 git config --global user.email "a3427173515@163.com"
 # 设置全局查看分支冲突软件
 git config --global merge.tool kdiff3
@@ -1340,7 +1340,7 @@ time
 ### 设置快捷键
 
 #### 设置音量快捷键
-
+**方法一：脚本模式**
 ```bash
 # 切换音量状态（静音、非静音） 
 amixer sset Master toggle
@@ -1351,8 +1351,6 @@ amixer sset Master 5%- unmute
 # 增大音量
 amixer sset Master 5%+ unmute
 ```
-
-
 
 ```bash
 # 进入 dwm 的目录
@@ -1378,6 +1376,52 @@ amixer sset Master toggle
 chmod +x volup.sh voldown.sh voltoggle.sh
 
 # 注意 ： 把 script 目录归到普通用户组
+```
+
+**方法二：系统快捷键**
+
+```bash
+// 增加音量
+static const char *up_vol[]   = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "+10%",   NULL };
+// 减少音量
+static const char *down_vol[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "-10%",   NULL };
+// 切换动静音量
+static const char *mute_vol[] = { "pactl", "set-sink-mute",   "@DEFAULT_SINK@", "toggle", NULL };
+
+static const Key keys[] = {
+       ...
+       
+        // 切换静音（笔记本系统设置，比如我的是 fn + f5）
+        { 0, XF86XK_AudioMute,        spawn, {.v = mute_vol } },
+         // 降低音量（笔记本系统设置，比如我的是 fn + f6）
+        { 0, XF86XK_AudioLowerVolume, spawn, {.v = down_vol } },
+        // 增加音量（笔记本系统设置，比如我的是 fn + f7）
+        { 0, XF86XK_AudioRaiseVolume, spawn, {.v = up_vol } },
+       
+       ...
+};
+```
+
+
+
+#### 设置亮度快捷键
+
+```bash
+// 增加亮度
+static const char *brighter[] = { "brightnessctl", "set", "10%+", NULL };
+// 降低亮度
+static const char *dimmer[]   = { "brightnessctl", "set", "10%-", NULL };
+
+static const Key keys[] = {
+       ...
+       
+        // 降低亮度（笔记本系统设置，比如我的是 fn + f1）
+        { 0, XF86XK_MonBrightnessDown, spawn, {.v = dimmer } },
+        // 增加亮度（笔记本系统设置，比如我的是 fn + f2）
+        { 0, XF86XK_MonBrightnessUp,   spawn, {.v = brighter } },
+       
+       ...
+};
 ```
 
 
