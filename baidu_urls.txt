@@ -1,3 +1,4 @@
+https://roukaixin.github.io/posts/2023-11/arch-install-config/
 https://roukaixin.github.io/friends/
 https://roukaixin.github.io/posts/2023-09/debian-linux-%E5%AE%89%E8%A3%85/
 https://roukaixin.github.io/posts/2023-09/webstorm%E9%85%8D%E7%BD%AE-live-server/
