@@ -1,4 +1,4 @@
-# Arch Linux 安装到美化
+# Arch Linux 基础安装到日常使用与美化 - 基础系统安装
 
 
 
@@ -141,10 +141,10 @@ mkfs.btrfs -f -L arch /dev/sda3
 ```
 
 - btrfs
-  - `-f`  ：强制格式化为 `btrfs` 格式
-  - `-L` ： 表示分区 `label` （可以自定义），可以理解为 `win` 下的磁盘名称。
+    - `-f`  ：强制格式化为 `btrfs` 格式
+    - `-L` ： 表示分区 `label` （可以自定义），可以理解为 `win` 下的磁盘名称。
 
- 
+
 
 ## 挂载分区
 
@@ -152,7 +152,7 @@ mkfs.btrfs -f -L arch /dev/sda3
 
 
 {{< admonition warning "注意" true >}}
-  必须先挂载根目录才能挂载其他目录
+必须先挂载根目录才能挂载其他目录
 {{< /admonition >}}
 
 
@@ -189,8 +189,8 @@ mkfs.btrfs -f -L arch /dev/sda3
     swapon /dev/sda2
     ```
 
-    {{< admonition warning "警告" true >}}快照工具 `timeshift` 只支持 /@ 这种子卷布局，如果采用不同的布局，`thimeshift` 可能会存在问题。
-    {{< /admonition >}}
+   {{< admonition warning "警告" true >}}快照工具 `timeshift` 只支持 /@ 这种子卷布局，如果采用不同的布局，`thimeshift` 可能会存在问题。
+   {{< /admonition >}}
 
 
 
@@ -218,7 +218,7 @@ mkfs.btrfs -f -L arch /dev/sda3
 pacstrap /mnt base base-devel linux linux-firmware vim
 ```
 
-![image-20220924005039396](./note%20picture/Arch%20Linux.assets/image-20220924005039396.png " ")
+![image-20220924005039396](../note%20picture/Arch%20Linux.assets/image-20220924005039396.png " ")
 
 ## 配置系统
 
@@ -407,139 +407,6 @@ reboot
 
 # 安装后的配置
 
-## 配置中国源和开启32位软件包
-
-```bash
-# 编辑 /etc/pacman.d/mirrorlist，如果在安装系统时，关闭了 reflector 服务和配置了 mirrorlist，那么这个可以不用改，为了保险起见，还是需要看一下和安装的时候有没有区别。
-vim /etc/pacman.d/mirrorlist
-
-# 清华源
-Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
-# 中科大源
-Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
-# 在头部添加阿里源
-Server = https://mirrors.aliyun.com/archlinux/$repo/os/$arch
-# 163源 （i686 和 x86_64）
-Server = https://mirrors.163.com/archlinux/$repo/os/i686
-
-################ 开启32位软件包 ################
-# 编辑 /etc/pacman.conf 
-vim /etc/pacman.conf
-
-# 下面两行内容取消掉 # 号
-[multilib]
-Include = /etc/pacman.d/mirrorlist
-# 在最后面添加
-[archlinuxcn]
-Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
-Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
-Server = https://mirrors.aliyun.com/archlinuxcn/$arch
-
-
-# 更新软件包缓存
-pacman -Syy
-# 安装 GPG key
-pacman -S archlinuxcn-keyring 
-```
-
-
-
-## 添加一个普通用户
-
-```bash
-#新建用户名arch 可自行更改用户名
-useradd -m -G wheel -s /bin/bash arch
-
-#设置arch用户名的密码
-passwd arch
-
-#编辑arch用户的权限
-EDITOR=vim visudo
-
-找到 # %wheel ALL=(ALL:ALL)ALL 并把 # 号去掉
-```
-
-![image-20230625065238368](./note%20picture/Arch%20Linux.assets/image-20230625065238368.png " ")
-
-**个人是注释掉 `%wheel ALL=(ALL:ALL)ALL` 这一行，如果不想使用 `sudo` 命令时输入密码，可以注释掉 `%wheel ALL=(ALL:ALL) NOPASSWD: ALL`。两个选择一个注释掉既可以了**
-
-
-
-## 安装软件源（AUR）
-
-```bash
-# 可以选择两个都安装，也可以只安装一个
-pacman -S yay paru
-```
-
-
-
-## 安装字体
-
-```bash
-# ttf-dejavu : 英文字体
-# wqy-zenhei : 文泉驿正黑矢量字体
-# wqy-microhei : 文泉驿-微米黑
-# noto-fonts-emoji : Emoji 字体
-# ttf-jetbrains-mono-nerd :
-pacman -S ttf-dejavu  wqy-zenhei wqy-microhei noto-fonts-emoji
-```
-
-
-
-## 安装中文输入法 
-
-> 安装 fcitx5
-
-```bash
-# fcitx5-im : 基础包和模块
-# fcitx5-chinese-addons ：中文输入法引擎
-# 
-# 输入法模块 1、qt程序：fcitx5-qt 2、gtk程序 ： fcitx5-gtk
-pacman -S fcitx5-im  fcitx5-chinese-addons
-```
-
-> 配置输入法
->
-
-```bash
-# 编辑 /etc/environment，加入下面内容
-vim /etc/environment
-
-# 内容
-GTK_IM_MODULE=fcitx
-QT_IM_MODULE=fcitx
-XMODIFIERS=@im=fcitx
-SDL_IM_MODULE=fcitx
-GLFW_IM_MODULE=ibus
-
-
-```
-
-> 安装词库
-
-```bash
-# 安装词库
-# fcitx5-pinyin-zhwiki : 中文维基百科创建的词库		
-pacman -S fcitx5-pinyin-zhwiki fcitx5-pinyin-moegirl
-```
-
-**全部配置完成之后重启一下电脑，使用普通用户登录，在进行下面操作**
-
-
-
-## 安装工具（可选）
-
-```bash
-# udisk2 udiskie : 自动挂载U盘修改
-# ntfs-3g ： 读取ntfs格式磁盘
-# dolphin : 文件管理器
-# thunar : 文件管理器
-pacman -S udisks2 udiskie ntfs-3g  dolphin
-
-# 开机自启自动挂载U盘
-systemctl enable udisks2
-```
 
 
 
@@ -577,9 +444,9 @@ vim /etc/default/grub
 # 找到 GRUB_CMDLINE_LINUX_DEFAULT 这一项在后面加入 nvidia-drm.modeset=1
 ```
 
-![image-20230507044757042](./note%20picture/Arch%20Linux.assets/image-20230507044757042.png " ")
+![image-20230507044757042](../note%20picture/Arch%20Linux.assets/image-20230507044757042.png " ")
 
-![image-20230506101749305](./note%20picture/Arch%20Linux.assets/image-20230506101749305.png " ")
+![image-20230506101749305](../note%20picture/Arch%20Linux.assets/image-20230506101749305.png " ")
 
 
 
@@ -591,7 +458,7 @@ vim /etc/default/grub
 
 在 `/etc/mkinitcpio.conf` 中找到  `MODULES=` 这一行在括号的后面加入`nvidia nvidia_modeset nvidia_uvm nvidia_drm`。修改之前先备份一下（`sudo cp /etc/mkinitcpio.conf /etc/mkinitcpio.conf.back`）
 
-![image-20230507045036585](./note%20picture/Arch%20Linux.assets/image-20230507045036585.png " ")
+![image-20230507045036585](../note%20picture/Arch%20Linux.assets/image-20230507045036585.png " ")
 
 > 重新生成 `initramfs `
 
@@ -652,7 +519,7 @@ EndSection
 
 > 使用 startx 启动
 
-这里以**dwm**为例，如果你是其他桌面管理器，请参阅[这里](https://wiki.archlinux.org/index.php/NVIDIA_Optimus#Display_Managers)。如果不配置你将会获得黑屏。 
+这里以**dwm**为例，如果你是其他桌面管理器，请参阅[这里](https://wiki.archlinux.org/index.php/NVIDIA_Optimus#Display_Managers)。如果不配置你将会获得黑屏。
 
 接下来，将以下两行添加到您的开头：`~/.xinitrc`
 
@@ -664,7 +531,7 @@ xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
 ```
 
-![image-20230507052853861](./note%20picture/Arch%20Linux.assets/image-20230507052853861.png " ")
+![image-20230507052853861](../note%20picture/Arch%20Linux.assets/image-20230507052853861.png " ")
 
 **如果启动之后 dpi 设置不正确，那么还需要在 `xrandr --auto` 下面一行加入 `xrandr --dpi 96`**
 
@@ -676,7 +543,7 @@ xrandr --auto
 sudo pacman -S nvidia-settings nvidia-utils
 ```
 
-![image-20230507052136496](./note%20picture/Arch%20Linux.assets/image-20230507052136496.png " ")
+![image-20230507052136496](../note%20picture/Arch%20Linux.assets/image-20230507052136496.png " ")
 
 
 
@@ -692,7 +559,7 @@ sudo pacman -S mesa-utils
 glxinfo | grep NVIDIA
 ```
 
-![image-20230507053421591](./note%20picture/Arch%20Linux.assets/image-20230507053421591.png " ")
+![image-20230507053421591](../note%20picture/Arch%20Linux.assets/image-20230507053421591.png " ")
 
 
 
@@ -721,7 +588,7 @@ export VDPAU_DRIVER=nvidia
 [ -f ~/.xprofile ] && . ~/.xprofile
 ```
 
-![image-20230507053717011](./note%20picture/Arch%20Linux.assets/image-20230507053717011.png " ")
+![image-20230507053717011](../note%20picture/Arch%20Linux.assets/image-20230507053717011.png " ")
 
 方法二：
 
@@ -732,7 +599,7 @@ export LIBVA_DRIVERS_PATH=/usr/lib/dri/
 export VDPAU_DRIVER=nvidia
 ```
 
-![image-20230625081349283](./note%20picture/Arch%20Linux.assets/image-20230625081349283.png " ")
+![image-20230625081349283](../note%20picture/Arch%20Linux.assets/image-20230625081349283.png " ")
 
 **注意：一定要在 `exec dwm` 之前**
 
@@ -749,7 +616,7 @@ sudo pacman -S libva-utils
 
 
 
-![image-20230507055147711](./note%20picture/Arch%20Linux.assets/image-20230507055147711.png " ")
+![image-20230507055147711](../note%20picture/Arch%20Linux.assets/image-20230507055147711.png " ")
 
 > 验证VDPAU
 
@@ -762,7 +629,7 @@ sudo pacman -S vdpauinfo
 
 验证 VDPAU 是否正常工作，运行`vdpauinfo`，出现下图就表示成功
 
-![image-20230507055418720](./note%20picture/Arch%20Linux.assets/image-20230507055418720.png " ")
+![image-20230507055418720](../note%20picture/Arch%20Linux.assets/image-20230507055418720.png " ")
 
 
 
@@ -852,7 +719,7 @@ make clean install
 # 在 ~/.xinitrc 中加入 exec slstatus & 。注意：一定要在 dwm 前面
 ```
 
-![image-20220925144617614](./note%20picture/Arch%20Linux.assets/image-20220925144617614.png " ")
+![image-20220925144617614](../note%20picture/Arch%20Linux.assets/image-20220925144617614.png " ")
 
 
 
@@ -879,7 +746,7 @@ vim ~/.xinitrc
 ```
 
 
-**在`～/.xinitrc`文件末尾添加`exec dwm`，并保存退出，使用`startx`来启动窗口管理器。** 
+**在`～/.xinitrc`文件末尾添加`exec dwm`，并保存退出，使用`startx`来启动窗口管理器。**
 
 
 
@@ -908,7 +775,7 @@ xrandr --addmode 显示器名称 "1920x1080_144.00"
 xrandr --output 显示器名称 --mode '分辨率'
 ```
 
-![image-20220928004105215](./note%20picture/Arch%20Linux.assets/image-20220928004105215.png " ")
+![image-20220928004105215](../note%20picture/Arch%20Linux.assets/image-20220928004105215.png " ")
 
 
 
@@ -944,7 +811,7 @@ picom --config ~/wm/config/picom/picom.conf
 **class_g 怎么获取：**
 
 - **1、下载安装 `xorg-xprop` **
-- **2、在终端里运行 `xprop` 命令，之后点击需要获取的 `class` 的窗口** 
+- **2、在终端里运行 `xprop` 命令，之后点击需要获取的 `class` 的窗口**
 
 
 
@@ -964,7 +831,7 @@ opacity-rule = [
 # 其中 100 表示不透明度为 100%
 ```
 
-![image-20230507064748371](./note%20picture/Arch%20Linux.assets/image-20230507064748371.png " ")
+![image-20230507064748371](../note%20picture/Arch%20Linux.assets/image-20230507064748371.png " ")
 
 > 开启圆角
 
@@ -979,7 +846,7 @@ rounded-corners-exclude = [
 
 
 
-![image-20230507065032647](./note%20picture/Arch%20Linux.assets/image-20230507065032647.png " ")
+![image-20230507065032647](../note%20picture/Arch%20Linux.assets/image-20230507065032647.png " ")
 
 **我的配置文件地址：`https://gitee.com/rouxin/config`**
 
@@ -1124,8 +991,8 @@ vim .rej
 
 ```
 
-  - 在.rej 文件里，前端有 + 号的就是表示要加进去，- 号就表示删除掉
-  - 注意：函数的函数名不要删除掉
+- 在.rej 文件里，前端有 + 号的就是表示要加进去，- 号就表示删除掉
+- 注意：函数的函数名不要删除掉
 
 
 
@@ -1157,9 +1024,9 @@ git remote add github git@github.com:roukaixin/dwm.git
 
 ```
 
-![image-20230507075646997](./note%20picture/Arch%20Linux.assets/image-20230507075646997.png " ")
+![image-20230507075646997](../note%20picture/Arch%20Linux.assets/image-20230507075646997.png " ")
 
-![image-20230507080205654](./note%20picture/Arch%20Linux.assets/image-20230507080205654.png " ")
+![image-20230507080205654](../note%20picture/Arch%20Linux.assets/image-20230507080205654.png " ")
 
 
 
@@ -1238,7 +1105,7 @@ vim config.h
 
 
 
-![image-20220924013208040](./note%20picture/Arch%20Linux.assets/image-20220924013208040.png " ")
+![image-20220924013208040](../note%20picture/Arch%20Linux.assets/image-20220924013208040.png " ")
 
 
 
@@ -1263,11 +1130,11 @@ fc-list |grep Nerd
 “Symbols Nerd Font:pixelsize=14:type=2048-em:antialias=true:autohint=true”
 ```
 
-![image-20220924233710569](./note%20picture/Arch%20Linux.assets/image-20220924233710569.png " ")
+![image-20220924233710569](../note%20picture/Arch%20Linux.assets/image-20220924233710569.png " ")
 
 
 
-![image-20221001210909598](./note%20picture/Arch%20Linux.assets/image-20221001210909598.png " ")
+![image-20221001210909598](../note%20picture/Arch%20Linux.assets/image-20221001210909598.png " ")
 
 
 
@@ -1295,9 +1162,9 @@ https://www.nerdfonts.com/cheat-sheet
 make && sudo make clean install
 ```
 
-![image-20220925134618485](./note%20picture/Arch%20Linux.assets/image-20220925134618485.png " ")
+![image-20220925134618485](../note%20picture/Arch%20Linux.assets/image-20220925134618485.png " ")
 
-![image-20220925134649175](./note%20picture/Arch%20Linux.assets/image-20220925134649175.png " ")
+![image-20220925134649175](../note%20picture/Arch%20Linux.assets/image-20220925134649175.png " ")
 
 
 
@@ -1331,7 +1198,7 @@ time
 如图片
 ```
 
-![image-20221001202825882](./note%20picture/Arch%20Linux.assets/image-20221001202825882.png " ")
+![image-20221001202825882](../note%20picture/Arch%20Linux.assets/image-20221001202825882.png " ")
 
 
 
@@ -1441,12 +1308,12 @@ static const Key keys[] = {
 ### st推荐补丁
 
 - 终端半透明（alpha）
-- 去除终端的白边（anysize） 
-  - 打开多个终端就会出项这个问题
+- 去除终端的白边（anysize）
+    - 打开多个终端就会出项这个问题
 - 终端中的输入下划线（blinking_cursor）
-  - 闪动的下划线
+    - 闪动的下划线
 - 主题颜色（xresources）
-  - 保留多个主颜色
+    - 保留多个主颜色
 
 
 
@@ -1462,7 +1329,7 @@ vim config.h
 
 
 
-![image-20220924013544614](./note%20picture/Arch%20Linux.assets/image-20220924013544614.png " ")
+![image-20220924013544614](../note%20picture/Arch%20Linux.assets/image-20220924013544614.png " ")
 
 
 
@@ -1500,7 +1367,7 @@ do
 done &
 ```
 
-![image-20220924120805094](./note%20picture/Arch%20Linux.assets/image-20220924120805094.png " ")
+![image-20220924120805094](../note%20picture/Arch%20Linux.assets/image-20220924120805094.png " ")
 
 
 
@@ -1576,7 +1443,7 @@ sudo pacman -S ranger
 ranger --copy-config=all
 ```
 
-![image-20230525000537299](./note%20picture/Arch%20Linux.assets/image-20230525000537299.png " ")
+![image-20230525000537299](../note%20picture/Arch%20Linux.assets/image-20230525000537299.png " ")
 
 ### 安装图标
 
@@ -1613,7 +1480,7 @@ sudo pacman -S ffmpegthumbnailer
 
 
 
-![image-20230525011949986](./note%20picture/Arch%20Linux.assets/image-20230525011949986.png " ")
+![image-20230525011949986](../note%20picture/Arch%20Linux.assets/image-20230525011949986.png " ")
 
 
 
@@ -1659,7 +1526,7 @@ wget -o confing.yaml 订阅地址&flag=clash
 
 
 
-> docker compose 
+> docker compose
 
 ```yaml
 version: "3.8"
@@ -1734,7 +1601,7 @@ paru -S qqmusic-bin
 
 地址：`https://github.com/listen1/listen1_desktop`
 
-![image-20230608194903103](./note%20picture/Arch%20Linux.assets/image-20230608194903103.png " ")
+![image-20230608194903103](../note%20picture/Arch%20Linux.assets/image-20230608194903103.png " ")
 
 这里我选择的是 `AppImage` 格式，如果想在 rofi 中可以打开，那么要先给这个文件可执行的权限，并把他软链接到 `/usr/local/bin` 目录下。
 
@@ -1778,7 +1645,7 @@ ln -sf /opt/apps/com.qq.weixin.deepin/files/run.sh /usr/local/bin/weixin
 
 **注意：如果使用有那些框框，可以试着改一下启动命令的一些东西，本人使用 deepin-wine5 是比较好用的，还有一些 wine 的容器（这个需要自己去了解）**
 
-![image-20230608195843418](./note%20picture/Arch%20Linux.assets/image-20230608195843418.png " ")
+![image-20230608195843418](../note%20picture/Arch%20Linux.assets/image-20230608195843418.png " ")
 
 
 
@@ -1825,5 +1692,5 @@ https://redis.com/redis-enterprise/redis-insight/
 ---
 
 > 作者: pankx  
-> URL: https://roukaixin.github.io/posts/2023-06/arch-linux/  
+> URL: https://roukaixin.github.io/posts/2023-06/arch-basic-install/  
 
