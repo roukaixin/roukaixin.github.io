@@ -48,6 +48,6 @@ services:
 
 ---
 
-> 作者: pankx  
+> 作者:   
 > URL: https://roukaixin.github.io/posts/2023-08/minio-%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2/  
 

@@ -254,6 +254,6 @@ sudo dnf install microsoft-edge-stable
 
 ---
 
-> 作者: pankx  
+> 作者:   
 > URL: https://roukaixin.github.io/posts/2023-07/fedora-linux/  
 

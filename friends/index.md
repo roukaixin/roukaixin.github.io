@@ -17,6 +17,6 @@
 
 ---
 
-> 作者: pankx  
+> 作者:   
 > URL: https://roukaixin.github.io/friends/  
 

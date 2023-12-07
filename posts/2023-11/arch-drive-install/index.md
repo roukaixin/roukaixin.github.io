@@ -246,6 +246,6 @@ systemctl start bluetooth.service
 
 ---
 
-> 作者: pankx  
+> 作者:   
 > URL: https://roukaixin.github.io/posts/2023-11/arch-drive-install/  
 

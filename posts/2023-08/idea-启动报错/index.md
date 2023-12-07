@@ -11,6 +11,6 @@
 
 ---
 
-> 作者: pankx  
+> 作者:   
 > URL: https://roukaixin.github.io/posts/2023-08/idea-%E5%90%AF%E5%8A%A8%E6%8A%A5%E9%94%99/  
 

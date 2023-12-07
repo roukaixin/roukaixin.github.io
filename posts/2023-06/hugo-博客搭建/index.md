@@ -329,6 +329,6 @@ enableGitInfo: true
 
 ---
 
-> 作者: pankx  
+> 作者:   
 > URL: https://roukaixin.github.io/posts/2023-06/hugo-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/  
 
