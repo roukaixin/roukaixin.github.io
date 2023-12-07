@@ -230,6 +230,20 @@ sudo pacman -S pipewire-pulse
 sudo pacman -S pavucontrol
 ```
 
+
+## 蓝牙驱动
+
+```bash
+sudo pacman -S bluez bluez-utils blueman
+```
+
+启动蓝牙
+```bash
+systemctl start bluetooth.service
+```
+
+参考教程：`https://cn.linux-console.net/?p=16637`
+
 ---
 
 > 作者: pankx  
