@@ -4,9 +4,9 @@
 
 
 
-# archlinux的基本安装
+## archlinux的基本安装
 
-## 停止reflector服务 禁止自动更新服务器列表
+### 停止reflector服务 禁止自动更新服务器列表
 
 ```bash
 systemctl stop reflector.service
@@ -14,7 +14,7 @@ systemctl stop reflector.service
 
 
 
-## 检查电脑是否支持UEFI引导模式
+### 检查电脑是否支持UEFI引导模式
 
 ```bash
 ls /sys/firmware/efi/efivars
@@ -23,15 +23,15 @@ ls /sys/firmware/efi/efivars
 
 
 
-## 连接网络
+### 连接网络
 
-### 有线连接
+#### 有线连接
 
 直接插上网线就可以自动联网了
 
 
 
-### 无线网络（wifi）
+#### 无线网络（wifi）
 
 ```bash
 # 是否启用了网络接口
@@ -58,7 +58,7 @@ ping baidu.com
 
 
 
-## 同步时间
+### 同步时间
 
 ```bash
 # 同步网络时间
@@ -68,7 +68,7 @@ timedatectl status
 ```
 
 
-## 修改软件源
+### 修改软件源
 
 - 打中国的源放在头部
 
@@ -82,9 +82,9 @@ vim /etc/pacman.d/mirrorlist
 
 
 
-## 分区
+### 分区
 
-### fdisk分区
+#### fdisk分区
 
 ```bash
 # 查看磁盘分区
@@ -95,7 +95,7 @@ fdisk  /dev/sda
 
 
 
-### cfdisk分区
+#### cfdisk分区
 
 ```bash
 cfdisk /dev/sda
@@ -109,7 +109,7 @@ cfdisk /dev/sda
 
 
 
-### 格式化分区
+#### 格式化分区
 
 > EFI 分区
 
@@ -146,7 +146,7 @@ mkfs.btrfs -f -L arch /dev/sda3
 
 
 
-## 挂载分区
+### 挂载分区
 
 - 根据自己的分区情况进行挂载分区（尽量不要把usr目录挂载出去，如果挂载出去是不能开机的（网上也有教程是可以挂载的，我没有试过）），一般挂载第三方应用安装目录（opt）、临时文件目录（tmp）
 
@@ -208,7 +208,7 @@ mkfs.btrfs -f -L arch /dev/sda3
 
 
 
-## 安装内核
+### 安装内核
 
 ```bash
 # 往/mnt目录里安装系统
@@ -220,9 +220,9 @@ pacstrap /mnt base base-devel linux linux-firmware vim
 
 ![image-20220924005039396](images/Arch%20Linux.assets/image-20220924005039396.png " ")
 
-## 配置系统
+### 配置系统
 
-### Fstab
+#### Fstab
 
 ```bash
 # 生成 fstab文件 (用 `-U` 或 `-L` 选项设置 UUID 或卷标)
@@ -233,7 +233,7 @@ genfstab -U /mnt >> /mnt/etc/fstab
 
 
 
-### Chroot
+#### Chroot
 
 ```bash
 # chroot到新安装的系统
@@ -242,7 +242,7 @@ arch-chroot /mnt
 
 
 
-### 设置时区
+#### 设置时区
 
 ```bash
 # ln -sf /usr/share/zoneinfo/Region（地区名）/City（城市名） /etc/localtime
@@ -255,7 +255,7 @@ hwclock --systohc
 
 
 
-### 本地化
+#### 本地化
 
 > 修改 local.gen 文件
 
@@ -294,7 +294,7 @@ zh_SG.UTF-8 UTF-8
 
 
 
-### 网络配置
+#### 网络配置
 
 > 创建hostname文件
 >
@@ -321,7 +321,7 @@ vim /etc/hosts
 
 
 
-### Root 密码
+#### Root 密码
 
 ```bash
 # 修改 root 密码
@@ -330,9 +330,9 @@ passwd
 
 
 
-## 安装引导程序
+### 安装引导程序
 
-### 安装 cpu微码和引导软件
+#### 安装 cpu微码和引导软件
 
 ```bash
 # 如果是amd的cpu 则输入amd-ucode
@@ -342,7 +342,7 @@ pacman -S intel-ucode  grub efibootmgr os-prober
 
 
 
-### 安装grub引导
+#### 安装grub引导
 
 ```bash
 #安装grub引导
@@ -358,7 +358,7 @@ grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=ARCH
 
 
 
-### 生成grub
+#### 生成grub
 
 ```bash
 # 生成grub ，如果没有 /boot/grub 目录就创建。（创建目录：mkdir /boot/grub）
@@ -367,7 +367,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 
 
-## 安装软件
+### 安装软件
 
 ```bash
 # 连接网络相关的包，如果安装了 networkmanager 就不需要安装 dhcpd 。如果你使用的是 dhcpcd 那就需要结合 iwd 来使用 wifi，networkmanager 不需要 iwd。
@@ -390,7 +390,7 @@ systemctl enable NetworkManager
 
 
 
-## 退出
+### 退出
 
 ```bash
 #输入 exit 或按 Ctrl+d 退出 chroot 环境。
@@ -405,24 +405,24 @@ reboot
 
 
 
-# 安装后的配置
+## 安装后的配置
 
 
 
 
 
 
-# 显卡驱动
+## 显卡驱动
 
 
 
 
 
-# wm（窗口管理器）
+## wm（窗口管理器）
 
-## dwm（窗口管理器）的安装
+### dwm（窗口管理器）的安装
 
-### 安装x窗口管理系统
+#### 安装x窗口管理系统
 
 ```bash
 # xorg  ： xorg 包含 xorg-server 和 xorg-apps
@@ -435,9 +435,9 @@ cp /etc/X11/xinit/xinitrc ~/.xinitrc
 
 
 
-### 安装dwm全家桶
+#### 安装dwm全家桶
 
-#### 安装dwm
+##### 安装dwm
 
 ```bash
 # 下载dwm
@@ -451,7 +451,7 @@ make install
 
 
 
-#### 安装st
+##### 安装st
 
 ```bash
 # 下载st （alacritty 终端）
@@ -465,7 +465,7 @@ make install
 
 
 
-#### 安装dmenu
+##### 安装dmenu
 
 ```bash
 # 下载dmenu （rofi）
@@ -479,7 +479,7 @@ make clean install
 
 
 
-#### 安装slstaus
+##### 安装slstaus
 
 ```bash
 # 下载安装 slstatus
@@ -495,9 +495,9 @@ make clean install
 
 
 
-#### 启动
+##### 启动
 
-#### 设置中文界面
+##### 设置中文界面
 
 ```bash
 # 在 ～/.xintrx 中加入
@@ -508,7 +508,7 @@ export LANGUAGE=zh_CN:en_US
 
 
 
-#### 启动dwm
+##### 启动dwm
 
 ```bash
 # 编辑 .xinitrc 文件
@@ -522,7 +522,7 @@ vim ~/.xinitrc
 
 
 
-#### 设置分辨率
+##### 设置分辨率
 
 ```bash
 # 查看分辨率
@@ -551,7 +551,7 @@ xrandr --output 显示器名称 --mode '分辨率'
 
 
 
-# picom合成器
+## picom合成器
 
 ```bash
 # 安装 picom 、picom-ibhagwan-git(毛玻璃效果)、picom-ftlabs-git（动画效果很好）
@@ -626,11 +626,11 @@ rounded-corners-exclude = [
 
 
 
-# 系统优化
+## 系统优化
 
 
 
-## 提升开机速度
+### 提升开机速度
 
 ```bash
 # 事后可设置 /etc/default/grub 中 可提升启动速度
@@ -640,7 +640,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 
-## 双系统时间不正确
+### 双系统时间不正确
 
 windows使用 UTC 时间
 
@@ -649,7 +649,7 @@ windows使用 UTC 时间
 reg add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation" /v RealTimeIsUniversal /d 1 /t REG_DWORD /f
 ```
 
-## 调节亮度
+### 调节亮度
 
 **方法一：**
 
@@ -699,7 +699,7 @@ static const Key keys[] = {
 
 
 
-## 打补丁方法
+### 打补丁方法
 
 
 
@@ -776,7 +776,7 @@ vim .rej
 
 
 
-## dwm
+### dwm
 
 进行到这一步的时候，因为之前已经编译了 dwm ，所以先重置回到官方的版本。`命令：make clean && rm -rf config.h && git reset --hard origin/master`
 
@@ -829,7 +829,7 @@ git merge sockless -m "更新 dwm 官方代码"
 
 
 
-### dwn推荐的补丁
+#### dwn推荐的补丁
 
 - 窗口全屏（actualfullscreen）
 
@@ -853,7 +853,7 @@ git merge sockless -m "更新 dwm 官方代码"
 
 
 
-### 布局图标
+#### 布局图标
 
 ```bash
 # 地址
@@ -866,7 +866,7 @@ nf-md-collage
 
 
 
-### 修改关键的键为win键
+#### 修改关键的键为win键
 
 ```bash
 cd dwm
@@ -881,7 +881,7 @@ vim config.h
 
 
 
-### 设置中英文字体大小相同
+#### 设置中英文字体大小相同
 
 ```bash
 # 安装矢量图标
@@ -910,7 +910,7 @@ fc-list |grep Nerd
 
 
 
-### 设置tag图标
+#### 设置tag图标
 
 ```bash
 # 图标网址
@@ -940,7 +940,7 @@ make && sudo make clean install
 
 
 
-### 设置状态栏
+#### 设置状态栏
 
 **使用音量要安装alsa-utils包** ：`pacman -S  alsa-utils`
 
@@ -976,10 +976,10 @@ time
 
 
 
-### 设置快捷键
+#### 设置快捷键
 在 config.h 头部加入 `#include <X11/XF86keysym.h>`
 
-#### 设置音量快捷键
+##### 设置音量快捷键
 **方法一：脚本模式**
 ```bash
 # 切换音量状态（静音、非静音） 
@@ -1044,7 +1044,7 @@ static const Key keys[] = {
 
 
 
-#### 设置亮度快捷键
+##### 设置亮度快捷键
 
 ```bash
 // 增加亮度
@@ -1075,9 +1075,9 @@ static const Key keys[] = {
 
 
 
-## st
+### st
 
-### st推荐补丁
+#### st推荐补丁
 
 - 终端半透明（alpha）
 - 去除终端的白边（anysize）
@@ -1091,7 +1091,7 @@ static const Key keys[] = {
 
 
 
-### 修改st的字体大小
+#### 修改st的字体大小
 
 ```bash
 cd st
@@ -1105,11 +1105,11 @@ vim config.h
 
 
 
-## dmenu
+### dmenu
 
 
 
-## slstaus
+### slstaus
 
 
 
@@ -1117,7 +1117,7 @@ vim config.h
 
 
 
-## 设置背景图片
+### 设置背景图片
 
 ```bash
 # feh 图形工具
@@ -1149,9 +1149,9 @@ done &
 
 
 
-# 软件安装
+## 软件安装
 
-## 网络管理器
+### 网络管理器
 
 ```bash
 # 系统托盘
@@ -1177,7 +1177,7 @@ sudo create_ap wlo1 wlo1 arch 12345678
 
 
 
-## 截图软件
+### 截图软件
 
 ```bash
 # 火焰截图
@@ -1188,7 +1188,7 @@ sudo pacman -S flameshot
 
 
 
-## 通知守护进程
+### 通知守护进程
 
 ```bash
 sudo pacman -S dunst
@@ -1199,7 +1199,7 @@ dunst -config 文件路径
 
 
 
-## 终端文件管理器
+### 终端文件管理器
 
 ```bash
 sudo pacman -S ranger
@@ -1209,7 +1209,7 @@ sudo pacman -S ranger
 
 其他文档配置：`https://www.zssnp.top/2021/06/03/ranger/`
 
-### 生成配置文件
+#### 生成配置文件
 
 ```bash
 ranger --copy-config=all
@@ -1217,7 +1217,7 @@ ranger --copy-config=all
 
 ![image-20230525000537299](images/Arch%20Linux.assets/image-20230525000537299.png " ")
 
-### 安装图标
+#### 安装图标
 
 ```bash
 git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
@@ -1226,7 +1226,7 @@ echo "default_linemode devicons" >> $HOME/.config/ranger/rc.conf
 
 
 
-### 预览图片
+#### 预览图片
 
 ```bash
 # 安装 ueberzugpp
@@ -1239,7 +1239,7 @@ set preview_images_method w3m 改为 set preview_images_method ueberzug
 
 
 
-### 预览视频
+#### 预览视频
 
 ```bash
 # 安装 ffmpegthumbnailer
@@ -1256,7 +1256,7 @@ sudo pacman -S ffmpegthumbnailer
 
 
 
-### 代码高亮
+#### 代码高亮
 
 ```bash
 sudo pacman -S highlight
@@ -1264,7 +1264,7 @@ sudo pacman -S highlight
 
 
 
-### 压缩包预览
+#### 压缩包预览
 
 ```bash
 sudo pacman -S atool
@@ -1274,9 +1274,9 @@ sudo pacman -S atool
 
 
 
-## 文档软件
+### 文档软件
 
-### wps
+#### wps
 
 ```bash
 paru -S wps-office
@@ -1286,9 +1286,9 @@ paru -S wps-office-mui-zh-cn
 
 
 
-## 代理
+### 代理
 
-### clash
+#### clash
 
 > 下载配置文件
 
@@ -1349,7 +1349,7 @@ google-chrome-stable --proxy-server=127.0.0.1:7890
 
 
 
-## 文件管理器
+### 文件管理器
 
 ```bash
 # thunar
@@ -1359,9 +1359,9 @@ sudo pacman -S thunar
 
 
 
-## 音乐播放器
+### 音乐播放器
 
-### qq音乐
+#### qq音乐
 
 ```bash
 paru -S qqmusic-bin
@@ -1369,7 +1369,7 @@ paru -S qqmusic-bin
 
 
 
-### listen1
+#### listen1
 
 地址：`https://github.com/listen1/listen1_desktop`
 
@@ -1385,9 +1385,9 @@ paru -S qqmusic-bin
 
 
 
-## 聊天软件
+### 聊天软件
 
-### 纸飞机
+#### 纸飞机
 
 ```bash
 sudo pacman -S telegram-desktop
@@ -1395,7 +1395,7 @@ sudo pacman -S telegram-desktop
 
 
 
-### qq
+#### qq
 
 ```bash
 paru -S linuxqq
@@ -1403,7 +1403,7 @@ paru -S linuxqq
 
 
 
-### 微信
+#### 微信
 
 ```bash
 paru -S com.qq.weixin.deepin
@@ -1423,9 +1423,9 @@ ln -sf /opt/apps/com.qq.weixin.deepin/files/run.sh /usr/local/bin/weixin
 
 
 
-## 笔记软件
+### 笔记软件
 
-### typora
+#### typora
 
 ```bash
 sudo pacman -S typora
@@ -1433,9 +1433,9 @@ sudo pacman -S typora
 
 
 
-## 录屏软件
+### 录屏软件
 
-### obs
+#### obs
 
 ```bash
 sudo pacman -S obs-studio
@@ -1443,7 +1443,7 @@ sudo pacman -S obs-studio
 
 
 
-## redis 可视化
+### redis 可视化
 
 ```bash
 paru -S redisinsight

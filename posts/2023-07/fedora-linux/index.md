@@ -7,7 +7,7 @@
 
 
 
-# 安装
+## 安装
 
 > 下载`iso` 镜像
 
@@ -27,9 +27,9 @@
 
 
 
-# 安装配置
+## 安装配置
 
-## 替换为国内源
+### 替换为国内源
 
 ```bash
 sudo sed -e 's|^metalink=|#metalink=|g' \
@@ -49,7 +49,7 @@ sudo dnf -y update
 
 
 
-## 创建一个普通用户
+### 创建一个普通用户
 
 ```bash
 #新建用户名arch 可自行更改用户名
@@ -68,7 +68,7 @@ EDITOR=vim visudo
 
 
 
-## 配置窗口管理器
+### 配置窗口管理器
 
 > xorg 服务器
 
@@ -174,7 +174,7 @@ sudo rm -rf JetBrainsMono.zip
 
 
 
-## 安装n卡驱动
+### 安装n卡驱动
 
 **安装成功系统后，引导的时候需要开启第三方软件库**
 
@@ -184,7 +184,7 @@ sudo dnf install akmod-nvidia
 
 
 
-## 安装docker
+### 安装docker
 
 ```bash
 # 卸载之前安装的docker
@@ -211,7 +211,7 @@ sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 
 
 
-## 安装typora
+### 安装typora
 
 ```bash
 # 这个可能用不了了
@@ -228,7 +228,7 @@ flatpak install flathub io.typora.Typora
 
 
 
-## 安装浏览器
+### 安装浏览器
 
 > google chrome
 

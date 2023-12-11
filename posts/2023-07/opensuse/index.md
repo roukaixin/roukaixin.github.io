@@ -1,7 +1,7 @@
 # openSUSE 安装和窗口管理器安装
 
 
-# 安装
+## 安装
 
 镜像下载地址：`https://get.opensuse.org/tumbleweed/#download`
 
@@ -9,9 +9,9 @@
 
 
 
-# 窗口管理器安装
+## 窗口管理器安装
 
-## 创建一个普通用户
+### 创建一个普通用户
 
 ```bash
 #新建用户名arch 可自行更改用户名
@@ -30,7 +30,7 @@ EDITOR=vim visudo
 
 
 
-## 安装 dwm
+### 安装 dwm
 
 重启使用普通用户登录
 
@@ -57,7 +57,7 @@ sudo make clean install
 
 
 
-## 安装 st
+### 安装 st
 
 ```bash
 # 克隆
@@ -76,7 +76,7 @@ sudo make clean install
 
 
 
-## 安装 picom
+### 安装 picom
 
 ```bash
 # 克隆
@@ -93,7 +93,7 @@ ninja -C build install
 ```
 
 
-## 安装字体
+### 安装字体
 
 下载地址：`https://github.com/ryanoasis/nerd-fonts/releases/`
 
@@ -116,7 +116,7 @@ sudo rm -rf JetBrainsMono.zip
 ```
 
 
-## 安装 xorg 服务器
+### 安装 xorg 服务器
 
 ```bash
 sudo zypper install xorg-x11-server xinit
@@ -130,7 +130,7 @@ exec dwm
 
 
 
-## 其他依赖包
+### 其他依赖包
 
 ```bash
 sudo zypper install NetworkManager-applet flameshot dunst feh neofetch acpi xsetroot rofi
@@ -138,9 +138,9 @@ sudo zypper install NetworkManager-applet flameshot dunst feh neofetch acpi xset
 
 
 
-# 配置
+## 配置
 
-## 启动中文
+### 启动中文
 
 ```bash
 # 在 ～/.xintrx 中加入
@@ -151,7 +151,7 @@ export LANGUAGE=zh_CN:en_US
 
 
 
-## 安装输入法
+### 安装输入法
 
 ```bash
 sudo zypper install fcitx5-devel fcitx5-chinese-addons-devel
@@ -173,7 +173,7 @@ GLFW_IM_MODULE=ibus
 
 
 
-## 显示亮度
+### 显示亮度
 
 ```bash
 sudo zypper install brightnessctl
@@ -181,7 +181,7 @@ sudo zypper install brightnessctl
 
 
 
-## 声卡驱动
+### 声卡驱动
 
 ```bash
 sudo zypper install pipewire-pulseaudio pavucontrol
@@ -189,7 +189,7 @@ sudo zypper install pipewire-pulseaudio pavucontrol
 
 
 
-## 显卡驱动
+### 显卡驱动
 
 ```bash
 

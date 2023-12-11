@@ -2,13 +2,13 @@
 
 
 
-# 安装
+## 安装
 
 github 地址：`https://github.com/neovim/neovim`
 
 
 
-## arch
+### arch
 
 ```bash
 sudo pacman -S neovim

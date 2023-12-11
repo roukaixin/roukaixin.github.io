@@ -5,11 +5,11 @@
 
 
 
-# hugo 安装
+## hugo 安装
 
-## windows
+### windows
 
-### hugo
+#### hugo
 
 下载地址：`https://github.com/gohugoio/hugo/releases`
 
@@ -47,7 +47,7 @@
 
 
 
-### git
+#### git
 
 下载地址：`https://git-scm.com/download/win`
 
@@ -59,7 +59,7 @@
 
 
 
-### go
+#### go
 
 下载地址：`https://go.dev/dl/`
 
@@ -69,7 +69,7 @@
 
 
 
-## linux
+### linux
 
 我是使用的 Arch Linux 系统，可以直接使用 `sudo pacman -S hugo` 来下载。使用命令下载安装的就是扩展版的。
 
@@ -92,9 +92,9 @@ source /etc/profile
 
 
 
-# 创建一个博客
+## 创建一个博客
 
-## 创建网站
+### 创建网站
 
 ```bash
 # 创建一个博客目录
@@ -104,7 +104,7 @@ cd my_website
 
 
 
-## 安装主题
+### 安装主题
 
 ```bash
 git init
@@ -113,7 +113,7 @@ git submodule add https://github.com/hugo-fixit/FixIt.git themes/FixIt
 
 
 
-## 添加一个博客文章
+### 添加一个博客文章
 
 ```bash
 hugo new posts/first_post.md
@@ -123,10 +123,13 @@ hugo new posts/first_post.md
 
 
 
-## 启动
+### 启动
 
 ```bash
 hugo server
+
+# -e :指定使用那个环境 。development：测试环境，production：生产环境
+hugo server -e production
 ```
 
 **注意： 由于 ixIt 使用了 Hugo 中的 `.Scratch` 来实现一些特性， 非常建议你为 `hugo server` 命令添加 `--disableFastRender` 参数来实时预览你正在编辑的文章页面。**
@@ -135,7 +138,7 @@ hugo server
 
 
 
-# 博客内容管理
+## 博客内容管理
 
 - **title**: 文章标题
 
@@ -241,7 +244,7 @@ hugo server
 - `featured-image-preview` : 表示首页文章的缩略图
 - `resources` : 里面属性使用的是相对路径，优先级比较低
 
-# github action 自动化部署
+## github action 自动化部署
 
 官方地址方法：`https://gohugo.io/hosting-and-deployment/hosting-on-github/`
 
@@ -309,7 +312,7 @@ hugo server
 7. 在源文件仓库的设置里的 `secrets` 设置私钥。注意：私钥的名字一定要是 `ACTIONS_DEPLOY_KEY`。
 8. ![image-20230729225727248](./note%20picture/hugo%20%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.assets/image-20230729225727248.png " ")
 
-# 已 git 提交时间作为文章的更新时间
+## 已 git 提交时间作为文章的更新时间
 
 需要在 hugo 的配置文件中加入下面内容的配置
 
