@@ -32,9 +32,9 @@ vim /etc/default/grub
 # 找到 GRUB_CMDLINE_LINUX_DEFAULT 这一项在后面加入 nvidia-drm.modeset=1
 ```
 
-![image-20230507044757042](images/Arch%20Linux.assets/image-20230507044757042.png " ")
+![image-20230507044757042](arch-drive-install.assets/image-20230507044757042.png " ")
 
-![image-20230506101749305](images/Arch%20Linux.assets/image-20230506101749305.png " ")
+![image-20230506101749305](arch-drive-install.assets/image-20230506101749305.png " ")
 
 
 
@@ -46,7 +46,7 @@ vim /etc/default/grub
 
 在 `/etc/mkinitcpio.conf` 中找到  `MODULES=` 这一行在括号的后面加入`nvidia nvidia_modeset nvidia_uvm nvidia_drm`。修改之前先备份一下（`sudo cp /etc/mkinitcpio.conf /etc/mkinitcpio.conf.back`）
 
-![image-20230507045036585](images/Arch%20Linux.assets/image-20230507045036585.png " ")
+![image-20230507045036585](arch-drive-install.assets/image-20230507045036585.png " ")
 
 > 重新生成 `initramfs `
 
@@ -119,7 +119,7 @@ xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
 ```
 
-![image-20230507052853861](images/Arch%20Linux.assets/image-20230507052853861.png " ")
+![image-20230507052853861](arch-drive-install.assets/image-20230507052853861.png " ")
 
 **如果启动之后 dpi 设置不正确，那么还需要在 `xrandr --auto` 下面一行加入 `xrandr --dpi 96`**
 
@@ -131,7 +131,7 @@ xrandr --auto
 sudo pacman -S nvidia-settings nvidia-utils
 ```
 
-![image-20230507052136496](images/Arch%20Linux.assets/image-20230507052136496.png " ")
+![image-20230507052136496](arch-drive-install.assets/image-20230507052136496.png " ")
 
 
 
@@ -147,7 +147,7 @@ sudo pacman -S mesa-utils
 glxinfo | grep NVIDIA
 ```
 
-![image-20230507053421591](images/Arch%20Linux.assets/image-20230507053421591.png " ")
+![image-20230507053421591](arch-drive-install.assets/image-20230507053421591.png " ")
 
 
 
@@ -176,7 +176,7 @@ export VDPAU_DRIVER=nvidia
 [ -f ~/.xprofile ] && . ~/.xprofile
 ```
 
-![image-20230507053717011](images/Arch%20Linux.assets/image-20230507053717011.png " ")
+![image-20230507053717011](arch-drive-install.assets/image-20230507053717011.png " ")
 
 方法二：
 
@@ -187,7 +187,7 @@ export LIBVA_DRIVERS_PATH=/usr/lib/dri/
 export VDPAU_DRIVER=nvidia
 ```
 
-![image-20230625081349283](images/Arch%20Linux.assets/image-20230625081349283.png " ")
+![image-20230625081349283](arch-drive-install.assets/image-20230625081349283.png " ")
 
 **注意：一定要在 `exec dwm` 之前**
 
@@ -204,7 +204,7 @@ sudo pacman -S libva-utils
 
 
 
-![image-20230507055147711](images/Arch%20Linux.assets/image-20230507055147711.png " ")
+![image-20230507055147711](arch-drive-install.assets/image-20230507055147711.png " ")
 
 > 验证VDPAU
 
@@ -217,7 +217,7 @@ sudo pacman -S vdpauinfo
 
 验证 VDPAU 是否正常工作，运行`vdpauinfo`，出现下图就表示成功
 
-![image-20230507055418720](images/Arch%20Linux.assets/image-20230507055418720.png " ")
+![image-20230507055418720](arch-drive-install.assets/image-20230507055418720.png " ")
 
 
 

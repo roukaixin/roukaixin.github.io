@@ -65,7 +65,7 @@ EDITOR=vim visudo
 找到 # %wheel ALL=(ALL:ALL)ALL 并把 # 号去掉
 ```
 
-![image-20230625065238368](images/Arch%20Linux.assets/image-20230625065238368.png " ")
+![image-20230625065238368](arch-install-config.assets/image-20230625065238368.png " ")
 
 
 {{< admonition info "提醒" true >}}

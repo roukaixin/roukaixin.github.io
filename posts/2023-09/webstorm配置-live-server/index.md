@@ -20,11 +20,8 @@ categories:
 hiddenFromHomePage: false
 hiddenFromSearch: false
 summary:
-resources:
-    - name: featured-image
-      src: webstorm.jpg
-    - name: featured-image-preview
-      src: webstorm.jpg
+featuredImagePreview: /posts/WebStorm配置 live server/webstorm.jpg
+featuredImage: /posts/WebStorm配置 live server/webstorm.jpg
 toc: true
 math: false
 password:

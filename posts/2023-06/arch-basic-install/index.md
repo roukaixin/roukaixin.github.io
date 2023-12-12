@@ -218,7 +218,7 @@ mkfs.btrfs -f -L arch /dev/sda3
 pacstrap /mnt base base-devel linux linux-firmware vim
 ```
 
-![image-20220924005039396](images/Arch%20Linux.assets/image-20220924005039396.png " ")
+![image-20220924005039396](arch-basic-install.assets/image-20220924005039396.png " ")
 
 ### 配置系统
 
@@ -491,7 +491,7 @@ make clean install
 # 在 ~/.xinitrc 中加入 exec slstatus & 。注意：一定要在 dwm 前面
 ```
 
-![image-20220925144617614](images/Arch%20Linux.assets/image-20220925144617614.png " ")
+![image-20220925144617614](arch-basic-install.assets/image-20220925144617614.png " ")
 
 
 
@@ -547,7 +547,7 @@ xrandr --addmode 显示器名称 "1920x1080_144.00"
 xrandr --output 显示器名称 --mode '分辨率'
 ```
 
-![image-20220928004105215](images/Arch%20Linux.assets/image-20220928004105215.png " ")
+![image-20220928004105215](arch-basic-install.assets/image-20220928004105215.png " ")
 
 
 
@@ -603,7 +603,7 @@ opacity-rule = [
 # 其中 100 表示不透明度为 100%
 ```
 
-![image-20230507064748371](images/Arch%20Linux.assets/image-20230507064748371.png " ")
+![image-20230507064748371](arch-basic-install.assets/image-20230507064748371.png " ")
 
 > 开启圆角
 
@@ -618,7 +618,7 @@ rounded-corners-exclude = [
 
 
 
-![image-20230507065032647](images/Arch%20Linux.assets/image-20230507065032647.png " ")
+![image-20230507065032647](arch-basic-install.assets/image-20230507065032647.png " ")
 
 **我的配置文件地址：`https://gitee.com/rouxin/config`**
 
@@ -796,9 +796,9 @@ git remote add github git@github.com:roukaixin/dwm.git
 
 ```
 
-![image-20230507075646997](images/Arch%20Linux.assets/image-20230507075646997.png " ")
+![image-20230507075646997](arch-basic-install.assets/image-20230507075646997.png " ")
 
-![image-20230507080205654](images/Arch%20Linux.assets/image-20230507080205654.png " ")
+![image-20230507080205654](arch-basic-install.assets/image-20230507080205654.png " ")
 
 
 
@@ -877,7 +877,7 @@ vim config.h
 
 
 
-![image-20220924013208040](images/Arch%20Linux.assets/image-20220924013208040.png " ")
+![image-20220924013208040](arch-basic-install.assets/image-20220924013208040.png " ")
 
 
 
@@ -902,11 +902,11 @@ fc-list |grep Nerd
 “Symbols Nerd Font:pixelsize=14:type=2048-em:antialias=true:autohint=true”
 ```
 
-![image-20220924233710569](images/Arch%20Linux.assets/image-20220924233710569.png " ")
+![image-20220924233710569](arch-basic-install.assets/image-20220924233710569.png " ")
 
 
 
-![image-20221001210909598](images/Arch%20Linux.assets/image-20221001210909598.png " ")
+![image-20221001210909598](arch-basic-install.assets/image-20221001210909598.png " ")
 
 
 
@@ -934,9 +934,9 @@ https://www.nerdfonts.com/cheat-sheet
 make && sudo make clean install
 ```
 
-![image-20220925134618485](images/Arch%20Linux.assets/image-20220925134618485.png " ")
+![image-20220925134618485](arch-basic-install.assets/image-20220925134618485.png " ")
 
-![image-20220925134649175](images/Arch%20Linux.assets/image-20220925134649175.png " ")
+![image-20220925134649175](arch-basic-install.assets/image-20220925134649175.png " ")
 
 
 
@@ -970,7 +970,7 @@ time
 如图片
 ```
 
-![image-20221001202825882](images/Arch%20Linux.assets/image-20221001202825882.png " ")
+![image-20221001202825882](arch-basic-install.assets/image-20221001202825882.png " ")
 
 
 
@@ -1101,7 +1101,7 @@ vim config.h
 
 
 
-![image-20220924013544614](images/Arch%20Linux.assets/image-20220924013544614.png " ")
+![image-20220924013544614](arch-basic-install.assets/image-20220924013544614.png " ")
 
 
 
@@ -1139,7 +1139,7 @@ do
 done &
 ```
 
-![image-20220924120805094](images/Arch%20Linux.assets/image-20220924120805094.png " ")
+![image-20220924120805094](arch-basic-install.assets/image-20220924120805094.png " ")
 
 
 
@@ -1215,7 +1215,7 @@ sudo pacman -S ranger
 ranger --copy-config=all
 ```
 
-![image-20230525000537299](images/Arch%20Linux.assets/image-20230525000537299.png " ")
+![image-20230525000537299](arch-basic-install.assets/image-20230525000537299.png " ")
 
 #### 安装图标
 
@@ -1252,7 +1252,7 @@ sudo pacman -S ffmpegthumbnailer
 
 
 
-![image-20230525011949986](images/Arch%20Linux.assets/image-20230525011949986.png " ")
+![image-20230525011949986](arch-basic-install.assets/image-20230525011949986.png " ")
 
 
 
@@ -1373,7 +1373,7 @@ paru -S qqmusic-bin
 
 地址：`https://github.com/listen1/listen1_desktop`
 
-![image-20230608194903103](images/Arch%20Linux.assets/image-20230608194903103.png " ")
+![image-20230608194903103](arch-basic-install.assets/image-20230608194903103.png " ")
 
 这里我选择的是 `AppImage` 格式，如果想在 rofi 中可以打开，那么要先给这个文件可执行的权限，并把他软链接到 `/usr/local/bin` 目录下。
 
@@ -1417,7 +1417,7 @@ ln -sf /opt/apps/com.qq.weixin.deepin/files/run.sh /usr/local/bin/weixin
 
 **注意：如果使用有那些框框，可以试着改一下启动命令的一些东西，本人使用 deepin-wine5 是比较好用的，还有一些 wine 的容器（这个需要自己去了解）**
 
-![image-20230608195843418](images/Arch%20Linux.assets/image-20230608195843418.png " ")
+![image-20230608195843418](arch-basic-install.assets/image-20230608195843418.png " ")
 
 
 
