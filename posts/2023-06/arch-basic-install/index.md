@@ -1463,6 +1463,6 @@ https://redis.com/redis-enterprise/redis-insight/
 
 ---
 
-> 作者:   
+> 作者: 不北咪  
 > URL: https://roukaixin.github.io/posts/2023-06/arch-basic-install/  
 

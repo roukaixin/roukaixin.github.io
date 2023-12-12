@@ -152,6 +152,6 @@ systemctl enable udisks2
 
 ---
 
-> 作者:   
+> 作者: 不北咪  
 > URL: https://roukaixin.github.io/posts/2023-11/arch-install-config/  
 
