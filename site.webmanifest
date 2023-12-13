@@ -6,6 +6,7 @@
     "description": "个人笔记，记录学习中出现的问题",
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
+    "display_override": ["window-controls-overlay", "fullscreen", "minimal-ui"],
     "display": "standalone",
     "icons": [
       {
@@ -40,5 +41,22 @@
     ],
     "launch_handler": {
       "client_mode": "auto"
-    }
+    },
+    "file_handlers": [
+      {
+        "action": "/handle-audio-file",
+        "accept": {
+          "audio/wav": [".wav"],
+          "audio/x-wav": [".wav"],
+          "audio/mpeg": [".mp3"],
+          "audio/mp4": [".mp4"],
+          "audio/aac": [".adts"],
+          "audio/ogg": [".ogg"],
+          "application/ogg": [".ogg"],
+          "audio/webm": [".webm"],
+          "audio/flac": [".flac"],
+          "audio/mid": [".rmi", ".mid"]
+        }
+      }
+    ]
 }
