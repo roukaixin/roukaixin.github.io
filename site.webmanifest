@@ -1,4 +1,5 @@
 {
+    "id": "6fb57dcf9d5aee98",
     "name": "'不北咪'博客笔记文章",
     "short_name": "'不北咪'博客",
     "start_url": "/",
@@ -36,5 +37,8 @@
         "type": "image/png",
         "purpose": "maskable"
       }
-    ]
+    ],
+    "launch_handler": {
+      "client_mode": "auto"
+    }
 }
