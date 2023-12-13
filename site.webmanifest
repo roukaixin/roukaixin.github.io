@@ -99,6 +99,8 @@
         "label": "List of Awesome Resources available in Awesome App"
       }
     ],
+    "dir": "rtl",
+    "lang": "zh-CN",
     "short_name": "'不北咪'博客",
     "start_url": "/",
     "theme_color": "#ffffff"
