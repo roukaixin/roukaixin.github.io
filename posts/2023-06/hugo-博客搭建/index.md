@@ -15,7 +15,7 @@
 
 下载二进制文件（官方推荐下载扩展版），解压到一个目录，并配置 hugo 的环境变量。
 
-![image-20230613191605156](./note%20picture/hugo%20博客搭建.assets/image-20230613191605156.png " ")
+![image-20230613191605156](hugo-博客搭建.assets/image-20230613191605156.png " ")
 
 **注意：使用 `hugo` 一定要配置好 `git` 和 `go`  的环境**
 
@@ -23,27 +23,27 @@
 
 - 右键此电脑，打开属性
 
-![image-20230613214806614](./note%20picture/hugo%20博客搭建.assets/image-20230613214806614.png " ")
+![image-20230613214806614](hugo-博客搭建.assets/image-20230613214806614.png " ")
 
 - 在关于页面中往下拉，找到 **高级系统设置** ，并打开。
 
-![image-20230613215315561](./note%20picture/hugo%20博客搭建.assets/image-20230613215315561.png " ")
+![image-20230613215315561](hugo-博客搭建.assets/image-20230613215315561.png " ")
 
 - 打开环境变量
 
-![image-20230613220819155](./note%20picture/hugo%20博客搭建.assets/image-20230613220819155.png " ")
+![image-20230613220819155](hugo-博客搭建.assets/image-20230613220819155.png " ")
 
 - 双击打开
 
-![image-20230613220855745](./note%20picture/hugo%20博客搭建.assets/image-20230613220855745.png " ")
+![image-20230613220855745](hugo-博客搭建.assets/image-20230613220855745.png " ")
 
 - 点击新建，并把 `hugo` 解压的目录添加进去
 
-![image-20230613220953657](./note%20picture/hugo%20博客搭建.assets/image-20230613220953657.png " ")
+![image-20230613220953657](hugo-博客搭建.assets/image-20230613220953657.png " ")
 
 - 运行 `hugo version`，看是否配置成功
 
-![image-20230613221146810](./note%20picture/hugo%20博客搭建.assets/image-20230613221146810.png " ")
+![image-20230613221146810](hugo-博客搭建.assets/image-20230613221146810.png " ")
 
 
 
@@ -53,7 +53,7 @@
 
 - 根据自己的操作系统下载对应的安装包
 
-![image-20230613221341358](./note%20picture/hugo%20博客搭建.assets/image-20230613221341358.png " ")
+![image-20230613221341358](hugo-博客搭建.assets/image-20230613221341358.png " ")
 
 安装程序包，无脑安装点下一步就行
 
@@ -84,7 +84,7 @@ export PATH=hugo文件解压路径:$PATH
 source /etc/profile
 ```
 
-![image-20230613192442234](./note%20picture/hugo%20博客搭建.assets/image-20230613192442234.png " ")
+![image-20230613192442234](hugo-博客搭建.assets/image-20230613192442234.png " ")
 
 **注意： linux 下的 path 变量使用英文冒号**
 
@@ -308,9 +308,9 @@ hugo server -e production
    **注意：`Disable quotePath` 这个过程不一定需要加上，如果你的博客文件名有中文时一定需要加入，所以一般加上比较保险**
 4. 创建一个 ssh 密钥。`ssh-keygen -t rsa -C 'a3427173515@163.com' -f ~/.ssh/hugo_id_rsa`
 5. 在 `用户名.github.io` 仓库的设置的 `Deploy keys` 设置公钥。
-6. ![image-20230729225250770](./note%20picture/hugo%20%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.assets/image-20230729225250770.png " ")
+6. ![image-20230729225250770](hugo-博客搭建.assets/image-20230729225250770.png " ")
 7. 在源文件仓库的设置里的 `secrets` 设置私钥。注意：私钥的名字一定要是 `ACTIONS_DEPLOY_KEY`。
-8. ![image-20230729225727248](./note%20picture/hugo%20%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.assets/image-20230729225727248.png " ")
+8. ![image-20230729225727248](hugo-博客搭建.assets/image-20230729225727248.png " ")
 
 ## 已 git 提交时间作为文章的更新时间
 

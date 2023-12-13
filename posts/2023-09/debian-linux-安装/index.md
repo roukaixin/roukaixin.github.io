@@ -27,31 +27,31 @@
 
 启动进入选择页面，选择可视化页面安装
 
-![image-20230912204059582](./index.assets/image-20230912204059582.png " ")
+![image-20230912204059582](debian-linux-安装.assets/image-20230912204059582.png " ")
 
 > 选择语言
 
-![image-20230912204415235](./index.assets/image-20230912204415235.png " ")
+![image-20230912204415235](debian-linux-安装.assets/image-20230912204415235.png " ")
 
 > 选择地区
 
 选择 `other`  ->  `Asia`  -> `China`
 
-![image-20230912204454483](./index.assets/image-20230912204454483.png " ")
+![image-20230912204454483](debian-linux-安装.assets/image-20230912204454483.png " ")
 
-![image-20230912204544722](./index.assets/image-20230912204544722.png " ")
+![image-20230912204544722](debian-linux-安装.assets/image-20230912204544722.png " ")
 
 
 
 > 配置本地化
 
-![image-20230912204804923](./index.assets/image-20230912204804923.png " ")
+![image-20230912204804923](debian-linux-安装.assets/image-20230912204804923.png " ")
 
 
 
 > 配置键盘（默认点击下一步即可）
 
-![image-20230912205042514](./index.assets/image-20230912205042514.png " ")
+![image-20230912205042514](debian-linux-安装.assets/image-20230912205042514.png " ")
 
 
 
@@ -59,13 +59,13 @@
 
 填写自己的主机名
 
-![image-20230912205146453](./index.assets/image-20230912205146453.png " ")
+![image-20230912205146453](debian-linux-安装.assets/image-20230912205146453.png " ")
 
 
 
 > 配置域名（为空即可，就是什么都不要填）
 
-![image-20230912205250275](./index.assets/image-20230912205250275.png " ")
+![image-20230912205250275](debian-linux-安装.assets/image-20230912205250275.png " ")
 
 
 
@@ -73,7 +73,7 @@
 
 填入自己的密码
 
-![image-20230912205337148](./index.assets/image-20230912205337148.png " ")
+![image-20230912205337148](debian-linux-安装.assets/image-20230912205337148.png " ")
 
 
 
@@ -81,17 +81,17 @@
 
 全名可以填写大写
 
-![image-20230912205418499](./index.assets/image-20230912205418499.png " ")
+![image-20230912205418499](debian-linux-安装.assets/image-20230912205418499.png " ")
 
 用户名，这个是根据上一步获取的，不需要修改
 
-![image-20230912205506611](./index.assets/image-20230912205506611.png " ")
+![image-20230912205506611](debian-linux-安装.assets/image-20230912205506611.png " ")
 
 
 
 > 设置普通用户的密码
 
-![image-20230912205553128](./index.assets/image-20230912205553128.png " ")
+![image-20230912205553128](debian-linux-安装.assets/image-20230912205553128.png " ")
 
 
 
@@ -99,15 +99,15 @@
 
 - 选择自定义分区
 
-![image-20230912205644475](./index.assets/image-20230912205644475.png " ")
+![image-20230912205644475](debian-linux-安装.assets/image-20230912205644475.png " ")
 
 - 选择磁盘
 
-![image-20230912205744090](./index.assets/image-20230912205744090.png " ")
+![image-20230912205744090](debian-linux-安装.assets/image-20230912205744090.png " ")
 
 - 创建一个分区
 
-![image-20230912205823754](./index.assets/image-20230912205823754.png " ")
+![image-20230912205823754](debian-linux-安装.assets/image-20230912205823754.png " ")
 
 
 
@@ -115,13 +115,13 @@
 
 不启动，之后在修改配置文件
 
-![image-20230912210438395](./index.assets/image-20230912210438395.png " ")
+![image-20230912210438395](debian-linux-安装.assets/image-20230912210438395.png " ")
 
 
 
 > 选择桌面环境
 
-![image-20230912210541030](./index.assets/image-20230912210541030.png " ")
+![image-20230912210541030](debian-linux-安装.assets/image-20230912210541030.png " ")
 
 
 
