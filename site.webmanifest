@@ -1,13 +1,26 @@
 {
-    "id": "6fb57dcf9d5aee98",
-    "name": "'不北咪'博客笔记文章",
-    "short_name": "'不北咪'博客",
-    "start_url": "/",
-    "description": "个人笔记，记录学习中出现的问题",
-    "theme_color": "#ffffff",
     "background_color": "#ffffff",
-    "display_override": ["window-controls-overlay", "fullscreen", "minimal-ui"],
+    "categories": ["books", "education", "medical"],
+    "description": "个人笔记，记录学习中出现的问题",
     "display": "standalone",
+    "display_override": ["window-controls-overlay", "fullscreen", "minimal-ui"],
+    "file_handlers": [
+      {
+        "action": "/handle-audio-file",
+        "accept": {
+          "audio/wav": [".wav"],
+          "audio/x-wav": [".wav"],
+          "audio/mpeg": [".mp3"],
+          "audio/mp4": [".mp4"],
+          "audio/aac": [".adts"],
+          "audio/ogg": [".ogg"],
+          "application/ogg": [".ogg"],
+          "audio/webm": [".webm"],
+          "audio/flac": [".flac"],
+          "audio/mid": [".rmi", ".mid"]
+        }
+      }
+    ],
     "icons": [
       {
         "src": "/apple-touch-icon.png",
@@ -39,24 +52,13 @@
         "purpose": "maskable"
       }
     ],
+    "id": "6fb57dcf9d5aee98",
     "launch_handler": {
       "client_mode": "auto"
     },
-    "file_handlers": [
-      {
-        "action": "/handle-audio-file",
-        "accept": {
-          "audio/wav": [".wav"],
-          "audio/x-wav": [".wav"],
-          "audio/mpeg": [".mp3"],
-          "audio/mp4": [".mp4"],
-          "audio/aac": [".adts"],
-          "audio/ogg": [".ogg"],
-          "application/ogg": [".ogg"],
-          "audio/webm": [".webm"],
-          "audio/flac": [".flac"],
-          "audio/mid": [".rmi", ".mid"]
-        }
-      }
-    ]
+    "name": "'不北咪'博客笔记文章",
+    "orientation": "portrait-primary",
+    "short_name": "'不北咪'博客",
+    "start_url": "/",
+    "theme_color": "#ffffff"
 }
