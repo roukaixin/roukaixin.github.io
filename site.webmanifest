@@ -58,6 +58,47 @@
     },
     "name": "'不北咪'博客笔记文章",
     "orientation": "portrait-primary",
+    "prefer_related_applications": true,
+    "protocol_handlers": [
+      {
+        "protocol": "web+jngl",
+        "url": "/lookup?type=%s"
+      },
+      {
+        "protocol": "web+jnglstore",
+        "url": "/shop?for=%s"
+      }
+    ],
+    "related_applications": [
+      {
+        "platform": "play",
+        "url": "https://play.google.com/store/apps/details?id=com.example.app1",
+        "id": "com.example.app1"
+      }, {
+        "platform": "itunes",
+        "url": "https://itunes.apple.com/app/example-app1/id123456789"
+      }, {
+        "platform": "windows",
+        "url": "https://apps.microsoft.com/store/detail/example-app1/id123456789"
+      }
+    ],
+    "scope": "https://roukaixin.github.io/",
+    "screenshots" : [
+      {
+        "src": "screenshot1.webp",
+        "sizes": "1280x720",
+        "type": "image/webp",
+        "form_factor": "wide",
+        "label": "Homescreen of Awesome App"
+      },
+      {
+        "src": "screenshot2.webp",
+        "sizes": "1280x720",
+        "type": "image/webp",
+        "form_factor": "wide",
+        "label": "List of Awesome Resources available in Awesome App"
+      }
+    ],
     "short_name": "'不北咪'博客",
     "start_url": "/",
     "theme_color": "#ffffff"
