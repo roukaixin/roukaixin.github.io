@@ -1,7 +1,8 @@
 {
-    "name": "'不北咪'博客文章",
+    "name": "'不北咪'博客笔记文章",
     "short_name": "'不北咪'博客",
     "start_url": "/",
+    "description": "个人笔记，记录学习中出现的问题",
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "display": "standalone",
