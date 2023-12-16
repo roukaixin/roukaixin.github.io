@@ -1,32 +1,6 @@
 # WebStorm 配置 live-server
 
----
-title: WebStorm 配置 live-server
-subtitle:
-date: 2023-09-07T22:36:00+08:00
-lastmod:  2023-09-07T22:36:00+08:00
-draft: false
-description:
-keywords:
-license:
-comment: true
-weight: 0
-tags:
-    - webstorm
-    - idea
-    - 前端开发工具
-categories:
-    - idea
-hiddenFromHomePage: false
-hiddenFromSearch: false
-summary:
-featuredImagePreview: /posts/WebStorm配置 live server/webstorm.jpg
-featuredImage: /posts/WebStorm配置 live server/webstorm.jpg
-toc: true
-math: false
-password:
-message:
----
+
 
 ---
 
