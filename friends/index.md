@@ -6,7 +6,7 @@
 
 ---
 
-{{< admonition >}} 如需要添加友链信息，按照一下格式发生我邮箱 `3427173515@qq.com` {{< /admonition >}}
+{{< admonition >}} 如需要添加友链信息，按照一下格式发生我邮箱 `3427173515@qq.com`或者在下面评论 {{< /admonition >}}
 ```yaml
 - nickname: DebuggerX
   avatar: https://www.debuggerx.com/images/avatar.webp
