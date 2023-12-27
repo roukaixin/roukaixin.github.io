@@ -218,7 +218,7 @@ mkfs.btrfs -f -L arch /dev/sda3
 pacstrap /mnt base base-devel linux linux-firmware vim
 ```
 
-![image-20220924005039396](arch-basic-install.assets/image-20220924005039396.png " ")
+![image-20220924005039396](assets/arch-basic-install.assets/image-20220924005039396.png " ")
 
 ### 配置系统
 
@@ -491,7 +491,7 @@ make clean install
 # 在 ~/.xinitrc 中加入 exec slstatus & 。注意：一定要在 dwm 前面
 ```
 
-![image-20220925144617614](arch-basic-install.assets/image-20220925144617614.png " ")
+![image-20220925144617614](assets/arch-basic-install.assets/image-20220925144617614.png " ")
 
 
 
@@ -547,7 +547,7 @@ xrandr --addmode 显示器名称 "1920x1080_144.00"
 xrandr --output 显示器名称 --mode '分辨率'
 ```
 
-![image-20220928004105215](arch-basic-install.assets/image-20220928004105215.png " ")
+![image-20220928004105215](assets/arch-basic-install.assets/image-20220928004105215.png " ")
 
 
 
@@ -603,7 +603,7 @@ opacity-rule = [
 # 其中 100 表示不透明度为 100%
 ```
 
-![image-20230507064748371](arch-basic-install.assets/image-20230507064748371.png " ")
+![image-20230507064748371](assets/arch-basic-install.assets/image-20230507064748371.png " ")
 
 > 开启圆角
 
@@ -618,7 +618,7 @@ rounded-corners-exclude = [
 
 
 
-![image-20230507065032647](arch-basic-install.assets/image-20230507065032647.png " ")
+![image-20230507065032647](assets/arch-basic-install.assets/image-20230507065032647.png " ")
 
 **我的配置文件地址：`https://gitee.com/rouxin/config`**
 
@@ -796,9 +796,9 @@ git remote add github git@github.com:roukaixin/dwm.git
 
 ```
 
-![image-20230507075646997](arch-basic-install.assets/image-20230507075646997.png " ")
+![image-20230507075646997](assets/arch-basic-install.assets/image-20230507075646997.png " ")
 
-![image-20230507080205654](arch-basic-install.assets/image-20230507080205654.png " ")
+![image-20230507080205654](assets/arch-basic-install.assets/image-20230507080205654.png " ")
 
 
 
@@ -877,7 +877,7 @@ vim config.h
 
 
 
-![image-20220924013208040](arch-basic-install.assets/image-20220924013208040.png " ")
+![image-20220924013208040](assets/arch-basic-install.assets/image-20220924013208040.png " ")
 
 
 
@@ -902,11 +902,11 @@ fc-list |grep Nerd
 “Symbols Nerd Font:pixelsize=14:type=2048-em:antialias=true:autohint=true”
 ```
 
-![image-20220924233710569](arch-basic-install.assets/image-20220924233710569.png " ")
+![image-20220924233710569](assets/arch-basic-install.assets/image-20220924233710569.png " ")
 
 
 
-![image-20221001210909598](arch-basic-install.assets/image-20221001210909598.png " ")
+![image-20221001210909598](assets/arch-basic-install.assets/image-20221001210909598.png " ")
 
 
 
@@ -934,9 +934,9 @@ https://www.nerdfonts.com/cheat-sheet
 make && sudo make clean install
 ```
 
-![image-20220925134618485](arch-basic-install.assets/image-20220925134618485.png " ")
+![image-20220925134618485](assets/arch-basic-install.assets/image-20220925134618485.png " ")
 
-![image-20220925134649175](arch-basic-install.assets/image-20220925134649175.png " ")
+![image-20220925134649175](assets/arch-basic-install.assets/image-20220925134649175.png " ")
 
 
 
@@ -970,7 +970,7 @@ time
 如图片
 ```
 
-![image-20221001202825882](arch-basic-install.assets/image-20221001202825882.png " ")
+![image-20221001202825882](assets/arch-basic-install.assets/image-20221001202825882.png " ")
 
 
 
@@ -1101,7 +1101,7 @@ vim config.h
 
 
 
-![image-20220924013544614](arch-basic-install.assets/image-20220924013544614.png " ")
+![image-20220924013544614](assets/arch-basic-install.assets/image-20220924013544614.png " ")
 
 
 
@@ -1139,7 +1139,7 @@ do
 done &
 ```
 
-![image-20220924120805094](arch-basic-install.assets/image-20220924120805094.png " ")
+![image-20220924120805094](assets/arch-basic-install.assets/image-20220924120805094.png " ")
 
 
 
@@ -1201,6 +1201,8 @@ dunst -config 文件路径
 
 ### 终端文件管理器
 
+#### ranger
+
 ```bash
 sudo pacman -S ranger
 ```
@@ -1209,15 +1211,15 @@ sudo pacman -S ranger
 
 其他文档配置：`https://www.zssnp.top/2021/06/03/ranger/`
 
-#### 生成配置文件
+##### 生成配置文件
 
 ```bash
 ranger --copy-config=all
 ```
 
-![image-20230525000537299](arch-basic-install.assets/image-20230525000537299.png " ")
+![image-20230525000537299](assets/arch-basic-install.assets/image-20230525000537299.png " ")
 
-#### 安装图标
+##### 安装图标
 
 ```bash
 git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
@@ -1226,7 +1228,7 @@ echo "default_linemode devicons" >> $HOME/.config/ranger/rc.conf
 
 
 
-#### 预览图片
+##### 预览图片
 
 ```bash
 # 安装 ueberzugpp
@@ -1239,7 +1241,7 @@ set preview_images_method w3m 改为 set preview_images_method ueberzug
 
 
 
-#### 预览视频
+##### 预览视频
 
 ```bash
 # 安装 ffmpegthumbnailer
@@ -1252,11 +1254,11 @@ sudo pacman -S ffmpegthumbnailer
 
 
 
-![image-20230525011949986](arch-basic-install.assets/image-20230525011949986.png " ")
+![image-20230525011949986](assets/arch-basic-install.assets/image-20230525011949986.png " ")
 
 
 
-#### 代码高亮
+##### 代码高亮
 
 ```bash
 sudo pacman -S highlight
@@ -1264,13 +1266,15 @@ sudo pacman -S highlight
 
 
 
-#### 压缩包预览
+##### 压缩包预览
 
 ```bash
 sudo pacman -S atool
 ```
 
 
+
+#### joshuto
 
 
 
@@ -1337,7 +1341,7 @@ socks5	127.0.0.1	7891
 
 
 
-> googe 使用代理
+> google 使用代理
 
 ```bash
 # google-chrome-stable： 谷歌的命理
@@ -1373,7 +1377,7 @@ paru -S qqmusic-bin
 
 地址：`https://github.com/listen1/listen1_desktop`
 
-![image-20230608194903103](arch-basic-install.assets/image-20230608194903103.png " ")
+![image-20230608194903103](assets/arch-basic-install.assets/image-20230608194903103.png " ")
 
 这里我选择的是 `AppImage` 格式，如果想在 rofi 中可以打开，那么要先给这个文件可执行的权限，并把他软链接到 `/usr/local/bin` 目录下。
 
@@ -1417,7 +1421,7 @@ ln -sf /opt/apps/com.qq.weixin.deepin/files/run.sh /usr/local/bin/weixin
 
 **注意：如果使用有那些框框，可以试着改一下启动命令的一些东西，本人使用 deepin-wine5 是比较好用的，还有一些 wine 的容器（这个需要自己去了解）**
 
-![image-20230608195843418](arch-basic-install.assets/image-20230608195843418.png " ")
+![image-20230608195843418](assets/arch-basic-install.assets/image-20230608195843418.png " ")
 
 
 
@@ -1430,6 +1434,20 @@ ln -sf /opt/apps/com.qq.weixin.deepin/files/run.sh /usr/local/bin/weixin
 ```bash
 sudo pacman -S typora
 ```
+
+
+
+#### typora-free
+
+typora 免费版，需要科学上网才能下载
+
+```bash
+paru -S typora-free
+```
+
+
+
+
 
 
 
@@ -1460,6 +1478,29 @@ https://redis.com/redis-enterprise/redis-insight/
 ```
 
 
+
+### 编程软件
+
+#### vscode
+
+```bash
+sudo pacman -S code
+```
+
+1. 使用 `wayland` 启动
+
+   在 `~/.config` 目录下创建 `electron25-flags.conf` 文件并加入下面内容
+
+   ```config
+   --enable-features=WaylandWindowDecorations
+   --ozone-platform-hint=auto
+   ```
+
+2. 在 `wayland` 下输入法不能正常使用
+
+   修改 `/usr/share/applications/code-oss.desktop` 文件中的启动命令，加入 `--enable-wayland-ime` 内容
+
+   ![image-20231224220012098](assets/arch-basic-install.assets/image-20231224220012098.png " ")
 
 ---
 
