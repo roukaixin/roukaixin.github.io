@@ -111,7 +111,7 @@ cfdisk /dev/sda
 
 #### 格式化分区
 
-> EFI 分区
+&gt; EFI 分区
 
 两个选择其中一个
 
@@ -122,7 +122,7 @@ mkfs.vfat /dev/sda1
 
 
 
-> swap 分区
+&gt; swap 分区
 
 ```bash
 mkswap /dev/sda2
@@ -130,7 +130,7 @@ mkswap /dev/sda2
 
 
 
-> 普通分区
+&gt; 普通分区
 
 ```bash
 # 使用 ext4 格式格式化
@@ -151,12 +151,12 @@ mkfs.btrfs -f -L arch /dev/sda3
 - 根据自己的分区情况进行挂载分区（尽量不要把usr目录挂载出去，如果挂载出去是不能开机的（网上也有教程是可以挂载的，我没有试过）），一般挂载第三方应用安装目录（opt）、临时文件目录（tmp）
 
 
-{{< admonition warning "注意" true >}}
+{{&lt; admonition warning &#34;注意&#34; true &gt;}}
 必须先挂载根目录才能挂载其他目录
-{{< /admonition >}}
+{{&lt; /admonition &gt;}}
 
 
-> 挂载根分区
+&gt; 挂载根分区
 
 -  `btrfs` 格式化挂载方法
 
@@ -189,8 +189,8 @@ mkfs.btrfs -f -L arch /dev/sda3
     swapon /dev/sda2
     ```
 
-   {{< admonition warning "警告" true >}}快照工具 `timeshift` 只支持 /@ 这种子卷布局，如果采用不同的布局，`thimeshift` 可能会存在问题。
-   {{< /admonition >}}
+   {{&lt; admonition warning &#34;警告&#34; true &gt;}}快照工具 `timeshift` 只支持 /@ 这种子卷布局，如果采用不同的布局，`thimeshift` 可能会存在问题。
+   {{&lt; /admonition &gt;}}
 
 
 
@@ -218,7 +218,7 @@ mkfs.btrfs -f -L arch /dev/sda3
 pacstrap /mnt base base-devel linux linux-firmware vim
 ```
 
-![image-20220924005039396](assets/arch-basic-install.assets/image-20220924005039396.png " ")
+![image-20220924005039396](assets/arch-basic-install.assets/image-20220924005039396.png &#34; &#34;)
 
 ### 配置系统
 
@@ -226,10 +226,10 @@ pacstrap /mnt base base-devel linux linux-firmware vim
 
 ```bash
 # 生成 fstab文件 (用 `-U` 或 `-L` 选项设置 UUID 或卷标)
-genfstab -U /mnt >> /mnt/etc/fstab
+genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
 ```
 
-{{< admonition info "强烈建议" true >}}在执行完以上命令后，检查一下生成的 `/mnt/etc/fstab` 文件是否正确。{{< /admonition >}}
+{{&lt; admonition info &#34;强烈建议&#34; true &gt;}}在执行完以上命令后，检查一下生成的 `/mnt/etc/fstab` 文件是否正确。{{&lt; /admonition &gt;}}
 
 
 
@@ -257,7 +257,7 @@ hwclock --systohc
 
 #### 本地化
 
-> 修改 local.gen 文件
+&gt; 修改 local.gen 文件
 
 程序和库如果需要本地化文本，都依赖区域设置，后者明确规定了地域、货币、时区日期的格式、字符排列方式和其他本地化标准。
 
@@ -273,7 +273,7 @@ vim /etc/locale.gen
 locale-gen
 ```
 
-> 创建 locale.conf 文件
+&gt; 创建 locale.conf 文件
 
 创建 locale.conf 文件，并编辑设定 LANG 变量，比如：
 
@@ -296,8 +296,8 @@ zh_SG.UTF-8 UTF-8
 
 #### 网络配置
 
-> 创建hostname文件
->
+&gt; 创建hostname文件
+&gt;
 
 ```bash
 # 编辑 hostname，写入下面内容
@@ -307,8 +307,8 @@ vim /etc/hostname
 arch（主机名）
 ```
 
-> 创建hosts文件
->
+&gt; 创建hosts文件
+&gt;
 
 ```bash
 # 编辑 hosts，写入下面内容
@@ -393,7 +393,7 @@ systemctl enable NetworkManager
 ### 退出
 
 ```bash
-#输入 exit 或按 Ctrl+d 退出 chroot 环境。
+#输入 exit 或按 Ctrl&#43;d 退出 chroot 环境。
 exit
 #卸载被挂载的分区
 umount -R /mnt
@@ -488,10 +488,10 @@ cd slstatus
 make
 make clean install
 
-# 在 ~/.xinitrc 中加入 exec slstatus & 。注意：一定要在 dwm 前面
+# 在 ~/.xinitrc 中加入 exec slstatus &amp; 。注意：一定要在 dwm 前面
 ```
 
-![image-20220925144617614](assets/arch-basic-install.assets/image-20220925144617614.png " ")
+![image-20220925144617614](assets/arch-basic-install.assets/image-20220925144617614.png &#34; &#34;)
 
 
 
@@ -542,12 +542,12 @@ xrandr --output Virtual-1 --mode 1920x1080 --rate 144.00
 cvt 1920 1080 144
 xrandr --newmode ....
 # 添加到显示器上
-xrandr --addmode 显示器名称 "1920x1080_144.00"
+xrandr --addmode 显示器名称 &#34;1920x1080_144.00&#34;
 # 修改分辨率
-xrandr --output 显示器名称 --mode '分辨率'
+xrandr --output 显示器名称 --mode &#39;分辨率&#39;
 ```
 
-![image-20220928004105215](assets/arch-basic-install.assets/image-20220928004105215.png " ")
+![image-20220928004105215](assets/arch-basic-install.assets/image-20220928004105215.png &#34; &#34;)
 
 
 
@@ -587,38 +587,38 @@ picom --config ~/wm/config/picom/picom.conf
 
 
 
-> 排除透明度的程序
+&gt; 排除透明度的程序
 
 ```bash
 focus-exclude = [
-	"class_g = 'fcitx'"
+	&#34;class_g = &#39;fcitx&#39;&#34;
 ]
 # 表示排除选中的透明度
 
 
 opacity-rule = [
-	"100:class_g = 'fcitx'"
+	&#34;100:class_g = &#39;fcitx&#39;&#34;
 ]
 # 表示 fcitx 的不透明度
 # 其中 100 表示不透明度为 100%
 ```
 
-![image-20230507064748371](assets/arch-basic-install.assets/image-20230507064748371.png " ")
+![image-20230507064748371](assets/arch-basic-install.assets/image-20230507064748371.png &#34; &#34;)
 
-> 开启圆角
+&gt; 开启圆角
 
 ```bash
 # 圆角大小，值大于0
 corner-radius = 10
 # 排除圆角程序
 rounded-corners-exclude = [
-	"class_g = 'fcitx'"
+	&#34;class_g = &#39;fcitx&#39;&#34;
 ]
 ```
 
 
 
-![image-20230507065032647](assets/arch-basic-install.assets/image-20230507065032647.png " ")
+![image-20230507065032647](assets/arch-basic-install.assets/image-20230507065032647.png &#34; &#34;)
 
 **我的配置文件地址：`https://gitee.com/rouxin/config`**
 
@@ -634,7 +634,7 @@ rounded-corners-exclude = [
 
 ```bash
 # 事后可设置 /etc/default/grub 中 可提升启动速度
-GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 nowatchdog"
+GRUB_CMDLINE_LINUX_DEFAULT=&#34;loglevel=3 nowatchdog&#34;
 # 重新生成
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
@@ -646,7 +646,7 @@ windows使用 UTC 时间
 
 ```bash
 # 进入 windows 系统，使用管理员运行 cmd，并运行下面命令于添加到注册表中
-reg add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation" /v RealTimeIsUniversal /d 1 /t REG_DWORD /f
+reg add &#34;HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation&#34; /v RealTimeIsUniversal /d 1 /t REG_DWORD /f
 ```
 
 ### 调节亮度
@@ -655,13 +655,13 @@ reg add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation
 
 默认亮度：24000
 
-> 查看最大亮度
+&gt; 查看最大亮度
 
 ```bash
 cat  /sys/class/backlight/intel_backlight/max_brightness
 ```
 
-> 修改亮度值
+&gt; 修改亮度值
 
 ```bash
 sudo vim /sys/class/backlight/intel_backlight/brightness
@@ -679,8 +679,8 @@ sudo pacman -S brightnessctl
 在 dwm 的 config.h 中加入
 
 ```bash
-static const char *brighter[] = { "brightnessctl", "set", "10%+", NULL };
-static const char *dimmer[]   = { "brightnessctl", "set", "10%-", NULL };
+static const char *brighter[] = { &#34;brightnessctl&#34;, &#34;set&#34;, &#34;10%&#43;&#34;, NULL };
+static const char *dimmer[]   = { &#34;brightnessctl&#34;, &#34;set&#34;, &#34;10%-&#34;, NULL };
 ...
 
 static const Key keys[] = {
@@ -712,7 +712,7 @@ static const Key keys[] = {
 pacman -S git kdiff3
 # 配置用户名和邮箱
 git config --global user.name pankx
-git config --global user.email "a3427173515@163.com"
+git config --global user.email &#34;a3427173515@163.com&#34;
 # 设置全局查看分支冲突软件
 git config --global merge.tool kdiff3
 ```
@@ -721,8 +721,8 @@ git config --global merge.tool kdiff3
 
 
 
-> 方法一
->
+&gt; 方法一
+&gt;
 
 - 下载补丁
 
@@ -743,7 +743,7 @@ git commit -m 描述信息
 git merge config -m 123
 
 # 清除到原始的状态
-make clean && rm -rf config.h && git reset --hard origin/master
+make clean &amp;&amp; rm -rf config.h &amp;&amp; git reset --hard origin/master
 ```
 
 
@@ -763,14 +763,14 @@ vim .rej
 
 ```
 
-- 在.rej 文件里，前端有 + 号的就是表示要加进去，- 号就表示删除掉
+- 在.rej 文件里，前端有 &#43; 号的就是表示要加进去，- 号就表示删除掉
 - 注意：函数的函数名不要删除掉
 
 
 
 
 
-> 方法二
+&gt; 方法二
 
 下载补丁，然后自己手动去复制粘贴到源代码里面
 
@@ -778,7 +778,7 @@ vim .rej
 
 ### dwm
 
-进行到这一步的时候，因为之前已经编译了 dwm ，所以先重置回到官方的版本。`命令：make clean && rm -rf config.h && git reset --hard origin/master`
+进行到这一步的时候，因为之前已经编译了 dwm ，所以先重置回到官方的版本。`命令：make clean &amp;&amp; rm -rf config.h &amp;&amp; git reset --hard origin/master`
 
 ```bash
 # 创建一个本地 sockless 分支
@@ -796,13 +796,13 @@ git remote add github git@github.com:roukaixin/dwm.git
 
 ```
 
-![image-20230507075646997](assets/arch-basic-install.assets/image-20230507075646997.png " ")
+![image-20230507075646997](assets/arch-basic-install.assets/image-20230507075646997.png &#34; &#34;)
 
-![image-20230507080205654](assets/arch-basic-install.assets/image-20230507080205654.png " ")
+![image-20230507080205654](assets/arch-basic-install.assets/image-20230507080205654.png &#34; &#34;)
 
 
 
-> 把官方的 dwm 源码分别提交到 gitee 和 github 仓库
+&gt; 把官方的 dwm 源码分别提交到 gitee 和 github 仓库
 
 ```bash
 # 切换到 sockless 本地分支
@@ -824,7 +824,7 @@ git push github master:main
 # 拉取
 git pull sockless master:sockless
 # 在主分支上合并 sockless 分支
-git merge sockless -m "更新 dwm 官方代码"
+git merge sockless -m &#34;更新 dwm 官方代码&#34;
 ```
 
 
@@ -877,7 +877,7 @@ vim config.h
 
 
 
-![image-20220924013208040](assets/arch-basic-install.assets/image-20220924013208040.png " ")
+![image-20220924013208040](assets/arch-basic-install.assets/image-20220924013208040.png &#34; &#34;)
 
 
 
@@ -902,11 +902,11 @@ fc-list |grep Nerd
 “Symbols Nerd Font:pixelsize=14:type=2048-em:antialias=true:autohint=true”
 ```
 
-![image-20220924233710569](assets/arch-basic-install.assets/image-20220924233710569.png " ")
+![image-20220924233710569](assets/arch-basic-install.assets/image-20220924233710569.png &#34; &#34;)
 
 
 
-![image-20221001210909598](assets/arch-basic-install.assets/image-20221001210909598.png " ")
+![image-20221001210909598](assets/arch-basic-install.assets/image-20221001210909598.png &#34; &#34;)
 
 
 
@@ -931,12 +931,12 @@ https://www.nerdfonts.com/cheat-sheet
 
 
 # 设置完成后重新编译安装
-make && sudo make clean install
+make &amp;&amp; sudo make clean install
 ```
 
-![image-20220925134618485](assets/arch-basic-install.assets/image-20220925134618485.png " ")
+![image-20220925134618485](assets/arch-basic-install.assets/image-20220925134618485.png &#34; &#34;)
 
-![image-20220925134649175](assets/arch-basic-install.assets/image-20220925134649175.png " ")
+![image-20220925134649175](assets/arch-basic-install.assets/image-20220925134649175.png &#34; &#34;)
 
 
 
@@ -970,14 +970,14 @@ time
 如图片
 ```
 
-![image-20221001202825882](assets/arch-basic-install.assets/image-20221001202825882.png " ")
+![image-20221001202825882](assets/arch-basic-install.assets/image-20221001202825882.png &#34; &#34;)
 
 
 
 
 
 #### 设置快捷键
-在 config.h 头部加入 `#include <X11/XF86keysym.h>`
+在 config.h 头部加入 `#include &lt;X11/XF86keysym.h&gt;`
 
 ##### 设置音量快捷键
 **方法一：脚本模式**
@@ -989,7 +989,7 @@ amixer sset Master toggle
 # 减少音量
 amixer sset Master 5%- unmute
 # 增大音量
-amixer sset Master 5%+ unmute
+amixer sset Master 5%&#43; unmute
 ```
 
 ```bash
@@ -1002,7 +1002,7 @@ cd script
 # 编写加音量的脚本
 vim volup.sh
 #! /bin/bash
-amixer sset Master 3%+ unmute
+amixer sset Master 3%&#43; unmute
 # 编写减音量的脚本
 vim voldown.sh
 #! /bin/bash
@@ -1013,7 +1013,7 @@ vim voltoggle.sh
 amixer sset Master toggle
 
 # 编写完脚本之后给脚本可执行的权限
-chmod +x volup.sh voldown.sh voltoggle.sh
+chmod &#43;x volup.sh voldown.sh voltoggle.sh
 
 # 注意 ： 把 script 目录归到普通用户组
 ```
@@ -1022,20 +1022,20 @@ chmod +x volup.sh voldown.sh voltoggle.sh
 
 ```bash
 // 增加音量
-static const char *up_vol[]   = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "+10%",   NULL };
+static const char *up_vol[]   = { &#34;pactl&#34;, &#34;set-sink-volume&#34;, &#34;@DEFAULT_SINK@&#34;, &#34;&#43;10%&#34;,   NULL };
 // 减少音量
-static const char *down_vol[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "-10%",   NULL };
+static const char *down_vol[] = { &#34;pactl&#34;, &#34;set-sink-volume&#34;, &#34;@DEFAULT_SINK@&#34;, &#34;-10%&#34;,   NULL };
 // 切换动静音量
-static const char *mute_vol[] = { "pactl", "set-sink-mute",   "@DEFAULT_SINK@", "toggle", NULL };
+static const char *mute_vol[] = { &#34;pactl&#34;, &#34;set-sink-mute&#34;,   &#34;@DEFAULT_SINK@&#34;, &#34;toggle&#34;, NULL };
 
 static const Key keys[] = {
        ...
        
-        // 切换静音（笔记本系统设置，比如我的是 fn + f5）
+        // 切换静音（笔记本系统设置，比如我的是 fn &#43; f5）
         { 0, XF86XK_AudioMute,        spawn, {.v = mute_vol } },
-         // 降低音量（笔记本系统设置，比如我的是 fn + f6）
+         // 降低音量（笔记本系统设置，比如我的是 fn &#43; f6）
         { 0, XF86XK_AudioLowerVolume, spawn, {.v = down_vol } },
-        // 增加音量（笔记本系统设置，比如我的是 fn + f7）
+        // 增加音量（笔记本系统设置，比如我的是 fn &#43; f7）
         { 0, XF86XK_AudioRaiseVolume, spawn, {.v = up_vol } },
        
        ...
@@ -1048,16 +1048,16 @@ static const Key keys[] = {
 
 ```bash
 // 增加亮度
-static const char *brighter[] = { "brightnessctl", "set", "10%+", NULL };
+static const char *brighter[] = { &#34;brightnessctl&#34;, &#34;set&#34;, &#34;10%&#43;&#34;, NULL };
 // 降低亮度
-static const char *dimmer[]   = { "brightnessctl", "set", "10%-", NULL };
+static const char *dimmer[]   = { &#34;brightnessctl&#34;, &#34;set&#34;, &#34;10%-&#34;, NULL };
 
 static const Key keys[] = {
        ...
        
-        // 降低亮度（笔记本系统设置，比如我的是 fn + f1）
+        // 降低亮度（笔记本系统设置，比如我的是 fn &#43; f1）
         { 0, XF86XK_MonBrightnessDown, spawn, {.v = dimmer } },
-        // 增加亮度（笔记本系统设置，比如我的是 fn + f2）
+        // 增加亮度（笔记本系统设置，比如我的是 fn &#43; f2）
         { 0, XF86XK_MonBrightnessUp,   spawn, {.v = brighter } },
        
        ...
@@ -1101,7 +1101,7 @@ vim config.h
 
 
 
-![image-20220924013544614](assets/arch-basic-install.assets/image-20220924013544614.png " ")
+![image-20220924013544614](assets/arch-basic-install.assets/image-20220924013544614.png &#34; &#34;)
 
 
 
@@ -1136,10 +1136,10 @@ feh --bg-fill --randomize ~/wallpaper/*.png(壁纸路径)
 while feh --bg-fill --randomize ~/wallpaper/*.png(壁纸路径)
 do
 	sleep 60   # 睡多少秒
-done &
+done &amp;
 ```
 
-![image-20220924120805094](assets/arch-basic-install.assets/image-20220924120805094.png " ")
+![image-20220924120805094](assets/arch-basic-install.assets/image-20220924120805094.png &#34; &#34;)
 
 
 
@@ -1160,7 +1160,7 @@ sudo pacman -S network-manager-applet
 
 
 
-> 开启热点
+&gt; 开启热点
 
 ```bash
 # 安装 linux-wifi-hotspot
@@ -1184,7 +1184,7 @@ sudo create_ap wlo1 wlo1 arch 12345678
 sudo pacman -S flameshot 
 ```
 
-绑定 `dwm` 快捷键，在 `config.def.conf` 中加入 `{ Mod1Mask,                     XK_a,      spawn,          SHCMD("flameshot gui") },    //截图` （快捷键：alt + a）
+绑定 `dwm` 快捷键，在 `config.def.conf` 中加入 `{ Mod1Mask,                     XK_a,      spawn,          SHCMD(&#34;flameshot gui&#34;) },    //截图` （快捷键：alt &#43; a）
 
 
 
@@ -1217,13 +1217,13 @@ sudo pacman -S ranger
 ranger --copy-config=all
 ```
 
-![image-20230525000537299](assets/arch-basic-install.assets/image-20230525000537299.png " ")
+![image-20230525000537299](assets/arch-basic-install.assets/image-20230525000537299.png &#34; &#34;)
 
 ##### 安装图标
 
 ```bash
 git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
-echo "default_linemode devicons" >> $HOME/.config/ranger/rc.conf
+echo &#34;default_linemode devicons&#34; &gt;&gt; $HOME/.config/ranger/rc.conf
 ```
 
 
@@ -1254,7 +1254,7 @@ sudo pacman -S ffmpegthumbnailer
 
 
 
-![image-20230525011949986](assets/arch-basic-install.assets/image-20230525011949986.png " ")
+![image-20230525011949986](assets/arch-basic-install.assets/image-20230525011949986.png &#34; &#34;)
 
 
 
@@ -1294,18 +1294,18 @@ paru -S wps-office-mui-zh-cn
 
 #### clash
 
-> 下载配置文件
+&gt; 下载配置文件
 
 ```bash
-wget -o confing.yaml 订阅地址&flag=clash
+wget -o confing.yaml 订阅地址&amp;flag=clash
 ```
 
 
 
-> docker compose
+&gt; docker compose
 
 ```yaml
-version: "3.8"
+version: &#34;3.8&#34;
 
 services:
   clash:
@@ -1316,15 +1316,15 @@ services:
     dns:
       - 114.114.114.114
     ports:
-      - "7890:7890"
-      - "7891:7891"
-      - "9090:9090" # The External Controller (RESTful API)
-    network_mode: "bridge"
+      - &#34;7890:7890&#34;
+      - &#34;7891:7891&#34;
+      - &#34;9090:9090&#34; # The External Controller (RESTful API)
+    network_mode: &#34;bridge&#34;
 ```
 
 
 
-> 终端代理
+&gt; 终端代理
 
 ```bash
 sudo pacman -S proxychains-ng
@@ -1341,7 +1341,7 @@ socks5	127.0.0.1	7891
 
 
 
-> google 使用代理
+&gt; google 使用代理
 
 ```bash
 # google-chrome-stable： 谷歌的命理
@@ -1377,7 +1377,7 @@ paru -S qqmusic-bin
 
 地址：`https://github.com/listen1/listen1_desktop`
 
-![image-20230608194903103](assets/arch-basic-install.assets/image-20230608194903103.png " ")
+![image-20230608194903103](assets/arch-basic-install.assets/image-20230608194903103.png &#34; &#34;)
 
 这里我选择的是 `AppImage` 格式，如果想在 rofi 中可以打开，那么要先给这个文件可执行的权限，并把他软链接到 `/usr/local/bin` 目录下。
 
@@ -1421,7 +1421,7 @@ ln -sf /opt/apps/com.qq.weixin.deepin/files/run.sh /usr/local/bin/weixin
 
 **注意：如果使用有那些框框，可以试着改一下启动命令的一些东西，本人使用 deepin-wine5 是比较好用的，还有一些 wine 的容器（这个需要自己去了解）**
 
-![image-20230608195843418](assets/arch-basic-install.assets/image-20230608195843418.png " ")
+![image-20230608195843418](assets/arch-basic-install.assets/image-20230608195843418.png &#34; &#34;)
 
 
 
@@ -1469,7 +1469,7 @@ paru -S redisinsight
 
 
 
-> 官方地址
+&gt; 官方地址
 
 ```bash
 https://redis.com/redis-enterprise/redis-insight/
@@ -1500,7 +1500,7 @@ sudo pacman -S code
 
    修改 `/usr/share/applications/code-oss.desktop` 文件中的启动命令，加入 `--enable-wayland-ime` 内容
 
-   ![image-20231224220012098](assets/arch-basic-install.assets/image-20231224220012098.png " ")
+   ![image-20231224220012098](assets/arch-basic-install.assets/image-20231224220012098.png &#34; &#34;)
 
 ---
 

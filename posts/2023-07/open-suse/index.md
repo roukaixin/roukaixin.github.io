@@ -39,7 +39,7 @@ EDITOR=vim visudo
 sudo zypper install git
 
 # 创建 wm 并进入文件夹
-mkdir wm && cd ~/wm
+mkdir wm &amp;&amp; cd ~/wm
 
 # 克隆 dwm
 git clone https://github.com/roukaixin/yaocccc-dwm
@@ -61,7 +61,7 @@ sudo make clean install
 
 ```bash
 # 克隆
-cd ~/wm && git clone https://gitee.com/rouxin/st && cd st
+cd ~/wm &amp;&amp; git clone https://gitee.com/rouxin/st &amp;&amp; cd st
 
 # 修改 config.mk
 sudo zypper install neovim ncurses-devel
@@ -72,7 +72,7 @@ nvim config.mk
 sudo make clean install
 ```
 
-![image-20230715175157860](open-suse.assets/image-20230715175157860.png  " ")
+![image-20230715175157860](open-suse.assets/image-20230715175157860.png  &#34; &#34;)
 
 
 
@@ -80,7 +80,7 @@ sudo make clean install
 
 ```bash
 # 克隆
-cd ~/wm && git clone https://github.com/FT-Labs/picom 
+cd ~/wm &amp;&amp; git clone https://github.com/FT-Labs/picom 
 
 # 安装包
 sudo zypper install meson libev-devel xcb-util-renderutil-devel xcb-util-image-devel libpixman-1-0-devel xcb-util-devel uthash-devel libconfig-devel pcre2-devel Mesa-libGL-devel Mesa-libEGL-devel dbus-1-devel
@@ -97,7 +97,7 @@ ninja -C build install
 
 下载地址：`https://github.com/ryanoasis/nerd-fonts/releases/`
 
-![image-20230714175135561](open-suse.assets/image-20230714175135561.png " ")
+![image-20230714175135561](open-suse.assets/image-20230714175135561.png &#34; &#34;)
 
 下载需要的字体，本人使用 dwm 的字体为：`JetBrainsMono.zip`，下载地址为：`https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip`
 
@@ -109,7 +109,7 @@ sudo mkdir /usr/share/fonts/JetBrainsMono/
 cp JetBrainsMono.tar.xz /usr/share/fonts/JetBrainsMono/
 
 # 解压，如果没有 unzip 命令，使用 sudo dnf install unzip 安装
-cd /usr/share/fonts/JetBrainsMono/ && sudo unzip JetBrainsMono.zip
+cd /usr/share/fonts/JetBrainsMono/ &amp;&amp; sudo unzip JetBrainsMono.zip
 
 # 删除
 sudo rm -rf JetBrainsMono.zip
@@ -157,7 +157,7 @@ export LANGUAGE=zh_CN:en_US
 sudo zypper install fcitx5-devel fcitx5-chinese-addons-devel
 ```
 
-> 配置输入法
+&gt; 配置输入法
 
 ```bash
 # 编辑 /etc/environment，加入下面内容

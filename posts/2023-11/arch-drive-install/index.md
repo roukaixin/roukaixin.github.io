@@ -4,7 +4,7 @@
 
 ## 安装 NVIDIA 驱动
 
-> 安装驱动
+&gt; 安装驱动
 
 安装启动之前，先跟新一下 pacman 数据库。更新命令：`sudo pacman -Syyu`
 
@@ -21,7 +21,7 @@ sudo pacman -S nvidia-dkms
 
 
 
-> DRM 内核模式设置
+&gt; DRM 内核模式设置
 
 **这一步可以解决屏幕撕裂问题**
 
@@ -32,9 +32,9 @@ vim /etc/default/grub
 # 找到 GRUB_CMDLINE_LINUX_DEFAULT 这一项在后面加入 nvidia-drm.modeset=1
 ```
 
-![image-20230507044757042](arch-drive-install.assets/image-20230507044757042.png " ")
+![image-20230507044757042](arch-drive-install.assets/image-20230507044757042.png &#34; &#34;)
 
-![image-20230506101749305](arch-drive-install.assets/image-20230506101749305.png " ")
+![image-20230506101749305](arch-drive-install.assets/image-20230506101749305.png &#34; &#34;)
 
 
 
@@ -42,13 +42,13 @@ vim /etc/default/grub
 
 
 
-> 添加 initramfs 模块
+&gt; 添加 initramfs 模块
 
 在 `/etc/mkinitcpio.conf` 中找到  `MODULES=` 这一行在括号的后面加入`nvidia nvidia_modeset nvidia_uvm nvidia_drm`。修改之前先备份一下（`sudo cp /etc/mkinitcpio.conf /etc/mkinitcpio.conf.back`）
 
-![image-20230507045036585](arch-drive-install.assets/image-20230507045036585.png " ")
+![image-20230507045036585](arch-drive-install.assets/image-20230507045036585.png &#34; &#34;)
 
-> 重新生成 `initramfs `
+&gt; 重新生成 `initramfs `
 
 ```bash
 # 输入 sudo mkinitcpio -P 命令生成 initramfs
@@ -61,9 +61,9 @@ sudo mkinitcpio -P
 
 
 
-> 校验是否安装成功
+&gt; 校验是否安装成功
 
-打开终端，输入 `nvidia-smi` 命令，出现 `NVIDIA-SMI has failed because it couldn't communicate with the NIVIDIA driver. Make sure that the latest NVIDIA driver is installed and running`  ，那就说明没有安装成功。
+打开终端，输入 `nvidia-smi` 命令，出现 `NVIDIA-SMI has failed because it couldn&#39;t communicate with the NIVIDIA driver. Make sure that the latest NVIDIA driver is installed and running`  ，那就说明没有安装成功。
 
 **解决方案：重启电脑，如果重启电脑还是不行，看看上面修改的配置有没有对，如果还是不行在安装一遍**
 
@@ -73,7 +73,7 @@ sudo mkinitcpio -P
 
 **下面配置针对于 x 服务器，并使用桌面环境（dwm）**
 
-> 创建 xorg.conf（10-nvidia-drm-outputclass.conf）
+&gt; 创建 xorg.conf（10-nvidia-drm-outputclass.conf）
 
 在 `/etc/X11/xorg.conf.d/` 目录下新建 `10-nvidia-drm-outputclass.conf`。
 
@@ -84,20 +84,20 @@ sudo mkinitcpio -P
 ```bash
 vim /etc/X11/xorg.conf.d/10-nvidia-drm-outputclass.conf
 
-Section "OutputClass"
-    Identifier "intel"
-    MatchDriver "i915"
-    Driver "modesetting"
+Section &#34;OutputClass&#34;
+    Identifier &#34;intel&#34;
+    MatchDriver &#34;i915&#34;
+    Driver &#34;modesetting&#34;
 EndSection
 
-Section "OutputClass"
-    Identifier "nvidia"
-    MatchDriver "nvidia-drm"
-    Driver "nvidia"
-    Option "AllowEmptyInitialConfiguration"
-    Option "PrimaryGPU" "yes"
-    ModulePath "/usr/lib/nvidia/xorg"
-    ModulePath "/usr/lib/xorg/modules"
+Section &#34;OutputClass&#34;
+    Identifier &#34;nvidia&#34;
+    MatchDriver &#34;nvidia-drm&#34;
+    Driver &#34;nvidia&#34;
+    Option &#34;AllowEmptyInitialConfiguration&#34;
+    Option &#34;PrimaryGPU&#34; &#34;yes&#34;
+    ModulePath &#34;/usr/lib/nvidia/xorg&#34;
+    ModulePath &#34;/usr/lib/xorg/modules&#34;
 EndSection
 ```
 
@@ -105,7 +105,7 @@ EndSection
 
 
 
-> 使用 startx 启动
+&gt; 使用 startx 启动
 
 这里以**dwm**为例，如果你是其他桌面管理器，请参阅[这里](https://wiki.archlinux.org/index.php/NVIDIA_Optimus#Display_Managers)。如果不配置你将会获得黑屏。
 
@@ -119,23 +119,23 @@ xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
 ```
 
-![image-20230507052853861](arch-drive-install.assets/image-20230507052853861.png " ")
+![image-20230507052853861](arch-drive-install.assets/image-20230507052853861.png &#34; &#34;)
 
 **如果启动之后 dpi 设置不正确，那么还需要在 `xrandr --auto` 下面一行加入 `xrandr --dpi 96`**
 
 
 
-> 安装 NVIDIA 软件包 （可选）
+&gt; 安装 NVIDIA 软件包 （可选）
 
 ```bash
 sudo pacman -S nvidia-settings nvidia-utils
 ```
 
-![image-20230507052136496](arch-drive-install.assets/image-20230507052136496.png " ")
+![image-20230507052136496](arch-drive-install.assets/image-20230507052136496.png &#34; &#34;)
 
 
 
-> 检查3D
+&gt; 检查3D
 
 检查是否正常使用 N 卡来输出。建议检查一下
 
@@ -147,7 +147,7 @@ sudo pacman -S mesa-utils
 glxinfo | grep NVIDIA
 ```
 
-![image-20230507053421591](arch-drive-install.assets/image-20230507053421591.png " ")
+![image-20230507053421591](arch-drive-install.assets/image-20230507053421591.png &#34; &#34;)
 
 
 
@@ -160,7 +160,7 @@ paru -S libva-nvidia-driver
 
 
 
-> 配置
+&gt; 配置
 
 方法一：
 
@@ -173,10 +173,10 @@ export LIBVA_DRIVERS_PATH=/usr/lib/dri/
 export VDPAU_DRIVER=nvidia
 
 # 修改 .xinitrc 文件
-[ -f ~/.xprofile ] && . ~/.xprofile
+[ -f ~/.xprofile ] &amp;&amp; . ~/.xprofile
 ```
 
-![image-20230507053717011](arch-drive-install.assets/image-20230507053717011.png " ")
+![image-20230507053717011](arch-drive-install.assets/image-20230507053717011.png &#34; &#34;)
 
 方法二：
 
@@ -187,13 +187,13 @@ export LIBVA_DRIVERS_PATH=/usr/lib/dri/
 export VDPAU_DRIVER=nvidia
 ```
 
-![image-20230625081349283](arch-drive-install.assets/image-20230625081349283.png " ")
+![image-20230625081349283](arch-drive-install.assets/image-20230625081349283.png &#34; &#34;)
 
 **注意：一定要在 `exec dwm` 之前**
 
 
 
-> 验证 VA-API
+&gt; 验证 VA-API
 
 ```bash
 # 安装软件包，如果不安装这个包，那么 vainfo 无法使用
@@ -204,9 +204,9 @@ sudo pacman -S libva-utils
 
 
 
-![image-20230507055147711](arch-drive-install.assets/image-20230507055147711.png " ")
+![image-20230507055147711](arch-drive-install.assets/image-20230507055147711.png &#34; &#34;)
 
-> 验证VDPAU
+&gt; 验证VDPAU
 
 ```bash
 # 安装 vdpauinfo，不安装无法使用 vdpauinfo 命令
@@ -217,7 +217,7 @@ sudo pacman -S vdpauinfo
 
 验证 VDPAU 是否正常工作，运行`vdpauinfo`，出现下图就表示成功
 
-![image-20230507055418720](arch-drive-install.assets/image-20230507055418720.png " ")
+![image-20230507055418720](arch-drive-install.assets/image-20230507055418720.png &#34; &#34;)
 
 
 

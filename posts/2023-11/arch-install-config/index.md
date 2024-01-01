@@ -4,7 +4,7 @@
 
 ## 配置中国源和开启32位软件包
 
-> 配置中国镜像源
+&gt; 配置中国镜像源
 ```bash
 # 编辑 /etc/pacman.d/mirrorlist，如果在安装系统时，关闭了 reflector 服务和配置了 mirrorlist，那么这个可以不用改，为了保险起见，还是需要看一下和安装的时候有没有区别。
 vim /etc/pacman.d/mirrorlist
@@ -13,11 +13,11 @@ vim /etc/pacman.d/mirrorlist
 Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
 ```
 
-{{< admonition info "提醒" true >}}
+{{&lt; admonition info &#34;提醒&#34; true &gt;}}
 还可以添加其他源，例如：清华源(Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch)，阿里云（Server = https://mirrors.aliyun.com/archlinux/$repo/os/$arch）
-{{< /admonition >}}
+{{&lt; /admonition &gt;}}
 
-> 开启32位软件包
+&gt; 开启32位软件包
 ```bash
 # 编辑 /etc/pacman.conf 
 vim /etc/pacman.conf
@@ -27,17 +27,17 @@ vim /etc/pacman.conf
 Include = /etc/pacman.d/mirrorlist
 ```
 
-> 添加 aur 源
+&gt; 添加 aur 源
 ```bash
 # 在最后面添加
 [archlinuxcn]
 Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
 ```
 
-{{< admonition info "提醒" true >}}
+{{&lt; admonition info &#34;提醒&#34; true &gt;}}
 其他 aur 源。清华源（Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch），
 阿里云源（Server = https://mirrors.aliyun.com/archlinuxcn/$arch）
-{{< /admonition >}}
+{{&lt; /admonition &gt;}}
 
 **必须执行以下命令以添加密钥签名**
 
@@ -65,14 +65,14 @@ EDITOR=vim visudo
 找到 # %wheel ALL=(ALL:ALL)ALL 并把 # 号去掉
 ```
 
-![image-20230625065238368](arch-install-config.assets/image-20230625065238368.png " ")
+![image-20230625065238368](arch-install-config.assets/image-20230625065238368.png &#34; &#34;)
 
 
-{{< admonition info "提醒" true >}}
+{{&lt; admonition info &#34;提醒&#34; true &gt;}}
 **我自己个人是注释掉 `%wheel ALL=(ALL:ALL)ALL` 这一行，方便之后使用 `sudo` 时不需要输入密码。**
 
 **如果不想使用 `sudo` 命令时输入密码，可以注释掉 `%wheel ALL=(ALL:ALL) NOPASSWD: ALL`。两个选择一个注释掉既可以了**
-{{< /admonition >}}
+{{&lt; /admonition &gt;}}
 
 
 ## 安装软件源（AUR）
@@ -99,7 +99,7 @@ pacman -S ttf-dejavu  wqy-zenhei wqy-microhei noto-fonts-emoji
 
 ## 安装中文输入法
 
-> 安装 fcitx5
+&gt; 安装 fcitx5
 
 ```bash
 # fcitx5-im : 基础包和模块
@@ -109,8 +109,8 @@ pacman -S ttf-dejavu  wqy-zenhei wqy-microhei noto-fonts-emoji
 pacman -S fcitx5-im  fcitx5-chinese-addons
 ```
 
-> 配置输入法
->
+&gt; 配置输入法
+&gt;
 
 ```bash
 # 编辑 /etc/environment，加入下面内容
@@ -124,7 +124,7 @@ SDL_IM_MODULE=fcitx
 GLFW_IM_MODULE=ibus
 ```
 
-> 安装词库
+&gt; 安装词库
 
 ```bash
 # fcitx5-pinyin-zhwiki : 中文维基百科创建的词库		
@@ -145,9 +145,9 @@ pacman -S udisks2 udiskie ntfs-3g  dolphin
 systemctl enable udisks2
 ```
 
-{{< admonition info "提醒" true >}}
+{{&lt; admonition info &#34;提醒&#34; true &gt;}}
 `systemctl enable udisks2` 根据个人是否开启，如果不开启，可以在启动窗口管理器的时候在启动也行
-{{< /admonition >}}
+{{&lt; /admonition &gt;}}
 
 
 ---

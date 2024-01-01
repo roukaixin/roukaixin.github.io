@@ -21,21 +21,21 @@
 
 解决方法：
 
-- `ctrl + shel + a` 打开搜索 `actions`，搜索 `choose boot java runtime for the ide`
+- `ctrl &#43; shel &#43; a` 打开搜索 `actions`，搜索 `choose boot java runtime for the ide`
 
 
 
-![image-20231217230832950](assets/idea-%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98.assets/image-20231217230832950-17028257178791.png " ")
+![image-20231217230832950](assets/idea-%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98.assets/image-20231217230832950-17028257178791.png &#34; &#34;)
 
 
 
 - 搜索后按下回车键打开它
 
-![image-20231217231143620](assets/idea-%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98.assets/image-20231217231143620-17028259070872.png " ")
+![image-20231217231143620](assets/idea-%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98.assets/image-20231217231143620-17028259070872.png &#34; &#34;)
 
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**选择第一个即可，b后面的数字越大版本越新**
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;**选择第一个即可，b后面的数字越大版本越新**
 
 - 现在之后安装重新 idea 即可
 

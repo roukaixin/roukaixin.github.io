@@ -9,7 +9,7 @@
 
 ## 安装
 
-> 下载`iso` 镜像
+&gt; 下载`iso` 镜像
 
 下载地址：`https://mirrors.tuna.tsinghua.edu.cn/`
 
@@ -19,7 +19,7 @@
 
 
 
-> 安装
+&gt; 安装
 
 创建启动u盘，可视化安装教程。这里我安装的是最小化安装，因为我使用的是dwm窗口管理器
 
@@ -32,8 +32,8 @@
 ### 替换为国内源
 
 ```bash
-sudo sed -e 's|^metalink=|#metalink=|g' \
-         -e 's|^#baseurl=http://download.example/pub/fedora/linux|baseurl=https://mirrors.tuna.tsinghua.edu.cn/fedora|g' \
+sudo sed -e &#39;s|^metalink=|#metalink=|g&#39; \
+         -e &#39;s|^#baseurl=http://download.example/pub/fedora/linux|baseurl=https://mirrors.tuna.tsinghua.edu.cn/fedora|g&#39; \
          -i.bak \
          /etc/yum.repos.d/fedora.repo \
          /etc/yum.repos.d/fedora-modular.repo \
@@ -70,7 +70,7 @@ EDITOR=vim visudo
 
 ### 配置窗口管理器
 
-> xorg 服务器
+&gt; xorg 服务器
 
 ```bash
 # 安装依赖包
@@ -89,14 +89,14 @@ exec dwm
 
 
 
-> dwm
+&gt; dwm
 
 ```bash
 # 安装依赖包
 sudo dnf install cmake gcc libX11-devel libXft-devel libXinerama-devel git 
 
 # 克隆 dwm
-cd ~ && mkdir wm
+cd ~ &amp;&amp; mkdir wm
 git clone https://github.com/roukaixin/yaocccc-dwm
 
 # 编译
@@ -107,7 +107,7 @@ sudo make clean install
 
 
 
-> st
+&gt; st
 
 ```bash
 # 克隆 st
@@ -119,7 +119,7 @@ sudo make clean install
 
 
 
-> picom
+&gt; picom
 
 ```bash
 # 安装依赖包
@@ -138,7 +138,7 @@ ninja -C build install
 
 
 
-> 其他工具包
+&gt; 其他工具包
 
 ```bash
 sudo dnf install network-manager-applet flameshot dunst feh neofetch neovim acpi xsetroot
@@ -146,7 +146,7 @@ sudo dnf install network-manager-applet flameshot dunst feh neofetch neovim acpi
 
 
 
-> 安装字体
+&gt; 安装字体
 
 下载地址：`https://github.com/ryanoasis/nerd-fonts/releases/`
 
@@ -162,7 +162,7 @@ sudo mkdir /usr/share/fonts/JetBrainsMono/
 cp JetBrainsMono.tar.xz /usr/share/fonts/JetBrainsMono/
 
 # 解压，如果没有 unzip 命令，使用 sudo dnf install unzip 安装
-cd /usr/share/fonts/JetBrainsMono/ && sudo unzip JetBrainsMono.zip
+cd /usr/share/fonts/JetBrainsMono/ &amp;&amp; sudo unzip JetBrainsMono.zip
 
 # 删除
 sudo rm -rf JetBrainsMono.zip
@@ -203,7 +203,7 @@ sudo dnf -y install dnf-plugins-core
 sudo dnf config-manager \
     --add-repo \
     https://download.docker.com/linux/fedora/docker-ce.repo
-sudo sed -i 's+https://download.docker.com+https://mirrors.tuna.tsinghua.edu.cn/docker-ce+' /etc/yum.repos.d/docker-ce.repo
+sudo sed -i &#39;s&#43;https://download.docker.com&#43;https://mirrors.tuna.tsinghua.edu.cn/docker-ce&#43;&#39; /etc/yum.repos.d/docker-ce.repo
 
 # 安装 docker 引擎
 sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
@@ -230,7 +230,7 @@ flatpak install flathub io.typora.Typora
 
 ### 安装浏览器
 
-> google chrome
+&gt; google chrome
 
 ```bash
 # 下载
@@ -241,7 +241,7 @@ sudo dnf install ./google-chrome-stable_current_x86_64.rpm
 
 
 
-> edge
+&gt; edge
 
 ```bash
 # 导入GPG密钥
