@@ -244,6 +244,29 @@ systemctl start bluetooth.service
 
 参考教程：`https://cn.linux-console.net/?p=16637`
 
+
+
+## 电源管理
+
+安装 ： `sudo pacman -S tlp`
+
+&gt; 启动
+
+```bash
+systemctl start tlp.service
+systemctl enable tlp.service
+systemctl mask systemd-rfkill.service
+systemctl mask systemd-rfkill.socket
+```
+
+参考教程：https://wiki.archlinux.org/title/TLP
+
+
+
+&gt; GUI
+
+安装 ： `paru -S tlpui`
+
 ---
 
 > 作者: 不北咪  
