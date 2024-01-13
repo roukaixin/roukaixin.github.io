@@ -786,9 +786,9 @@ params:
   
 menu:
   main:
-    - identifier: "posts"
+    - identifier: "thumbnail"
       name: "文章"
-      url: "/posts/"
+      url: "/thumbnail/"
       # 顺序
       weight: 1
     - identifier: "categories"
@@ -852,8 +852,8 @@ sitemap:
   
 # Permalinks 配置 (https://gohugo.io/content-management/urls#permalinks)
 Permalinks:
-  # posts: ":year/:month/:filename", 文章的路径名
-  posts: "posts/:year-:month/:filename"
+  # thumbnail: ":year/:month/:filename", 文章的路径名
+  posts: "thumbnail/:year-:month/:filename"
 
 # 隐私信息配置 (https://gohugo.io/about/hugo-and-gdpr/)
 privacy:

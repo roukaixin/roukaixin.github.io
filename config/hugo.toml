@@ -852,7 +852,7 @@ theme = "FixIt"
   
 # Permalinks 配置 (https://gohugo.io/content-management/urls#permalinks)
 [Permalinks]
-  # posts = ":year/:month/:filename", 文章的路径名
+  # thumbnail = ":year/:month/:filename", 文章的路径名
   posts = "posts/:year-:month/:filename"
 
 # 隐私信息配置 (https://gohugo.io/about/hugo-and-gdpr/)
