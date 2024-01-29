@@ -1,3 +1,4 @@
+https://roukaixin.github.io/posts/arch/arch-software-yazi/
 https://roukaixin.github.io/posts/arch/arch-drive-install/
 https://roukaixin.github.io/posts/arch/arch-config-install/
 https://roukaixin.github.io/friends/
