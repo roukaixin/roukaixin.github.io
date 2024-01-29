@@ -4,7 +4,7 @@
 
 ## 2024
 
-- 01-29 [arch 基础安装到日常使用与美化 - wine](https://roukaixin.github.io/posts/arch/arch-software-yazi/ "2024-01-29 23:00:00")
+- 01-29 [arch 基础安装到日常使用与美化 - yazi](https://roukaixin.github.io/posts/arch/arch-software-yazi/ "2024-01-29 23:00:00")
 
 ## 2023
 
