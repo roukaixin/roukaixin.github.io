@@ -4,9 +4,13 @@
 
 ## 2024
 
+共计 1 篇文章
+
 - 01-29 [arch 基础安装到日常使用与美化 - yazi](https://roukaixin.github.io/posts/arch/arch-software-yazi/ "2024-01-29 23:00:00")
 
 ## 2023
+
+共计 11 篇文章
 
 - 11-14 [arch 基础安装到日常使用与美化 - 驱动安装](https://roukaixin.github.io/posts/arch/arch-drive-install/ "2023-11-14 21:00:00")
 - 11-12 [arch 基础安装到日常使用与美化 - 安装后配置](https://roukaixin.github.io/posts/arch/arch-config-install/ "2023-11-12 21:00:00")
