@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>不北咪</title><link>https://roukaixin.github.io/</link><description>不北咪</description><generator>Hugo 0.145.0 &amp; FixIt v0.3.17-8b402129</generator><language>zh-CN</language><managingEditor>a3427173515@163.com (不北咪)</managingEditor><webMaster>a3427173515@163.com (不北咪)</webMaster><lastBuildDate>Mon, 29 Jan 2024 23:00:00 +0800</lastBuildDate><atom:link href="https://roukaixin.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>arch 基础安装到日常使用与美化 - yazi</title><link>https://roukaixin.github.io/posts/arch/arch-software-yazi/</link><pubDate>Mon, 29 Jan 2024 23:00:00 +0800</pubDate><author>a3427173515@163.com (不北咪)</author><guid>https://roukaixin.github.io/posts/arch/arch-software-yazi/</guid><category domain="https://roukaixin.github.io/categories/linux/">Linux</category><description>&lt;img src="https://roukaixin.github.io/posts/thumbnail/arch/arch-software-yazi.png" alt="featured image" referrerpolicy="no-referrer">&lt;h2 id="yazi" class="heading-element">&lt;span>1、yazi&lt;/span>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>不北咪</title><link>https://roukaixin.github.io/</link><description>不北咪</description><generator>Hugo 0.148.2 &amp; FixIt v0.3.20</generator><language>zh-CN</language><managingEditor>a3427173515@163.com (不北咪)</managingEditor><webMaster>a3427173515@163.com (不北咪)</webMaster><lastBuildDate>Mon, 29 Jan 2024 23:00:00 +0800</lastBuildDate><atom:link href="https://roukaixin.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>arch 基础安装到日常使用与美化 - yazi</title><link>https://roukaixin.github.io/posts/arch/arch-software-yazi/</link><pubDate>Mon, 29 Jan 2024 23:00:00 +0800</pubDate><author>a3427173515@163.com (不北咪)</author><guid>https://roukaixin.github.io/posts/arch/arch-software-yazi/</guid><category domain="https://roukaixin.github.io/categories/linux/">Linux</category><description>&lt;img src="https://roukaixin.github.io/posts/thumbnail/arch/arch-software-yazi.png" alt="featured image" referrerpolicy="no-referrer">&lt;h2 class="heading-element" id="yazi">&lt;span>1、yazi&lt;/span>
  &lt;a href="#yazi" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>终端文件管理器和 &lt;code>ranger&lt;/code> 一样&lt;/p>
 &lt;p>官方文档地址：&lt;code>https://yazi-rs.github.io/&lt;/code>&lt;/p>
-&lt;h3 id="安装" class="heading-element">&lt;span>1.1、安装&lt;/span>
+&lt;h3 class="heading-element" id="安装">&lt;span>1.1、安装&lt;/span>
  &lt;a href="#%e5%ae%89%e8%a3%85" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -15,12 +15,12 @@
 &lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo pacman -S yazi ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="配置" class="heading-element">&lt;span>1.2、配置&lt;/span>
+&lt;/div>&lt;h3 class="heading-element" id="配置">&lt;span>1.2、配置&lt;/span>
  &lt;a href="#%e9%85%8d%e7%bd%ae" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h3>&lt;p>参考地址：&lt;code>https://yazi-rs.github.io/docs/tips&lt;/code>&lt;/p>
-&lt;h4 id="全边框" class="heading-element">&lt;span>1.2.1、全边框&lt;/span>
+&lt;h4 class="heading-element" id="全边框">&lt;span>1.2.1、全边框&lt;/span>
  &lt;a href="#%e5%85%a8%e8%be%b9%e6%a1%86" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -99,7 +99,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> end
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h4 id="软链接符号" class="heading-element">&lt;span>1.2.2、软链接符号&lt;/span>
+&lt;/div>&lt;h4 class="heading-element" id="软链接符号">&lt;span>1.2.2、软链接符号&lt;/span>
  &lt;a href="#%e8%bd%af%e9%93%be%e6%8e%a5%e7%ac%a6%e5%8f%b7" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -132,7 +132,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gi">&lt;/span> end
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h4 id="显示用户和用户组" class="heading-element">&lt;span>1.2.3、显示用户和用户组&lt;/span>
+&lt;/div>&lt;h4 class="heading-element" id="显示用户和用户组">&lt;span>1.2.3、显示用户和用户组&lt;/span>
  &lt;a href="#%e6%98%be%e7%a4%ba%e7%94%a8%e6%88%b7%e5%92%8c%e7%94%a8%e6%88%b7%e7%bb%84" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -239,7 +239,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 		ui.Paragraph(chunks[1], { left }),
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h4 id="文件不现实软链接" class="heading-element">&lt;span>1.2.4、文件不现实软链接&lt;/span>
+&lt;/div>&lt;h4 class="heading-element" id="文件不现实软链接">&lt;span>1.2.4、文件不现实软链接&lt;/span>
  &lt;a href="#%e6%96%87%e4%bb%b6%e4%b8%8d%e7%8e%b0%e5%ae%9e%e8%bd%af%e9%93%be%e6%8e%a5" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -303,7 +303,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">return&lt;/span> &lt;span class="n">spans&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kr">end&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>arch 基础安装到日常使用与美化 - 驱动安装</title><link>https://roukaixin.github.io/posts/arch/arch-drive-install/</link><pubDate>Tue, 14 Nov 2023 21:00:00 +0800</pubDate><author>a3427173515@163.com (不北咪)</author><guid>https://roukaixin.github.io/posts/arch/arch-drive-install/</guid><category domain="https://roukaixin.github.io/categories/linux/">Linux</category><description>&lt;img src="https://roukaixin.github.io/posts/thumbnail/arch/arch-drive-install.webp" alt="featured image" referrerpolicy="no-referrer">&lt;h2 id="安装-nvidia-驱动" class="heading-element">&lt;span>1、安装 NVIDIA 驱动&lt;/span>
+&lt;/div></description></item><item><title>arch 基础安装到日常使用与美化 - 驱动安装</title><link>https://roukaixin.github.io/posts/arch/arch-drive-install/</link><pubDate>Tue, 14 Nov 2023 21:00:00 +0800</pubDate><author>a3427173515@163.com (不北咪)</author><guid>https://roukaixin.github.io/posts/arch/arch-drive-install/</guid><category domain="https://roukaixin.github.io/categories/linux/">Linux</category><description>&lt;img src="https://roukaixin.github.io/posts/thumbnail/arch/arch-drive-install.webp" alt="featured image" referrerpolicy="no-referrer">&lt;h2 class="heading-element" id="安装-nvidia-驱动">&lt;span>1、安装 NVIDIA 驱动&lt;/span>
  &lt;a href="#%e5%ae%89%e8%a3%85-nvidia-%e9%a9%b1%e5%8a%a8" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -372,7 +372,7 @@
 &lt;p>校验是否安装成功&lt;/p>&lt;/blockquote>
 &lt;p>打开终端，输入 &lt;code>nvidia-smi&lt;/code> 命令，出现 &lt;code>NVIDIA-SMI has failed because it couldn't communicate with the NIVIDIA driver. Make sure that the latest NVIDIA driver is installed and running&lt;/code> ，那就说明没有安装成功。&lt;/p>
 &lt;p>&lt;strong>解决方案：重启电脑，如果重启电脑还是不行，看看上面修改的配置有没有对，如果还是不行在安装一遍&lt;/strong>&lt;/p>
-&lt;h3 id="仅使用-nvidia-显卡" class="heading-element">&lt;span>1.1、仅使用 NVIDIA 显卡&lt;/span>
+&lt;h3 class="heading-element" id="仅使用-nvidia-显卡">&lt;span>1.1、仅使用 NVIDIA 显卡&lt;/span>
  &lt;a href="#%e4%bb%85%e4%bd%bf%e7%94%a8-nvidia-%e6%98%be%e5%8d%a1" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -475,7 +475,7 @@
 &lt;/div>
 &lt;/div>&lt;p>&lt;figure>&lt;a class="lightgallery" href="assets/arch-drive-install.assets/image-20230507053421591.png" title=" " data-thumbnail="assets/arch-drive-install.assets/image-20230507053421591.png" data-sub-html="&lt;h2>image-20230507053421591&lt;/h2>&lt;p> &lt;/p>">&lt;img loading="lazy" src='assets/arch-drive-install.assets/image-20230507053421591.png' alt="image-20230507053421591">&lt;/a>&lt;figcaption class="image-caption"> &lt;/figcaption>
  &lt;/figure>&lt;/p>
-&lt;h4 id="配置视频硬解" class="heading-element">&lt;span>1.1.1、配置视频硬解&lt;/span>
+&lt;h4 class="heading-element" id="配置视频硬解">&lt;span>1.1.1、配置视频硬解&lt;/span>
  &lt;a href="#%e9%85%8d%e7%bd%ae%e8%a7%86%e9%a2%91%e7%a1%ac%e8%a7%a3" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -561,7 +561,7 @@
 &lt;/div>&lt;p>验证 VDPAU 是否正常工作，运行&lt;code>vdpauinfo&lt;/code>，出现下图就表示成功&lt;/p>
 &lt;p>&lt;figure>&lt;a class="lightgallery" href="assets/arch-drive-install.assets/image-20230507055418720.png" title=" " data-thumbnail="assets/arch-drive-install.assets/image-20230507055418720.png" data-sub-html="&lt;h2>image-20230507055418720&lt;/h2>&lt;p> &lt;/p>">&lt;img loading="lazy" src='assets/arch-drive-install.assets/image-20230507055418720.png' alt="image-20230507055418720">&lt;/a>&lt;figcaption class="image-caption"> &lt;/figcaption>
  &lt;/figure>&lt;/p>
-&lt;h2 id="声卡驱动" class="heading-element">&lt;span>2、声卡驱动&lt;/span>
+&lt;h2 class="heading-element" id="声卡驱动">&lt;span>2、声卡驱动&lt;/span>
  &lt;a href="#%e5%a3%b0%e5%8d%a1%e9%a9%b1%e5%8a%a8" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -578,7 +578,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo pacman -S pipewire-pulse
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo pacman -S pavucontrol&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="蓝牙驱动" class="heading-element">&lt;span>3、蓝牙驱动&lt;/span>
+&lt;/div>&lt;h2 class="heading-element" id="蓝牙驱动">&lt;span>3、蓝牙驱动&lt;/span>
  &lt;a href="#%e8%93%9d%e7%89%99%e9%a9%b1%e5%8a%a8" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -598,7 +598,7 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">systemctl start bluetooth.service&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>参考教程：&lt;code>https://cn.linux-console.net/?p=16637&lt;/code>&lt;/p>
-&lt;h2 id="电源管理" class="heading-element">&lt;span>4、电源管理&lt;/span>
+&lt;h2 class="heading-element" id="电源管理">&lt;span>4、电源管理&lt;/span>
  &lt;a href="#%e7%94%b5%e6%ba%90%e7%ae%a1%e7%90%86" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -621,7 +621,7 @@
 &lt;/div>&lt;p>参考教程：https://wiki.archlinux.org/title/TLP&lt;/p>
 &lt;blockquote>
 &lt;p>GUI&lt;/p>&lt;/blockquote>
-&lt;p>安装 ： &lt;code>paru -S tlpui&lt;/code>&lt;/p></description></item><item><title>arch 基础安装到日常使用与美化 - 安装后配置</title><link>https://roukaixin.github.io/posts/arch/arch-config-install/</link><pubDate>Sun, 12 Nov 2023 21:00:00 +0800</pubDate><author>a3427173515@163.com (不北咪)</author><guid>https://roukaixin.github.io/posts/arch/arch-config-install/</guid><category domain="https://roukaixin.github.io/categories/linux/">Linux</category><description>&lt;img src="https://roukaixin.github.io/posts/thumbnail/arch/arch-install-config.webp" alt="featured image" referrerpolicy="no-referrer">&lt;h2 id="配置中国源和开启32位软件包" class="heading-element">&lt;span>1、配置中国源和开启32位软件包&lt;/span>
+&lt;p>安装 ： &lt;code>paru -S tlpui&lt;/code>&lt;/p></description></item><item><title>arch 基础安装到日常使用与美化 - 安装后配置</title><link>https://roukaixin.github.io/posts/arch/arch-config-install/</link><pubDate>Sun, 12 Nov 2023 21:00:00 +0800</pubDate><author>a3427173515@163.com (不北咪)</author><guid>https://roukaixin.github.io/posts/arch/arch-config-install/</guid><category domain="https://roukaixin.github.io/categories/linux/">Linux</category><description>&lt;img src="https://roukaixin.github.io/posts/thumbnail/arch/arch-install-config.webp" alt="featured image" referrerpolicy="no-referrer">&lt;h2 class="heading-element" id="配置中国源和开启32位软件包">&lt;span>1、配置中国源和开启32位软件包&lt;/span>
  &lt;a href="#%e9%85%8d%e7%bd%ae%e4%b8%ad%e5%9b%bd%e6%ba%90%e5%92%8c%e5%bc%80%e5%90%af32%e4%bd%8d%e8%bd%af%e4%bb%b6%e5%8c%85" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -701,7 +701,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 安装 GPG key&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">pacman -S archlinuxcn-keyring &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="添加一个普通用户" class="heading-element">&lt;span>2、添加一个普通用户&lt;/span>
+&lt;/div>&lt;h2 class="heading-element" id="添加一个普通用户">&lt;span>2、添加一个普通用户&lt;/span>
  &lt;a href="#%e6%b7%bb%e5%8a%a0%e4%b8%80%e4%b8%aa%e6%99%ae%e9%80%9a%e7%94%a8%e6%88%b7" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -740,7 +740,7 @@
 &lt;/div>
  &lt;/div>
 &lt;/div>
-&lt;h2 id="安装软件源aur" class="heading-element">&lt;span>3、安装软件源（AUR）&lt;/span>
+&lt;h2 class="heading-element" id="安装软件源aur">&lt;span>3、安装软件源（AUR）&lt;/span>
  &lt;a href="#%e5%ae%89%e8%a3%85%e8%bd%af%e4%bb%b6%e6%ba%90aur" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -753,7 +753,7 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 可以选择两个都安装，也可以只安装一个&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">pacman -S yay paru&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="安装字体" class="heading-element">&lt;span>4、安装字体&lt;/span>
+&lt;/div>&lt;h2 class="heading-element" id="安装字体">&lt;span>4、安装字体&lt;/span>
  &lt;a href="#%e5%ae%89%e8%a3%85%e5%ad%97%e4%bd%93" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -774,7 +774,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ttf-jetbrains-mono-nerd :&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">pacman -S ttf-dejavu wqy-zenhei wqy-microhei noto-fonts-emoji&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="安装中文输入法" class="heading-element">&lt;span>5、安装中文输入法&lt;/span>
+&lt;/div>&lt;h2 class="heading-element" id="安装中文输入法">&lt;span>5、安装中文输入法&lt;/span>
  &lt;a href="#%e5%ae%89%e8%a3%85%e4%b8%ad%e6%96%87%e8%be%93%e5%85%a5%e6%b3%95" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -831,7 +831,7 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># fcitx5-pinyin-zhwiki : 中文维基百科创建的词库		&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">pacman -S fcitx5-pinyin-zhwiki fcitx5-pinyin-moegirl&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="安装工具可选" class="heading-element">&lt;span>6、安装工具（可选）&lt;/span>
+&lt;/div>&lt;h2 class="heading-element" id="安装工具可选">&lt;span>6、安装工具（可选）&lt;/span>
  &lt;a href="#%e5%ae%89%e8%a3%85%e5%b7%a5%e5%85%b7%e5%8f%af%e9%80%89" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -861,13 +861,13 @@
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;code>systemctl enable udisks2&lt;/code> 根据个人是否开启，如果不开启，可以在启动窗口管理器的时候在启动也行&lt;/div>
  &lt;/div>
-&lt;/div></description></item><item><title>debian 安装</title><link>https://roukaixin.github.io/posts/debian-linux-%E5%AE%89%E8%A3%85/</link><pubDate>Tue, 12 Sep 2023 20:31:00 +0800</pubDate><author>a3427173515@163.com (不北咪)</author><guid>https://roukaixin.github.io/posts/debian-linux-%E5%AE%89%E8%A3%85/</guid><category domain="https://roukaixin.github.io/categories/linux/">Linux</category><description>&lt;img src="https://roukaixin.github.io/posts/thumbnail/debian-linux-%E5%AE%89%E8%A3%85/debian.webp" alt="featured image" referrerpolicy="no-referrer">&lt;h2 id="下载镜像" class="heading-element">&lt;span>1、下载镜像&lt;/span>
+&lt;/div></description></item><item><title>debian 安装</title><link>https://roukaixin.github.io/posts/debian-linux-%E5%AE%89%E8%A3%85/</link><pubDate>Tue, 12 Sep 2023 20:31:00 +0800</pubDate><author>a3427173515@163.com (不北咪)</author><guid>https://roukaixin.github.io/posts/debian-linux-%E5%AE%89%E8%A3%85/</guid><category domain="https://roukaixin.github.io/categories/linux/">Linux</category><description>&lt;img src="https://roukaixin.github.io/posts/thumbnail/debian-linux-%E5%AE%89%E8%A3%85/debian.webp" alt="featured image" referrerpolicy="no-referrer">&lt;h2 class="heading-element" id="下载镜像">&lt;span>1、下载镜像&lt;/span>
  &lt;a href="#%e4%b8%8b%e8%bd%bd%e9%95%9c%e5%83%8f" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>官方下载地址 ：&lt;code>https://www.debian.org/download&lt;/code>&lt;/p>
 &lt;p>其他地址下载地址可以从中科大源或清华源去下载&lt;/p>
-&lt;h2 id="安装" class="heading-element">&lt;span>2、安装&lt;/span>
+&lt;h2 class="heading-element" id="安装">&lt;span>2、安装&lt;/span>
  &lt;a href="#%e5%ae%89%e8%a3%85" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -950,7 +950,7 @@
 &lt;p>&lt;figure>&lt;a class="lightgallery" href="assets/debian-linux-%e5%ae%89%e8%a3%85.assets/image-20230912210541030.png" title=" " data-thumbnail="assets/debian-linux-安装.assets/image-20230912210541030.png" data-sub-html="&lt;h2>image-20230912210541030&lt;/h2>&lt;p> &lt;/p>">&lt;img loading="lazy" src='assets/debian-linux-安装.assets/image-20230912210541030.png' alt="image-20230912210541030">&lt;/a>&lt;figcaption class="image-caption"> &lt;/figcaption>
  &lt;/figure>&lt;/p>
 &lt;blockquote>
-&lt;p>安装完成之后重启&lt;/p>&lt;/blockquote></description></item><item><title>WebStorm 配置 live-server</title><link>https://roukaixin.github.io/posts/web-storm%E9%85%8D%E7%BD%AE-live-server/</link><pubDate>Thu, 07 Sep 2023 22:36:00 +0800</pubDate><author>a3427173515@163.com (不北咪)</author><guid>https://roukaixin.github.io/posts/web-storm%E9%85%8D%E7%BD%AE-live-server/</guid><category domain="https://roukaixin.github.io/categories/idea/">Idea</category><description>&lt;img src="https://roukaixin.github.io/posts/thumbnail/web-storm%E9%85%8D%E7%BD%AE-live-server/webstorm.webp" alt="featured image" referrerpolicy="no-referrer"></description></item><item><title>idea 使用过程的问题</title><link>https://roukaixin.github.io/posts/idea-%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/</link><pubDate>Mon, 28 Aug 2023 20:43:46 +0800</pubDate><author>a3427173515@163.com (不北咪)</author><guid>https://roukaixin.github.io/posts/idea-%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/</guid><category domain="https://roukaixin.github.io/categories/idea/">Idea</category><description>&lt;img src="https://roukaixin.github.io/posts/thumbnail/idea-%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/idea.webp" alt="featured image" referrerpolicy="no-referrer">&lt;h2 id="failed-to-retrieve-application-jmx-service-url-报错" class="heading-element">&lt;span>1、&lt;code>Failed to retrieve application JMX service URL&lt;/code> 报错&lt;/span>
+&lt;p>安装完成之后重启&lt;/p>&lt;/blockquote></description></item><item><title>WebStorm 配置 live-server</title><link>https://roukaixin.github.io/posts/web-storm%E9%85%8D%E7%BD%AE-live-server/</link><pubDate>Thu, 07 Sep 2023 22:36:00 +0800</pubDate><author>a3427173515@163.com (不北咪)</author><guid>https://roukaixin.github.io/posts/web-storm%E9%85%8D%E7%BD%AE-live-server/</guid><category domain="https://roukaixin.github.io/categories/idea/">Idea</category><description>&lt;img src="https://roukaixin.github.io/posts/thumbnail/web-storm%E9%85%8D%E7%BD%AE-live-server/webstorm.webp" alt="featured image" referrerpolicy="no-referrer"></description></item><item><title>idea 使用过程的问题</title><link>https://roukaixin.github.io/posts/idea-%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/</link><pubDate>Mon, 28 Aug 2023 20:43:46 +0800</pubDate><author>a3427173515@163.com (不北咪)</author><guid>https://roukaixin.github.io/posts/idea-%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/</guid><category domain="https://roukaixin.github.io/categories/idea/">Idea</category><description>&lt;img src="https://roukaixin.github.io/posts/thumbnail/idea-%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/idea.webp" alt="featured image" referrerpolicy="no-referrer">&lt;h2 class="heading-element" id="failed-to-retrieve-application-jmx-service-url-报错">&lt;span>1、&lt;code>Failed to retrieve application JMX service URL&lt;/code> 报错&lt;/span>
  &lt;a href="#failed-to-retrieve-application-jmx-service-url-%e6%8a%a5%e9%94%99" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -958,7 +958,7 @@
 &lt;p>解决方法: 把 &lt;code>C:\Users\{用户名}\AppData\Roaming\JetBrains&lt;/code> 文件夹删除，之后重启 idea 即可&lt;/p>
 &lt;p>&lt;strong>注意: 如果没有看到上面的文件夹，请打开隐藏文件&lt;/strong>&lt;/p>
 &lt;p>如果上面方法还是不能成功，那么就需要在启动参数中加入 &lt;code>-Dcom.sun.management.jmxremote&lt;/code>&lt;/p>
-&lt;h2 id="fcitx5-在-idea-显示框位置不正确" class="heading-element">&lt;span>2、fcitx5 在 idea 显示框位置不正确&lt;/span>
+&lt;h2 class="heading-element" id="fcitx5-在-idea-显示框位置不正确">&lt;span>2、fcitx5 在 idea 显示框位置不正确&lt;/span>
  &lt;a href="#fcitx5-%e5%9c%a8-idea-%e6%98%be%e7%a4%ba%e6%a1%86%e4%bd%8d%e7%bd%ae%e4%b8%8d%e6%ad%a3%e7%a1%ae" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -978,7 +978,7 @@
 &lt;ul>
 &lt;li>现在之后安装重新 idea 即可&lt;/li>
 &lt;/ul>
-&lt;h2 id="启动速度优化" class="heading-element">&lt;span>3、启动速度优化&lt;/span>
+&lt;h2 class="heading-element" id="启动速度优化">&lt;span>3、启动速度优化&lt;/span>
  &lt;a href="#%e5%90%af%e5%8a%a8%e9%80%9f%e5%ba%a6%e4%bc%98%e5%8c%96" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1010,7 +1010,7 @@
 &lt;/div>
 &lt;/div>&lt;/li>
 &lt;/ol>
-&lt;p>参考 ： &lt;code>https://blog.csdn.net/m0_58022371/article/details/136951465&lt;/code>&lt;/p></description></item><item><title>minio 集群搭建</title><link>https://roukaixin.github.io/posts/minio-%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2/</link><pubDate>Sat, 12 Aug 2023 11:25:46 +0800</pubDate><author>a3427173515@163.com (不北咪)</author><guid>https://roukaixin.github.io/posts/minio-%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2/</guid><category domain="https://roukaixin.github.io/categories/%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E6%9C%8D%E5%8A%A1%E5%99%A8/">对象存储服务器</category><description>&lt;img src="https://roukaixin.github.io/posts/thumbnail/minio-%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2/minio.webp" alt="featured image" referrerpolicy="no-referrer">&lt;h2 id="集群部署" class="heading-element">&lt;span>1、集群部署&lt;/span>
+&lt;p>参考 ： &lt;code>https://blog.csdn.net/m0_58022371/article/details/136951465&lt;/code>&lt;/p></description></item><item><title>minio 集群搭建</title><link>https://roukaixin.github.io/posts/minio-%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2/</link><pubDate>Sat, 12 Aug 2023 11:25:46 +0800</pubDate><author>a3427173515@163.com (不北咪)</author><guid>https://roukaixin.github.io/posts/minio-%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2/</guid><category domain="https://roukaixin.github.io/categories/%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E6%9C%8D%E5%8A%A1%E5%99%A8/">对象存储服务器</category><description>&lt;img src="https://roukaixin.github.io/posts/thumbnail/minio-%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2/minio.webp" alt="featured image" referrerpolicy="no-referrer">&lt;h2 class="heading-element" id="集群部署">&lt;span>1、集群部署&lt;/span>
  &lt;a href="#%e9%9b%86%e7%be%a4%e9%83%a8%e7%bd%b2" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1085,7 +1085,7 @@
 &lt;li>&lt;strong>{1&amp;hellip;4}&lt;/strong> 表示的是一到四个节点。一到四之间是三个点。&lt;/li>
 &lt;li>&lt;strong>extra_hosts&lt;/strong> 表示在容器主机内中的 &lt;code>/etc/hosts&lt;/code> 文件中添加。&lt;/li>
 &lt;li>一定需要使用 &lt;code>host&lt;/code> 网络模式，如果不是 &lt;code>host&lt;/code> 网络，那么启动就会报 &lt;code>Unable to read 'format.json'&lt;/code> 错误&lt;/li>
-&lt;/ol></description></item><item><title>fedora-Linux 安装</title><link>https://roukaixin.github.io/posts/fedora-linux/</link><pubDate>Fri, 14 Jul 2023 19:13:00 +0800</pubDate><author>a3427173515@163.com (不北咪)</author><guid>https://roukaixin.github.io/posts/fedora-linux/</guid><category domain="https://roukaixin.github.io/categories/linux/">Linux</category><description>&lt;img src="https://roukaixin.github.io/posts/thumbnail/fedora-linux/fedora.webp" alt="featured image" referrerpolicy="no-referrer">&lt;h2 id="安装" class="heading-element">&lt;span>1、安装&lt;/span>
+&lt;/ol></description></item><item><title>fedora-Linux 安装</title><link>https://roukaixin.github.io/posts/fedora-linux/</link><pubDate>Fri, 14 Jul 2023 19:13:00 +0800</pubDate><author>a3427173515@163.com (不北咪)</author><guid>https://roukaixin.github.io/posts/fedora-linux/</guid><category domain="https://roukaixin.github.io/categories/linux/">Linux</category><description>&lt;img src="https://roukaixin.github.io/posts/thumbnail/fedora-linux/fedora.webp" alt="featured image" referrerpolicy="no-referrer">&lt;h2 class="heading-element" id="安装">&lt;span>1、安装&lt;/span>
  &lt;a href="#%e5%ae%89%e8%a3%85" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1097,11 +1097,11 @@
 &lt;blockquote>
 &lt;p>安装&lt;/p>&lt;/blockquote>
 &lt;p>创建启动u盘，可视化安装教程。这里我安装的是最小化安装，因为我使用的是dwm窗口管理器&lt;/p>
-&lt;h2 id="安装配置" class="heading-element">&lt;span>2、安装配置&lt;/span>
+&lt;h2 class="heading-element" id="安装配置">&lt;span>2、安装配置&lt;/span>
  &lt;a href="#%e5%ae%89%e8%a3%85%e9%85%8d%e7%bd%ae" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;h3 id="替换为国内源" class="heading-element">&lt;span>2.1、替换为国内源&lt;/span>
+&lt;/h2>&lt;h3 class="heading-element" id="替换为国内源">&lt;span>2.1、替换为国内源&lt;/span>
  &lt;a href="#%e6%9b%bf%e6%8d%a2%e4%b8%ba%e5%9b%bd%e5%86%85%e6%ba%90" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1136,7 +1136,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 更新软件&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo dnf -y update&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="创建一个普通用户" class="heading-element">&lt;span>2.2、创建一个普通用户&lt;/span>
+&lt;/div>&lt;h3 class="heading-element" id="创建一个普通用户">&lt;span>2.2、创建一个普通用户&lt;/span>
  &lt;a href="#%e5%88%9b%e5%bb%ba%e4%b8%80%e4%b8%aa%e6%99%ae%e9%80%9a%e7%94%a8%e6%88%b7" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1166,7 +1166,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">找到 &lt;span class="c1"># %wheel ALL=(ALL:ALL)ALL 并把 # 号去掉&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>&lt;strong>个人是注释掉 &lt;code>%wheel ALL=(ALL:ALL)ALL&lt;/code> 这一行，如果不想使用 &lt;code>sudo&lt;/code> 命令时输入密码，可以注释掉 &lt;code>%wheel ALL=(ALL:ALL) NOPASSWD: ALL&lt;/code>。两个选择一个注释掉既可以了&lt;/strong>&lt;/p>
-&lt;h3 id="配置窗口管理器" class="heading-element">&lt;span>2.3、配置窗口管理器&lt;/span>
+&lt;h3 class="heading-element" id="配置窗口管理器">&lt;span>2.3、配置窗口管理器&lt;/span>
  &lt;a href="#%e9%85%8d%e7%bd%ae%e7%aa%97%e5%8f%a3%e7%ae%a1%e7%90%86%e5%99%a8" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1312,7 +1312,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 删除&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo rm -rf JetBrainsMono.zip&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="安装n卡驱动" class="heading-element">&lt;span>2.4、安装n卡驱动&lt;/span>
+&lt;/div>&lt;h3 class="heading-element" id="安装n卡驱动">&lt;span>2.4、安装n卡驱动&lt;/span>
  &lt;a href="#%e5%ae%89%e8%a3%85n%e5%8d%a1%e9%a9%b1%e5%8a%a8" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1324,7 +1324,7 @@
 &lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo dnf install akmod-nvidia&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="安装docker" class="heading-element">&lt;span>2.5、安装docker&lt;/span>
+&lt;/div>&lt;h3 class="heading-element" id="安装docker">&lt;span>2.5、安装docker&lt;/span>
  &lt;a href="#%e5%ae%89%e8%a3%85docker" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1373,7 +1373,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 安装 docker 引擎&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="安装typora" class="heading-element">&lt;span>2.6、安装typora&lt;/span>
+&lt;/div>&lt;h3 class="heading-element" id="安装typora">&lt;span>2.6、安装typora&lt;/span>
  &lt;a href="#%e5%ae%89%e8%a3%85typora" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1399,7 +1399,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">flatpak install flathub io.typora.Typora&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="安装浏览器" class="heading-element">&lt;span>2.7、安装浏览器&lt;/span>
+&lt;/div>&lt;h3 class="heading-element" id="安装浏览器">&lt;span>2.7、安装浏览器&lt;/span>
  &lt;a href="#%e5%ae%89%e8%a3%85%e6%b5%8f%e8%a7%88%e5%99%a8" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1437,16 +1437,16 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 安装&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo dnf install microsoft-edge-stable&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>opensuse 安装和窗口管理器安装</title><link>https://roukaixin.github.io/posts/open-suse/</link><pubDate>Wed, 12 Jul 2023 20:00:00 +0800</pubDate><author>a3427173515@163.com (不北咪)</author><guid>https://roukaixin.github.io/posts/open-suse/</guid><category domain="https://roukaixin.github.io/categories/linux/">Linux</category><description>&lt;img src="https://roukaixin.github.io/posts/thumbnail/open-suse/opensuse.webp" alt="featured image" referrerpolicy="no-referrer">&lt;h2 id="安装" class="heading-element">&lt;span>1、安装&lt;/span>
+&lt;/div></description></item><item><title>opensuse 安装和窗口管理器安装</title><link>https://roukaixin.github.io/posts/open-suse/</link><pubDate>Wed, 12 Jul 2023 20:00:00 +0800</pubDate><author>a3427173515@163.com (不北咪)</author><guid>https://roukaixin.github.io/posts/open-suse/</guid><category domain="https://roukaixin.github.io/categories/linux/">Linux</category><description>&lt;img src="https://roukaixin.github.io/posts/thumbnail/open-suse/opensuse.webp" alt="featured image" referrerpolicy="no-referrer">&lt;h2 class="heading-element" id="安装">&lt;span>1、安装&lt;/span>
  &lt;a href="#%e5%ae%89%e8%a3%85" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>镜像下载地址：&lt;code>https://get.opensuse.org/tumbleweed/#download&lt;/code>&lt;/p>
-&lt;h2 id="窗口管理器安装" class="heading-element">&lt;span>2、窗口管理器安装&lt;/span>
+&lt;h2 class="heading-element" id="窗口管理器安装">&lt;span>2、窗口管理器安装&lt;/span>
  &lt;a href="#%e7%aa%97%e5%8f%a3%e7%ae%a1%e7%90%86%e5%99%a8%e5%ae%89%e8%a3%85" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;h3 id="创建一个普通用户" class="heading-element">&lt;span>2.1、创建一个普通用户&lt;/span>
+&lt;/h2>&lt;h3 class="heading-element" id="创建一个普通用户">&lt;span>2.1、创建一个普通用户&lt;/span>
  &lt;a href="#%e5%88%9b%e5%bb%ba%e4%b8%80%e4%b8%aa%e6%99%ae%e9%80%9a%e7%94%a8%e6%88%b7" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1476,7 +1476,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">找到 &lt;span class="c1"># %wheel ALL=(ALL:ALL)ALL 并把 # 号去掉&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>&lt;strong>个人是注释掉 &lt;code>%wheel ALL=(ALL:ALL)ALL&lt;/code> 这一行，如果不想使用 &lt;code>sudo&lt;/code> 命令时输入密码，可以注释掉 &lt;code>%wheel ALL=(ALL:ALL) NOPASSWD: ALL&lt;/code>。两个选择一个注释掉既可以了&lt;/strong>&lt;/p>
-&lt;h3 id="安装-dwm" class="heading-element">&lt;span>2.2、安装 dwm&lt;/span>
+&lt;h3 class="heading-element" id="安装-dwm">&lt;span>2.2、安装 dwm&lt;/span>
  &lt;a href="#%e5%ae%89%e8%a3%85-dwm" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1522,7 +1522,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 编译&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo make clean install&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="安装-st" class="heading-element">&lt;span>2.3、安装 st&lt;/span>
+&lt;/div>&lt;h3 class="heading-element" id="安装-st">&lt;span>2.3、安装 st&lt;/span>
  &lt;a href="#%e5%ae%89%e8%a3%85-st" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1553,7 +1553,7 @@
 &lt;/div>
 &lt;/div>&lt;p>&lt;figure>&lt;a class="lightgallery" href="assets/open-suse.assets/image-20230715175157860.png" title=" " data-thumbnail="assets/open-suse.assets/image-20230715175157860.png" data-sub-html="&lt;h2>image-20230715175157860&lt;/h2>&lt;p> &lt;/p>">&lt;img loading="lazy" src='assets/open-suse.assets/image-20230715175157860.png' alt="image-20230715175157860">&lt;/a>&lt;figcaption class="image-caption"> &lt;/figcaption>
  &lt;/figure>&lt;/p>
-&lt;h3 id="安装-picom" class="heading-element">&lt;span>2.4、安装 picom&lt;/span>
+&lt;h3 class="heading-element" id="安装-picom">&lt;span>2.4、安装 picom&lt;/span>
  &lt;a href="#%e5%ae%89%e8%a3%85-picom" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1584,7 +1584,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">meson setup --buildtype&lt;span class="o">=&lt;/span>release . build
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ninja -C build install&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="安装字体" class="heading-element">&lt;span>2.5、安装字体&lt;/span>
+&lt;/div>&lt;h3 class="heading-element" id="安装字体">&lt;span>2.5、安装字体&lt;/span>
  &lt;a href="#%e5%ae%89%e8%a3%85%e5%ad%97%e4%bd%93" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1619,7 +1619,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 删除&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo rm -rf JetBrainsMono.zip&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="安装-xorg-服务器" class="heading-element">&lt;span>2.6、安装 xorg 服务器&lt;/span>
+&lt;/div>&lt;h3 class="heading-element" id="安装-xorg-服务器">&lt;span>2.6、安装 xorg 服务器&lt;/span>
  &lt;a href="#%e5%ae%89%e8%a3%85-xorg-%e6%9c%8d%e5%8a%a1%e5%99%a8" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1642,7 +1642,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#!/bin/bash&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">exec&lt;/span> dwm&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="其他依赖包" class="heading-element">&lt;span>2.7、其他依赖包&lt;/span>
+&lt;/div>&lt;h3 class="heading-element" id="其他依赖包">&lt;span>2.7、其他依赖包&lt;/span>
  &lt;a href="#%e5%85%b6%e4%bb%96%e4%be%9d%e8%b5%96%e5%8c%85" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1653,11 +1653,11 @@
 &lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo zypper install NetworkManager-applet flameshot dunst feh neofetch acpi xsetroot rofi&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="配置" class="heading-element">&lt;span>3、配置&lt;/span>
+&lt;/div>&lt;h2 class="heading-element" id="配置">&lt;span>3、配置&lt;/span>
  &lt;a href="#%e9%85%8d%e7%bd%ae" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;h3 id="启动中文" class="heading-element">&lt;span>3.1、启动中文&lt;/span>
+&lt;/h2>&lt;h3 class="heading-element" id="启动中文">&lt;span>3.1、启动中文&lt;/span>
  &lt;a href="#%e5%90%af%e5%8a%a8%e4%b8%ad%e6%96%87" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1674,7 +1674,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">LANG&lt;/span>&lt;span class="o">=&lt;/span>zh_CN.UTF-8
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">LANGUAGE&lt;/span>&lt;span class="o">=&lt;/span>zh_CN:en_US&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="安装输入法" class="heading-element">&lt;span>3.2、安装输入法&lt;/span>
+&lt;/div>&lt;h3 class="heading-element" id="安装输入法">&lt;span>3.2、安装输入法&lt;/span>
  &lt;a href="#%e5%ae%89%e8%a3%85%e8%be%93%e5%85%a5%e6%b3%95" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1710,7 +1710,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">SDL_IM_MODULE&lt;/span>&lt;span class="o">=&lt;/span>fcitx
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">GLFW_IM_MODULE&lt;/span>&lt;span class="o">=&lt;/span>ibus&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="显示亮度" class="heading-element">&lt;span>3.3、显示亮度&lt;/span>
+&lt;/div>&lt;h3 class="heading-element" id="显示亮度">&lt;span>3.3、显示亮度&lt;/span>
  &lt;a href="#%e6%98%be%e7%a4%ba%e4%ba%ae%e5%ba%a6" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1721,7 +1721,7 @@
 &lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo zypper install brightnessctl&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="声卡驱动" class="heading-element">&lt;span>3.4、声卡驱动&lt;/span>
+&lt;/div>&lt;h3 class="heading-element" id="声卡驱动">&lt;span>3.4、声卡驱动&lt;/span>
  &lt;a href="#%e5%a3%b0%e5%8d%a1%e9%a9%b1%e5%8a%a8" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1732,7 +1732,7 @@
 &lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo zypper install pipewire-pulseaudio pavucontrol&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="显卡驱动" class="heading-element">&lt;span>3.5、显卡驱动&lt;/span>
+&lt;/div>&lt;h3 class="heading-element" id="显卡驱动">&lt;span>3.5、显卡驱动&lt;/span>
  &lt;a href="#%e6%98%be%e5%8d%a1%e9%a9%b1%e5%8a%a8" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1742,12 +1742,12 @@
 &lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>neovim</title><link>https://roukaixin.github.io/posts/neovim/</link><pubDate>Sat, 01 Jul 2023 23:45:46 +0800</pubDate><author>a3427173515@163.com (不北咪)</author><guid>https://roukaixin.github.io/posts/neovim/</guid><category domain="https://roukaixin.github.io/categories/vim/">Vim</category><description>&lt;img src="https://roukaixin.github.io/posts/thumbnail/neovim/neovim.webp" alt="featured image" referrerpolicy="no-referrer">&lt;h2 id="安装" class="heading-element">&lt;span>1、安装&lt;/span>
+&lt;/div></description></item><item><title>neovim</title><link>https://roukaixin.github.io/posts/neovim/</link><pubDate>Sat, 01 Jul 2023 23:45:46 +0800</pubDate><author>a3427173515@163.com (不北咪)</author><guid>https://roukaixin.github.io/posts/neovim/</guid><category domain="https://roukaixin.github.io/categories/vim/">Vim</category><description>&lt;img src="https://roukaixin.github.io/posts/thumbnail/neovim/neovim.webp" alt="featured image" referrerpolicy="no-referrer">&lt;h2 class="heading-element" id="安装">&lt;span>1、安装&lt;/span>
  &lt;a href="#%e5%ae%89%e8%a3%85" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>github 地址：&lt;code>https://github.com/neovim/neovim&lt;/code>&lt;/p>
-&lt;h3 id="arch" class="heading-element">&lt;span>1.1、arch&lt;/span>
+&lt;h3 class="heading-element" id="arch">&lt;span>1.1、arch&lt;/span>
  &lt;a href="#arch" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
