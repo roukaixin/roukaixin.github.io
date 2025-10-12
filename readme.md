@@ -1,6 +1,12 @@
 # 不北咪
 
-共计 12 篇文章
+共计 13 篇文章
+
+## 2025
+
+共计 1 篇文章
+
+- 10-11 [Landscape 路由器安装](https://roukaixin.github.io/posts/landscape/landscape-install/ "2025-10-11 10:40:00")
 
 ## 2024
 
