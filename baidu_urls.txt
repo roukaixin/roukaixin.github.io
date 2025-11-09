@@ -1,9 +1,9 @@
 https://roukaixin.github.io/posts/landscape/landscape-flow/
 https://roukaixin.github.io/posts/landscape/landscape-geo/
 https://roukaixin.github.io/posts/landscape/landscape-install/
-https://roukaixin.github.io/posts/arch/arch-software-yazi/
-https://roukaixin.github.io/posts/arch/arch-drive-install/
-https://roukaixin.github.io/posts/arch/arch-config-install/
+https://roukaixin.github.io/posts/arch/04-arch-software/
+https://roukaixin.github.io/posts/arch/03-arch-drive/
+https://roukaixin.github.io/posts/arch/02-arch-config/
 https://roukaixin.github.io/friends/
 https://roukaixin.github.io/posts/debian-linux-%E5%AE%89%E8%A3%85/
 https://roukaixin.github.io/posts/web-storm%E9%85%8D%E7%BD%AE-live-server/
@@ -12,5 +12,5 @@ https://roukaixin.github.io/posts/minio-%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2/
 https://roukaixin.github.io/posts/fedora-linux/
 https://roukaixin.github.io/posts/open-suse/
 https://roukaixin.github.io/posts/neovim/
-https://roukaixin.github.io/posts/arch/arch-basic-install/
+https://roukaixin.github.io/posts/arch/01-arch-basic/
 https://roukaixin.github.io/posts/hugo-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/
