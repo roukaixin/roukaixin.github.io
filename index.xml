@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>不北咪</title><link>https://roukaixin.github.io/</link><description>不北咪</description><generator>Hugo 0.152.2 &amp; FixIt v0.3.20</generator><language>zh-CN</language><managingEditor>a3427173515@163.com (不北咪)</managingEditor><webMaster>a3427173515@163.com (不北咪)</webMaster><lastBuildDate>Sun, 16 Nov 2025 03:56:15 +0000</lastBuildDate><atom:link href="https://roukaixin.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Landscape 流</title><link>https://roukaixin.github.io/posts/landscape/landscape-flow/</link><pubDate>Sun, 12 Oct 2025 20:36:00 +0800</pubDate><author>a3427173515@163.com (不北咪)</author><guid>https://roukaixin.github.io/posts/landscape/landscape-flow/</guid><category domain="https://roukaixin.github.io/categories/%E8%BD%AF%E8%B7%AF%E7%94%B1/">软路由</category><description>&lt;h2 class="heading-element" id="配置分流"&gt;&lt;span&gt;配置分流&lt;/span&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>不北咪</title><link>https://roukaixin.github.io/</link><description>不北咪</description><generator>Hugo 0.152.2 &amp; FixIt v0.3.20</generator><language>zh-CN</language><managingEditor>a3427173515@163.com (不北咪)</managingEditor><webMaster>a3427173515@163.com (不北咪)</webMaster><lastBuildDate>Sun, 16 Nov 2025 12:19:03 +0000</lastBuildDate><atom:link href="https://roukaixin.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Landscape 流</title><link>https://roukaixin.github.io/posts/landscape/landscape-flow/</link><pubDate>Sun, 12 Oct 2025 20:36:00 +0800</pubDate><author>a3427173515@163.com (不北咪)</author><guid>https://roukaixin.github.io/posts/landscape/landscape-flow/</guid><category domain="https://roukaixin.github.io/categories/%E8%BD%AF%E8%B7%AF%E7%94%B1/">软路由</category><description>&lt;h2 class="heading-element" id="配置分流"&gt;&lt;span&gt;配置分流&lt;/span&gt;
  &lt;a href="#%e9%85%8d%e7%bd%ae%e5%88%86%e6%b5%81" class="heading-mark"&gt;
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
  &lt;/a&gt;
@@ -567,7 +567,48 @@ database {
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
  &lt;/a&gt;
 &lt;/h3&gt;&lt;p&gt;文档地址：&lt;a href="https://rmpc.mierak.dev/next/overview/"target="_blank" rel="external nofollow noopener noreferrer"&gt;rmpc docs&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;使用 &lt;code&gt;rmpc config &amp;gt; ~/.config/rmpc/config.ron&lt;/code&gt; 生成配置并启动 &lt;code&gt;rmpc&lt;/code&gt;&lt;/p&gt;</description></item><item><title>arch 安装使用 - 驱动安装（3）</title><link>https://roukaixin.github.io/posts/arch/03-arch-drive/</link><pubDate>Tue, 14 Nov 2023 21:00:00 +0800</pubDate><author>a3427173515@163.com (不北咪)</author><guid>https://roukaixin.github.io/posts/arch/03-arch-drive/</guid><category domain="https://roukaixin.github.io/categories/linux/">Linux</category><description>&lt;img src="https://roukaixin.github.io/posts/thumbnail/arch/arch-drive-install.webp" alt="featured image" referrerpolicy="no-referrer"&gt;&lt;h2 class="heading-element" id="安装-nvidia-驱动"&gt;&lt;span&gt;1、安装 NVIDIA 驱动&lt;/span&gt;
+&lt;p&gt;使用 &lt;code&gt;rmpc config &amp;gt; ~/.config/rmpc/config.ron&lt;/code&gt; 生成配置并启动 &lt;code&gt;rmpc&lt;/code&gt;&lt;/p&gt;
+&lt;h2 class="heading-element" id="翻译"&gt;&lt;span&gt;3、翻译&lt;/span&gt;
+ &lt;a href="#%e7%bf%bb%e8%af%91" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;&lt;h3 class="heading-element" id="终端翻译"&gt;&lt;span&gt;3.1、终端翻译&lt;/span&gt;
+ &lt;a href="#%e7%bb%88%e7%ab%af%e7%bf%bb%e8%af%91" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h3&gt;&lt;h4 class="heading-element" id="谷歌"&gt;&lt;span&gt;3.1.1、谷歌&lt;/span&gt;
+ &lt;a href="#%e8%b0%b7%e6%ad%8c" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h4&gt;&lt;p&gt;github地址：&lt;code&gt;https://github.com/soimort/translate-shell&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;安装&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 安装&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo pacman -S translate-shell&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;使用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;进入交互式命令行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# trans -I 或 trans -shell&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;trans -I&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a class="lightgallery" href="./image-20240123202405449.png" title="image-20240123202405449" data-thumbnail="./image-20240123202405449.png" data-sub-html="&lt;h2&gt;image-20240123202405449&lt;/h2&gt;"&gt;&lt;img loading="lazy" src='./image-20240123202405449.png' alt="image-20240123202405449"&gt;&lt;/a&gt;&lt;/p&gt;</description></item><item><title>arch 安装使用 - 驱动安装（3）</title><link>https://roukaixin.github.io/posts/arch/03-arch-drive/</link><pubDate>Tue, 14 Nov 2023 21:00:00 +0800</pubDate><author>a3427173515@163.com (不北咪)</author><guid>https://roukaixin.github.io/posts/arch/03-arch-drive/</guid><category domain="https://roukaixin.github.io/categories/linux/">Linux</category><description>&lt;img src="https://roukaixin.github.io/posts/thumbnail/arch/arch-drive-install.webp" alt="featured image" referrerpolicy="no-referrer"&gt;&lt;h2 class="heading-element" id="安装-nvidia-驱动"&gt;&lt;span&gt;1、安装 NVIDIA 驱动&lt;/span&gt;
  &lt;a href="#%e5%ae%89%e8%a3%85-nvidia-%e9%a9%b1%e5%8a%a8" class="heading-mark"&gt;
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
  &lt;/a&gt;
@@ -612,16 +653,16 @@ database {
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 找到 GRUB_CMDLINE_LINUX_DEFAULT 这一项在后面加入 nvidia-drm.modeset=1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;figure&gt;&lt;a class="lightgallery" href="assets/arch-drive-install.assets/image-20230507044757042.png" title=" " data-thumbnail="assets/arch-drive-install.assets/image-20230507044757042.png" data-sub-html="&lt;h2&gt;image-20230507044757042&lt;/h2&gt;&lt;p&gt; &lt;/p&gt;"&gt;&lt;img loading="lazy" src='assets/arch-drive-install.assets/image-20230507044757042.png' alt="image-20230507044757042"&gt;&lt;/a&gt;&lt;figcaption class="image-caption"&gt; &lt;/figcaption&gt;
+&lt;/div&gt;&lt;p&gt;&lt;figure&gt;&lt;a class="lightgallery" href="./image-20230507044757042.png" title=" " data-thumbnail="./image-20230507044757042.png" data-sub-html="&lt;h2&gt;image-20230507044757042&lt;/h2&gt;&lt;p&gt; &lt;/p&gt;"&gt;&lt;img loading="lazy" src='./image-20230507044757042.png' alt="image-20230507044757042"&gt;&lt;/a&gt;&lt;figcaption class="image-caption"&gt; &lt;/figcaption&gt;
  &lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;&lt;figure&gt;&lt;a class="lightgallery" href="assets/arch-drive-install.assets/image-20230506101749305.png" title=" " data-thumbnail="assets/arch-drive-install.assets/image-20230506101749305.png" data-sub-html="&lt;h2&gt;image-20230506101749305&lt;/h2&gt;&lt;p&gt; &lt;/p&gt;"&gt;&lt;img loading="lazy" src='assets/arch-drive-install.assets/image-20230506101749305.png' alt="image-20230506101749305"&gt;&lt;/a&gt;&lt;figcaption class="image-caption"&gt; &lt;/figcaption&gt;
+&lt;p&gt;&lt;figure&gt;&lt;a class="lightgallery" href="./image-20230506101749305.png" title=" " data-thumbnail="./image-20230506101749305.png" data-sub-html="&lt;h2&gt;image-20230506101749305&lt;/h2&gt;&lt;p&gt; &lt;/p&gt;"&gt;&lt;img loading="lazy" src='./image-20230506101749305.png' alt="image-20230506101749305"&gt;&lt;/a&gt;&lt;figcaption class="image-caption"&gt; &lt;/figcaption&gt;
  &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;编辑完成之后，重新生成 &lt;code&gt;grub.cfg&lt;/code&gt; ，执行 &lt;code&gt;sudo grub-mkconfig -o /boot/grub/grub.cfg&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;添加 initramfs 模块&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;在 &lt;code&gt;/etc/mkinitcpio.conf&lt;/code&gt; 中找到 &lt;code&gt;MODULES=&lt;/code&gt; 这一行在括号的后面加入&lt;code&gt;nvidia nvidia_modeset nvidia_uvm nvidia_drm&lt;/code&gt;。修改之前先备份一下（&lt;code&gt;sudo cp /etc/mkinitcpio.conf /etc/mkinitcpio.conf.back&lt;/code&gt;）&lt;/p&gt;
-&lt;p&gt;&lt;figure&gt;&lt;a class="lightgallery" href="assets/arch-drive-install.assets/image-20230507045036585.png" title=" " data-thumbnail="assets/arch-drive-install.assets/image-20230507045036585.png" data-sub-html="&lt;h2&gt;image-20230507045036585&lt;/h2&gt;&lt;p&gt; &lt;/p&gt;"&gt;&lt;img loading="lazy" src='assets/arch-drive-install.assets/image-20230507045036585.png' alt="image-20230507045036585"&gt;&lt;/a&gt;&lt;figcaption class="image-caption"&gt; &lt;/figcaption&gt;
+&lt;p&gt;&lt;figure&gt;&lt;a class="lightgallery" href="./image-20230507045036585.png" title=" " data-thumbnail="./image-20230507045036585.png" data-sub-html="&lt;h2&gt;image-20230507045036585&lt;/h2&gt;&lt;p&gt; &lt;/p&gt;"&gt;&lt;img loading="lazy" src='./image-20230507045036585.png' alt="image-20230507045036585"&gt;&lt;/a&gt;&lt;figcaption class="image-caption"&gt; &lt;/figcaption&gt;
  &lt;/figure&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;重新生成 &lt;code&gt;initramfs &lt;/code&gt;&lt;/p&gt;
@@ -712,7 +753,7 @@ database {
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;xrandr --setprovideroutputsource modesetting NVIDIA-0
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;xrandr --auto&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;figure&gt;&lt;a class="lightgallery" href="assets/arch-drive-install.assets/image-20230507052853861.png" title=" " data-thumbnail="assets/arch-drive-install.assets/image-20230507052853861.png" data-sub-html="&lt;h2&gt;image-20230507052853861&lt;/h2&gt;&lt;p&gt; &lt;/p&gt;"&gt;&lt;img loading="lazy" src='assets/arch-drive-install.assets/image-20230507052853861.png' alt="image-20230507052853861"&gt;&lt;/a&gt;&lt;figcaption class="image-caption"&gt; &lt;/figcaption&gt;
+&lt;/div&gt;&lt;p&gt;&lt;figure&gt;&lt;a class="lightgallery" href="./image-20230507052853861.png" title=" " data-thumbnail="./image-20230507052853861.png" data-sub-html="&lt;h2&gt;image-20230507052853861&lt;/h2&gt;&lt;p&gt; &lt;/p&gt;"&gt;&lt;img loading="lazy" src='./image-20230507052853861.png' alt="image-20230507052853861"&gt;&lt;/a&gt;&lt;figcaption class="image-caption"&gt; &lt;/figcaption&gt;
  &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;如果启动之后 dpi 设置不正确，那么还需要在 &lt;code&gt;xrandr --auto&lt;/code&gt; 下面一行加入 &lt;code&gt;xrandr --dpi 96&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -725,7 +766,7 @@ database {
 &lt;td class="lntd"&gt;
 &lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo pacman -S nvidia-settings nvidia-utils&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;figure&gt;&lt;a class="lightgallery" href="assets/arch-drive-install.assets/image-20230507052136496.png" title=" " data-thumbnail="assets/arch-drive-install.assets/image-20230507052136496.png" data-sub-html="&lt;h2&gt;image-20230507052136496&lt;/h2&gt;&lt;p&gt; &lt;/p&gt;"&gt;&lt;img loading="lazy" src='assets/arch-drive-install.assets/image-20230507052136496.png' alt="image-20230507052136496"&gt;&lt;/a&gt;&lt;figcaption class="image-caption"&gt; &lt;/figcaption&gt;
+&lt;/div&gt;&lt;p&gt;&lt;figure&gt;&lt;a class="lightgallery" href="./image-20230507052136496.png" title=" " data-thumbnail="./image-20230507052136496.png" data-sub-html="&lt;h2&gt;image-20230507052136496&lt;/h2&gt;&lt;p&gt; &lt;/p&gt;"&gt;&lt;img loading="lazy" src='./image-20230507052136496.png' alt="image-20230507052136496"&gt;&lt;/a&gt;&lt;figcaption class="image-caption"&gt; &lt;/figcaption&gt;
  &lt;/figure&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;检查3D&lt;/p&gt;
@@ -746,7 +787,7 @@ database {
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 检查是否输出,出现下面内容就是成功了&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;glxinfo &lt;span class="p"&gt;|&lt;/span&gt; grep NVIDIA&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;figure&gt;&lt;a class="lightgallery" href="assets/arch-drive-install.assets/image-20230507053421591.png" title=" " data-thumbnail="assets/arch-drive-install.assets/image-20230507053421591.png" data-sub-html="&lt;h2&gt;image-20230507053421591&lt;/h2&gt;&lt;p&gt; &lt;/p&gt;"&gt;&lt;img loading="lazy" src='assets/arch-drive-install.assets/image-20230507053421591.png' alt="image-20230507053421591"&gt;&lt;/a&gt;&lt;figcaption class="image-caption"&gt; &lt;/figcaption&gt;
+&lt;/div&gt;&lt;p&gt;&lt;figure&gt;&lt;a class="lightgallery" href="./image-20230507053421591.png" title=" " data-thumbnail="./image-20230507053421591.png" data-sub-html="&lt;h2&gt;image-20230507053421591&lt;/h2&gt;&lt;p&gt; &lt;/p&gt;"&gt;&lt;img loading="lazy" src='./image-20230507053421591.png' alt="image-20230507053421591"&gt;&lt;/a&gt;&lt;figcaption class="image-caption"&gt; &lt;/figcaption&gt;
  &lt;/figure&gt;&lt;/p&gt;
 &lt;h4 class="heading-element" id="配置视频硬解"&gt;&lt;span&gt;1.1.1、配置视频硬解&lt;/span&gt;
  &lt;a href="#%e9%85%8d%e7%bd%ae%e8%a7%86%e9%a2%91%e7%a1%ac%e8%a7%a3" class="heading-mark"&gt;
@@ -788,7 +829,7 @@ database {
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 修改 .xinitrc 文件&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="o"&gt;[&lt;/span&gt; -f ~/.xprofile &lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; . ~/.xprofile&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;figure&gt;&lt;a class="lightgallery" href="assets/arch-drive-install.assets/image-20230507053717011.png" title=" " data-thumbnail="assets/arch-drive-install.assets/image-20230507053717011.png" data-sub-html="&lt;h2&gt;image-20230507053717011&lt;/h2&gt;&lt;p&gt; &lt;/p&gt;"&gt;&lt;img loading="lazy" src='assets/arch-drive-install.assets/image-20230507053717011.png' alt="image-20230507053717011"&gt;&lt;/a&gt;&lt;figcaption class="image-caption"&gt; &lt;/figcaption&gt;
+&lt;/div&gt;&lt;p&gt;&lt;figure&gt;&lt;a class="lightgallery" href="./image-20230507053717011.png" title=" " data-thumbnail="./image-20230507053717011.png" data-sub-html="&lt;h2&gt;image-20230507053717011&lt;/h2&gt;&lt;p&gt; &lt;/p&gt;"&gt;&lt;img loading="lazy" src='./image-20230507053717011.png' alt="image-20230507053717011"&gt;&lt;/a&gt;&lt;figcaption class="image-caption"&gt; &lt;/figcaption&gt;
  &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;方法二：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
@@ -804,7 +845,7 @@ database {
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;LIBVA_DRIVERS_PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/usr/lib/dri/
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;VDPAU_DRIVER&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;nvidia&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;figure&gt;&lt;a class="lightgallery" href="assets/arch-drive-install.assets/image-20230625081349283.png" title=" " data-thumbnail="assets/arch-drive-install.assets/image-20230625081349283.png" data-sub-html="&lt;h2&gt;image-20230625081349283&lt;/h2&gt;&lt;p&gt; &lt;/p&gt;"&gt;&lt;img loading="lazy" src='assets/arch-drive-install.assets/image-20230625081349283.png' alt="image-20230625081349283"&gt;&lt;/a&gt;&lt;figcaption class="image-caption"&gt; &lt;/figcaption&gt;
+&lt;/div&gt;&lt;p&gt;&lt;figure&gt;&lt;a class="lightgallery" href="./image-20230625081349283.png" title=" " data-thumbnail="./image-20230625081349283.png" data-sub-html="&lt;h2&gt;image-20230625081349283&lt;/h2&gt;&lt;p&gt; &lt;/p&gt;"&gt;&lt;img loading="lazy" src='./image-20230625081349283.png' alt="image-20230625081349283"&gt;&lt;/a&gt;&lt;figcaption class="image-caption"&gt; &lt;/figcaption&gt;
  &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;注意：一定要在 &lt;code&gt;exec dwm&lt;/code&gt; 之前&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -820,7 +861,7 @@ database {
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo pacman -S libva-utils&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;验证 VA-API 是否正常工作，运行 &lt;code&gt;vainfo&lt;/code&gt;，出现下面内容就表示成功&lt;/p&gt;
-&lt;p&gt;&lt;figure&gt;&lt;a class="lightgallery" href="assets/arch-drive-install.assets/image-20230507055147711.png" title=" " data-thumbnail="assets/arch-drive-install.assets/image-20230507055147711.png" data-sub-html="&lt;h2&gt;image-20230507055147711&lt;/h2&gt;&lt;p&gt; &lt;/p&gt;"&gt;&lt;img loading="lazy" src='assets/arch-drive-install.assets/image-20230507055147711.png' alt="image-20230507055147711"&gt;&lt;/a&gt;&lt;figcaption class="image-caption"&gt; &lt;/figcaption&gt;
+&lt;p&gt;&lt;figure&gt;&lt;a class="lightgallery" href="./image-20230507055147711.png" title=" " data-thumbnail="./image-20230507055147711.png" data-sub-html="&lt;h2&gt;image-20230507055147711&lt;/h2&gt;&lt;p&gt; &lt;/p&gt;"&gt;&lt;img loading="lazy" src='./image-20230507055147711.png' alt="image-20230507055147711"&gt;&lt;/a&gt;&lt;figcaption class="image-caption"&gt; &lt;/figcaption&gt;
  &lt;/figure&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;验证VDPAU&lt;/p&gt;
@@ -835,7 +876,7 @@ database {
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo pacman -S vdpauinfo&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;验证 VDPAU 是否正常工作，运行&lt;code&gt;vdpauinfo&lt;/code&gt;，出现下图就表示成功&lt;/p&gt;
-&lt;p&gt;&lt;figure&gt;&lt;a class="lightgallery" href="assets/arch-drive-install.assets/image-20230507055418720.png" title=" " data-thumbnail="assets/arch-drive-install.assets/image-20230507055418720.png" data-sub-html="&lt;h2&gt;image-20230507055418720&lt;/h2&gt;&lt;p&gt; &lt;/p&gt;"&gt;&lt;img loading="lazy" src='assets/arch-drive-install.assets/image-20230507055418720.png' alt="image-20230507055418720"&gt;&lt;/a&gt;&lt;figcaption class="image-caption"&gt; &lt;/figcaption&gt;
+&lt;p&gt;&lt;figure&gt;&lt;a class="lightgallery" href="./image-20230507055418720.png" title=" " data-thumbnail="./image-20230507055418720.png" data-sub-html="&lt;h2&gt;image-20230507055418720&lt;/h2&gt;&lt;p&gt; &lt;/p&gt;"&gt;&lt;img loading="lazy" src='./image-20230507055418720.png' alt="image-20230507055418720"&gt;&lt;/a&gt;&lt;figcaption class="image-caption"&gt; &lt;/figcaption&gt;
  &lt;/figure&gt;&lt;/p&gt;
 &lt;h2 class="heading-element" id="声卡驱动"&gt;&lt;span&gt;2、声卡驱动&lt;/span&gt;
  &lt;a href="#%e5%a3%b0%e5%8d%a1%e9%a9%b1%e5%8a%a8" class="heading-mark"&gt;
@@ -1038,7 +1079,7 @@ database {
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;找到 &lt;span class="c1"&gt;# %wheel ALL=(ALL:ALL)ALL 并把 # 号去掉&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;figure&gt;&lt;a class="lightgallery" href="assets/arch-install-config.assets/image-20230625065238368.png" title=" " data-thumbnail="assets/arch-install-config.assets/image-20230625065238368.png" data-sub-html="&lt;h2&gt;image-20230625065238368&lt;/h2&gt;&lt;p&gt; &lt;/p&gt;"&gt;&lt;img loading="lazy" src='assets/arch-install-config.assets/image-20230625065238368.png' alt="image-20230625065238368"&gt;&lt;/a&gt;&lt;figcaption class="image-caption"&gt; &lt;/figcaption&gt;
+&lt;/div&gt;&lt;p&gt;&lt;figure&gt;&lt;a class="lightgallery" href="./image-20230625065238368.png" title=" " data-thumbnail="./image-20230625065238368.png" data-sub-html="&lt;h2&gt;image-20230625065238368&lt;/h2&gt;&lt;p&gt; &lt;/p&gt;"&gt;&lt;img loading="lazy" src='./image-20230625065238368.png' alt="image-20230625065238368"&gt;&lt;/a&gt;&lt;figcaption class="image-caption"&gt; &lt;/figcaption&gt;
  &lt;/figure&gt;&lt;/p&gt;
 &lt;div class="alert alert-note"&gt;&lt;p class="alert-title"&gt;&lt;svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"&gt;&lt;path d="M0 8a8 8 0 1116 0A8 8 0 010 8zm8-6.5a6.5 6.5.0 100 13 6.5 6.5.0 000-13zM6.5 7.75A.75.75.0 017.25 7h1a.75.75.0 01.75.75v2.75h.25a.75.75.0 010 1.5h-2a.75.75.0 010-1.5h.25v-2h-.25a.75.75.0 01-.75-.75zM8 6a1 1 0 110-2 1 1 0 010 2z"/&gt;&lt;/svg&gt;注意&lt;/p&gt;&lt;p&gt;&lt;strong&gt;我自己个人是注释掉 &lt;code&gt;%wheel ALL=(ALL:ALL)ALL&lt;/code&gt; 这一行，方便之后使用 &lt;code&gt;sudo&lt;/code&gt; 时不需要输入密码。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;如果不想使用 &lt;code&gt;sudo&lt;/code&gt; 命令时输入密码，可以注释掉 &lt;code&gt;%wheel ALL=(ALL:ALL) NOPASSWD: ALL&lt;/code&gt;。两个选择一个注释掉既可以了&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;&lt;h2 class="heading-element" id="安装软件源aur"&gt;&lt;span&gt;3、安装软件源（AUR）&lt;/span&gt;
