@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>不北咪</title><link>https://roukaixin.github.io/</link><description>不北咪</description><generator>Hugo 0.152.2 &amp; FixIt v0.3.20</generator><language>zh-CN</language><managingEditor>a3427173515@163.com (不北咪)</managingEditor><webMaster>a3427173515@163.com (不北咪)</webMaster><lastBuildDate>Sun, 16 Nov 2025 12:19:03 +0000</lastBuildDate><atom:link href="https://roukaixin.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Landscape 流</title><link>https://roukaixin.github.io/posts/landscape/landscape-flow/</link><pubDate>Sun, 12 Oct 2025 20:36:00 +0800</pubDate><author>a3427173515@163.com (不北咪)</author><guid>https://roukaixin.github.io/posts/landscape/landscape-flow/</guid><category domain="https://roukaixin.github.io/categories/%E8%BD%AF%E8%B7%AF%E7%94%B1/">软路由</category><description>&lt;h2 class="heading-element" id="配置分流"&gt;&lt;span&gt;配置分流&lt;/span&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>不北咪</title><link>https://roukaixin.github.io/</link><description>不北咪</description><generator>Hugo 0.152.2 &amp; FixIt v0.3.20</generator><language>zh-CN</language><managingEditor>a3427173515@163.com (不北咪)</managingEditor><webMaster>a3427173515@163.com (不北咪)</webMaster><lastBuildDate>Sun, 07 Dec 2025 15:21:46 +0000</lastBuildDate><atom:link href="https://roukaixin.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Landscape 流</title><link>https://roukaixin.github.io/posts/landscape/landscape-flow/</link><pubDate>Sun, 12 Oct 2025 20:36:00 +0800</pubDate><author>a3427173515@163.com (不北咪)</author><guid>https://roukaixin.github.io/posts/landscape/landscape-flow/</guid><category domain="https://roukaixin.github.io/categories/%E8%BD%AF%E8%B7%AF%E7%94%B1/">软路由</category><description>&lt;h2 class="heading-element" id="配置分流"&gt;&lt;span&gt;配置分流&lt;/span&gt;
  &lt;a href="#%e9%85%8d%e7%bd%ae%e5%88%86%e6%b5%81" class="heading-mark"&gt;
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
  &lt;/a&gt;
@@ -6,7 +6,14 @@
 &lt;div class="details admonition question open disabled"&gt;
  &lt;div class="details-summary admonition-title"&gt;&lt;i class="icon fa-fw fa-regular fa-circle-question" aria-hidden="true"&gt;&lt;/i&gt;问题&lt;/div&gt;
  &lt;div class="details-content"&gt;
- &lt;div class="admonition-content"&gt;&lt;p&gt;每一组 &lt;code&gt;flow&lt;/code&gt; 流规则都必须要一个兜底 &lt;code&gt;dns&lt;/code&gt; 规则。如果没有兜底配置，那么所有流量都会被拒接。&lt;/p&gt;&lt;/div&gt;
+ &lt;div class="admonition-content"&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;默认有一个 &lt;code&gt;id&lt;/code&gt; 为 0 的 &lt;code&gt;flow&lt;/code&gt;，他的 &lt;code&gt;dns&lt;/code&gt; 规则和 &lt;code&gt;目标ip&lt;/code&gt; 规则就是 &lt;code&gt;系统基础信息&lt;/code&gt; 页面的 &lt;code&gt;dns&lt;/code&gt; 配置，两个是一样的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;每一组 &lt;code&gt;flow&lt;/code&gt; 流规则都必须要 &lt;code&gt;dns&lt;/code&gt; 规则。如果没有，那么所有流量都会被拒接。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
  &lt;/div&gt;
 &lt;/div&gt;&lt;h2 class="heading-element" id="与-sing-box-结合使用"&gt;&lt;span&gt;1、与 &lt;code&gt;sing-box&lt;/code&gt; 结合使用&lt;/span&gt;
  &lt;a href="#%e4%b8%8e-sing-box-%e7%bb%93%e5%90%88%e4%bd%bf%e7%94%a8" class="heading-mark"&gt;
@@ -19,13 +26,13 @@
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
  &lt;/a&gt;
 &lt;/h3&gt;&lt;p&gt;可以参考下面&lt;code&gt;sing-box&lt;/code&gt; compose 文件，只需要替换成自己的节点信息即可。&lt;/p&gt;
-&lt;a href="https://github.com/roukaixin/docker-software/blob/main/standalone/sing-box/docker-compose.yaml"target="_blank" rel="external nofollow noopener noreferrer" class="card-link"&gt;&lt;span class="cl-backdrop" style="--cl-bg-url: url(/images/fixit.min.svg);"&gt;&lt;/span&gt;
+&lt;a href="https://github.com/roukaixin/docker-software/blob/main/docker/sing-box/docker-compose.yaml"target="_blank" rel="external nofollow noopener noreferrer" class="card-link"&gt;&lt;span class="cl-backdrop" style="--cl-bg-url: url(/images/fixit.min.svg);"&gt;&lt;/span&gt;
  &lt;span class="cl-content"&gt;
  &lt;span class="cl-text"&gt;
  &lt;span class="cl-title"&gt;sing-box compose 文件&lt;/span&gt;
  &lt;span class="cl-meta"&gt;
  &lt;svg class="cl-icon-link" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16"&gt;&lt;path d="M574 665.4c-3.1-3.1-8.2-3.1-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8c-3.1-3.1-8.2-3.1-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zM832.6 191.4c-84.6-84.6-221.5-84.6-306 0L410.3 307.6c-3.1 3.1-3.1 8.2 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0 59.5 59.5 53.8 150.2 0 204L665.3 562.6c-3.1 3.1-3.1 8.2 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1z" fill="#a9a9b3"&gt;&lt;/path&gt;&lt;path d="M610.1 372.3c-3.1-3.1-8.2-3.1-11.3 0L372.3 598.7c-3.1 3.1-3.1 8.2 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z" fill="#a9a9b3"&gt;&lt;/path&gt;&lt;/svg&gt;
- &lt;span class="cl-url"&gt;https://github.com/roukaixin/docker-software/blob/main/standalone/sing-box/docker-compose.yaml&lt;/span&gt;
+ &lt;span class="cl-url"&gt;https://github.com/roukaixin/docker-software/blob/main/docker/sing-box/docker-compose.yaml&lt;/span&gt;
  &lt;/span&gt;
  &lt;/span&gt;&lt;img src="https://roukaixin.github.io/images/remote/github_14075797050460861398.png" alt="card image" class="cl-shortcut-image"&gt;&lt;/span&gt;&lt;/a&gt;
 &lt;h4 class="heading-element" id="获取容器的启动命令"&gt;&lt;span&gt;1.1.1、获取容器的启动命令&lt;/span&gt;
@@ -46,7 +53,7 @@
  &lt;a href="#%e4%b8%8b%e8%bd%bd%e6%8e%a5%e5%ba%94%e7%a8%8b%e5%ba%8f" class="heading-mark"&gt;
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
  &lt;/a&gt;
-&lt;/h4&gt;&lt;p&gt;通俗来讲，接应程序就是用来负责转发流程。&lt;/p&gt;
+&lt;/h4&gt;&lt;p&gt;通俗来讲，接应程序就是用来负责转发流量的，把倒入到容器的流量在转发出去。&lt;/p&gt;
 &lt;p&gt;通过&lt;a href="https://github.com/ThisSeanZhang/landscape/releases"target="_blank" rel="external nofollow noopener noreferrer"&gt;releases&lt;/a&gt;地址下载接应程序。&lt;/p&gt;
 &lt;p&gt;&lt;figure&gt;&lt;a class="lightgallery" href="./2025-10-18_20-02002.png" title=" " data-thumbnail="./2025-10-18_20-02002.png" data-sub-html="&lt;h2&gt;2025-10-18_20-02002.png&lt;/h2&gt;&lt;p&gt; &lt;/p&gt;"&gt;&lt;img loading="lazy" src='./2025-10-18_20-02002.png' alt="2025-10-18_20-02002.png"&gt;&lt;/a&gt;&lt;figcaption class="image-caption"&gt; &lt;/figcaption&gt;
  &lt;/figure&gt;&lt;/p&gt;
@@ -123,7 +130,7 @@
 &lt;p&gt;配置当前出口为&lt;code&gt;sing-box&lt;/code&gt;容器&lt;/p&gt;
 &lt;p&gt;&lt;figure&gt;&lt;a class="lightgallery" href="./2025-10-18_20-13004.png" title=" " data-thumbnail="./2025-10-18_20-13004.png" data-sub-html="&lt;h2&gt;2025-10-18_20-13004.png&lt;/h2&gt;&lt;p&gt; &lt;/p&gt;"&gt;&lt;img loading="lazy" src='./2025-10-18_20-13004.png' alt="2025-10-18_20-13004.png"&gt;&lt;/a&gt;&lt;figcaption class="image-caption"&gt; &lt;/figcaption&gt;
  &lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;配置入口，可以配置&lt;code&gt;lan&lt;/code&gt;口下的所有id地址，也可以根据自己需要去配置。&lt;/p&gt;
+&lt;p&gt;配置入口，可以配置 &lt;code&gt;lan&lt;/code&gt; 口下的所有id地址，也可以根据自己需要去配置。&lt;/p&gt;
 &lt;div class="details admonition info open disabled"&gt;
  &lt;div class="details-summary admonition-title"&gt;&lt;i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true"&gt;&lt;/i&gt;信息&lt;/div&gt;
  &lt;div class="details-content"&gt;
@@ -132,7 +139,6 @@
 &lt;/div&gt;&lt;p&gt;&lt;figure&gt;&lt;a class="lightgallery" href="./2025-10-18_20-15005.png" title=" " data-thumbnail="./2025-10-18_20-15005.png" data-sub-html="&lt;h2&gt;2025-10-18_20-15005.png&lt;/h2&gt;&lt;p&gt; &lt;/p&gt;"&gt;&lt;img loading="lazy" src='./2025-10-18_20-15005.png' alt="2025-10-18_20-15005.png"&gt;&lt;/a&gt;&lt;figcaption class="image-caption"&gt; &lt;/figcaption&gt;
  &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;配置&lt;code&gt;dns&lt;/code&gt;规则&lt;/p&gt;
-&lt;p&gt;根据需要选择要代理的地址，需要注意需要创建一条兜底的&lt;code&gt;DNS&lt;/code&gt;并出口指向默认流&lt;/p&gt;
 &lt;p&gt;&lt;figure&gt;&lt;a class="lightgallery" href="./2025-10-18_20-20007.png" title=" " data-thumbnail="./2025-10-18_20-20007.png" data-sub-html="&lt;h2&gt;2025-10-18_20-20007.png&lt;/h2&gt;&lt;p&gt; &lt;/p&gt;"&gt;&lt;img loading="lazy" src='./2025-10-18_20-20007.png' alt="2025-10-18_20-20007.png"&gt;&lt;/a&gt;&lt;figcaption class="image-caption"&gt; &lt;/figcaption&gt;
  &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;&lt;figure&gt;&lt;a class="lightgallery" href="./2025-10-18_20-19006.png" title=" " data-thumbnail="./2025-10-18_20-19006.png" data-sub-html="&lt;h2&gt;2025-10-18_20-19006.png&lt;/h2&gt;&lt;p&gt; &lt;/p&gt;"&gt;&lt;img loading="lazy" src='./2025-10-18_20-19006.png' alt="2025-10-18_20-19006.png"&gt;&lt;/a&gt;&lt;figcaption class="image-caption"&gt; &lt;/figcaption&gt;
